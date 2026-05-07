@@ -5,7 +5,8 @@
       "options": [
         "is coming",
         "comes",
-        "are coming"
+        "are coming",
+        "has come"
       ],
       "a": 0,
       "h": "(U1) 'Look!' là dấu hiệu Hiện tại tiếp diễn."
@@ -15,7 +16,8 @@
       "options": [
         "drink",
         "am drinking",
-        "drinks"
+        "drinks",
+        "drinking"
       ],
       "a": 0,
       "h": "(U2) 'Never' dùng cho thói quen Hiện tại đơn."
@@ -25,7 +27,8 @@
       "options": [
         "rises",
         "is rising",
-        "rise"
+        "rise",
+        "rose"
       ],
       "a": 0,
       "h": "Sự thật hiển nhiên dùng Present Simple."
@@ -35,7 +38,8 @@
       "options": [
         "wrote",
         "write",
-        "has written"
+        "has written",
+        "was writing"
       ],
       "a": 0,
       "h": "(U5) Sự việc trong quá khứ đã chấm dứt."
@@ -45,7 +49,8 @@
       "options": [
         "is getting",
         "gets",
-        "getting"
+        "getting",
+        "got"
       ],
       "a": 0,
       "h": "(U1) Diễn tả sự thay đổi đang diễn ra."
@@ -55,7 +60,8 @@
       "options": [
         "go",
         "am going",
-        "goes"
+        "goes",
+        "gone"
       ],
       "a": 0,
       "h": "(U2) 'Usually' chỉ thói quen Hiện tại đơn."
@@ -65,7 +71,8 @@
       "options": [
         "speaks",
         "is speaking",
-        "speak"
+        "speak",
+        "spoke"
       ],
       "a": 0,
       "h": "Khả năng/Sự thật dùng Present Simple."
@@ -75,7 +82,8 @@
       "options": [
         "take place",
         "are taking place",
-        "took"
+        "took",
+        "takes place"
       ],
       "a": 0,
       "h": "Lịch trình/Sự kiện định kỳ."
@@ -85,7 +93,8 @@
       "options": [
         "took",
         "take",
-        "taked"
+        "taked",
+        "taking"
       ],
       "a": 0,
       "h": "(U5) Quá khứ của take là took."
@@ -95,7 +104,8 @@
       "options": [
         "went",
         "go",
-        "gone"
+        "gone",
+        "going"
       ],
       "a": 0,
       "h": "(U5) Quá khứ của go là went."
@@ -105,7 +115,8 @@
       "options": [
         "causes",
         "is causing",
-        "cause"
+        "cause",
+        "caused"
       ],
       "a": 0,
       "h": "Sự thật khách quan."
@@ -115,7 +126,8 @@
       "options": [
         "doesn't grow",
         "isn't growing",
-        "not grow"
+        "not grow",
+        "don't grow"
       ],
       "a": 0,
       "h": "Sự thật hiển nhiên."
@@ -125,7 +137,8 @@
       "options": [
         "does",
         "is",
-        "do"
+        "do",
+        "has"
       ],
       "a": 0,
       "h": "Câu hỏi Hiện tại đơn."
@@ -135,7 +148,8 @@
       "options": [
         "drank",
         "drink",
-        "drunk"
+        "drunk",
+        "drinking"
       ],
       "a": 0,
       "h": "(U5) Quá khứ của drink là drank."
@@ -145,7 +159,8 @@
       "options": [
         "didn't enjoy",
         "not enjoyed",
-        "don't enjoy"
+        "don't enjoy",
+        "wasn't enjoying"
       ],
       "a": 0,
       "h": "(U5) Phủ định quá khứ dùng didn't + V1."
@@ -155,7 +170,8 @@
       "options": [
         "didn't eat",
         "not ate",
-        "doesn't eat"
+        "doesn't eat",
+        "wasn't eat"
       ],
       "a": 0,
       "h": "(U5) Phủ định quá khứ đơn."
@@ -165,7 +181,8 @@
       "options": [
         "laughed",
         "was laughing",
-        "laughs"
+        "laughs",
+        "laugh"
       ],
       "a": 0,
       "h": "Sự việc xảy ra trong quá khứ."
@@ -175,7 +192,8 @@
       "options": [
         "flew",
         "fly",
-        "flown"
+        "flown",
+        "flying"
       ],
       "a": 0,
       "h": "Quá khứ của fly là flew."
@@ -185,7 +203,8 @@
       "options": [
         "didn't see",
         "not saw",
-        "don't see"
+        "don't see",
+        "saw not"
       ],
       "a": 0,
       "h": "(U5) 'Yesterday' là quá khứ đơn."
@@ -195,7 +214,8 @@
       "options": [
         "make",
         "making",
-        "are making"
+        "are making",
+        "makes"
       ],
       "a": 0,
       "h": "Sự thật hiển nhiên."
@@ -205,7 +225,8 @@
       "options": [
         "don't eat",
         "not eat",
-        "doesn't eat"
+        "doesn't eat",
+        "aren't eating"
       ],
       "a": 0,
       "h": "Sự thật hiển nhiên."
@@ -215,7 +236,8 @@
       "options": [
         "opens",
         "is opening",
-        "open"
+        "open",
+        "opened"
       ],
       "a": 0,
       "h": "Lịch trình cố định."
@@ -225,7 +247,8 @@
       "options": [
         "go",
         "am going",
-        "goes"
+        "goes",
+        "went"
       ],
       "a": 0,
       "h": "Thói quen hàng ngày."
@@ -235,7 +258,8 @@
       "options": [
         "doesn't believe",
         "isn't believing",
-        "don't believe"
+        "don't believe",
+        "not believe"
       ],
       "a": 0,
       "h": "Sự thật về niềm tin."
@@ -245,7 +269,8 @@
       "options": [
         "translates",
         "is translating",
-        "translate"
+        "translate",
+        "translated"
       ],
       "a": 0,
       "h": "Công việc/Sự thật."
@@ -255,7 +280,8 @@
       "options": [
         "don't tell",
         "doesn't tell",
-        "not telling"
+        "not telling",
+        "aren't telling"
       ],
       "a": 0,
       "h": "Định nghĩa/Sự thật."
@@ -265,7 +291,8 @@
       "options": [
         "flows",
         "is flowing",
-        "flowed"
+        "flowed",
+        "flow"
       ],
       "a": 0,
       "h": "Sự thật địa lý."
@@ -275,7 +302,8 @@
       "options": [
         "go",
         "are going",
-        "goes"
+        "goes",
+        "went"
       ],
       "a": 0,
       "h": "Suggest dùng Present Simple."
@@ -285,7 +313,8 @@
       "options": [
         "do",
         "are",
-        "does"
+        "does",
+        "have"
       ],
       "a": 0,
       "h": "Câu hỏi tần suất."
@@ -295,7 +324,8 @@
       "options": [
         "do",
         "are",
-        "does"
+        "does",
+        "have"
       ],
       "a": 0,
       "h": "Hỏi khả năng."
@@ -305,7 +335,8 @@
       "options": [
         "does",
         "is",
-        "do"
+        "do",
+        "has"
       ],
       "a": 0,
       "h": "Quê quán dùng Hiện tại đơn."
@@ -315,7 +346,8 @@
       "options": [
         "does",
         "is",
-        "do"
+        "do",
+        "are"
       ],
       "a": 0,
       "h": "Hỏi nghĩa từ vựng."
@@ -325,7 +357,8 @@
       "options": [
         "don't know",
         "am not knowing",
-        "doesn't know"
+        "doesn't know",
+        "not know"
       ],
       "a": 0,
       "h": "'Know' là động từ trạng thái."
@@ -335,7 +368,8 @@
       "options": [
         "takes",
         "is taking",
-        "take"
+        "take",
+        "took"
       ],
       "a": 0,
       "h": "Thói quen/Sự thật."
@@ -345,7 +379,8 @@
       "options": [
         "don't know",
         "weren't knowing",
-        "didn't know"
+        "didn't know",
+        "not know"
       ],
       "a": 0,
       "h": "Hiện tại đơn phủ định."
@@ -355,7 +390,8 @@
       "options": [
         "doesn't do",
         "not does",
-        "don't do"
+        "don't do",
+        "isn't doing"
       ],
       "a": 0,
       "h": "Chia động từ phủ định."
@@ -365,7 +401,8 @@
       "options": [
         "don't go",
         "doesn't go",
-        "not go"
+        "not go",
+        "aren't going"
       ],
       "a": 0,
       "h": "'They' đi với 'don't'."
@@ -375,7 +412,8 @@
       "options": [
         "doesn't speak",
         "not speaks",
-        "don't speak"
+        "don't speak",
+        "isn't speaking"
       ],
       "a": 0,
       "h": "Ngôi 3 số ít phủ định."
@@ -385,7 +423,8 @@
       "options": [
         "doesn't use",
         "don't use",
-        "isn't using"
+        "isn't using",
+        "not use"
       ],
       "a": 0,
       "h": "Đặc tính sự vật."
@@ -395,7 +434,8 @@
       "options": [
         "don't get up",
         "doesn't get up",
-        "am not getting up"
+        "am not getting up",
+        "not get up"
       ],
       "a": 0,
       "h": "Thói quen cuối tuần."
@@ -405,7 +445,8 @@
       "options": [
         "do",
         "does",
-        "are"
+        "are",
+        "have"
       ],
       "a": 0,
       "h": "Số nhiều dùng 'do'."
@@ -415,7 +456,8 @@
       "options": [
         "do",
         "are",
-        "does"
+        "does",
+        "is"
       ],
       "a": 0,
       "h": "Cách đánh vần."
@@ -425,7 +467,8 @@
       "options": [
         "do",
         "are",
-        "does"
+        "does",
+        "have"
       ],
       "a": 0,
       "h": "Hỏi nghề nghiệp."
@@ -435,7 +478,8 @@
       "options": [
         "are",
         "do",
-        "is"
+        "is",
+        "have"
       ],
       "a": 0,
       "h": "Đi với tính từ dùng to-be."
@@ -445,7 +489,8 @@
       "options": [
         "doesn't",
         "don't",
-        "isn't"
+        "isn't",
+        "not"
       ],
       "a": 0,
       "h": "Thời tiết địa phương."
@@ -455,7 +500,8 @@
       "options": [
         "goes",
         "is going",
-        "go"
+        "go",
+        "went"
       ],
       "a": 0,
       "h": "Sự thật vũ trụ."
@@ -465,7 +511,8 @@
       "options": [
         "doesn't grow",
         "don't grow",
-        "isn't growing"
+        "isn't growing",
+        "not grow"
       ],
       "a": 0,
       "h": "Sự thật phủ định."
@@ -475,7 +522,8 @@
       "options": [
         "does",
         "is",
-        "do"
+        "do",
+        "has"
       ],
       "a": 0,
       "h": "Hỏi về thời gian."
@@ -485,7 +533,8 @@
       "options": [
         "don't",
         "doesn't",
-        "aren't"
+        "aren't",
+        "not"
       ],
       "a": 0,
       "h": "Cảm xúc/Trạng thái."
@@ -495,7 +544,8 @@
       "options": [
         "don't",
         "doesn't",
-        "am not"
+        "am not",
+        "not"
       ],
       "a": 0,
       "h": "Hiểu biết dùng Hiện tại đơn."
@@ -505,7 +555,8 @@
       "options": [
         "broke",
         "breaked",
-        "broken"
+        "broken",
+        "breaking"
       ],
       "a": 0,
       "h": "Quá khứ bất quy tắc."
@@ -515,7 +566,8 @@
       "options": [
         "enjoyed",
         "enjoys",
-        "were enjoy"
+        "were enjoy",
+        "enjoy"
       ],
       "a": 0,
       "h": "Sự việc đã qua."
@@ -525,7 +577,8 @@
       "options": [
         "spent",
         "spended",
-        "spend"
+        "spend",
+        "spending"
       ],
       "a": 0,
       "h": "Quá khứ của spend là spent."
@@ -535,7 +588,8 @@
       "options": [
         "built",
         "build",
-        "builded"
+        "builded",
+        "building"
       ],
       "a": 0,
       "h": "Sự việc có mốc thời gian quá khứ."
@@ -545,7 +599,8 @@
       "options": [
         "didn't sleep",
         "not slept",
-        "don't sleep"
+        "don't sleep",
+        "wasn't sleep"
       ],
       "a": 0,
       "h": "Phủ định quá khứ đơn."
@@ -555,7 +610,8 @@
       "options": [
         "was",
         "were",
-        "is"
+        "is",
+        "did"
       ],
       "a": 0,
       "h": "To-be quá khứ số ít."
@@ -565,7 +621,8 @@
       "options": [
         "were",
         "was",
-        "are"
+        "are",
+        "did"
       ],
       "a": 0,
       "h": "To-be quá khứ số nhiều."
@@ -575,7 +632,8 @@
       "options": [
         "go",
         "went",
-        "going"
+        "going",
+        "gone"
       ],
       "a": 0,
       "h": "Sau Did dùng V-nguyên thể."
@@ -585,7 +643,8 @@
       "options": [
         "woke up",
         "wake up",
-        "waked up"
+        "waked up",
+        "waking up"
       ],
       "a": 0,
       "h": "Hành động vừa xảy ra sáng nay."
@@ -595,7 +654,8 @@
       "options": [
         "didn't find",
         "not found",
-        "doesn't find"
+        "doesn't find",
+        "wasn't find"
       ],
       "a": 0,
       "h": "Sự việc quá khứ."
@@ -605,7 +665,8 @@
       "options": [
         "went",
         "go",
-        "gone"
+        "gone",
+        "going"
       ],
       "a": 0,
       "h": "Kể lại sự việc."
@@ -615,7 +676,8 @@
       "options": [
         "had",
         "have",
-        "has"
+        "has",
+        "having"
       ],
       "a": 0,
       "h": "Quá khứ của have là had."
@@ -625,7 +687,8 @@
       "options": [
         "arrived",
         "arrive",
-        "was arrive"
+        "was arrive",
+        "arriving"
       ],
       "a": 0,
       "h": "Sự việc quá khứ."
@@ -635,7 +698,8 @@
       "options": [
         "did",
         "were",
-        "was"
+        "was",
+        "do"
       ],
       "a": 0,
       "h": "Trợ động từ nghi vấn quá khứ."
@@ -645,7 +709,8 @@
       "options": [
         "did",
         "were",
-        "was"
+        "was",
+        "do"
       ],
       "a": 0,
       "h": "Hỏi về hoạt động quá khứ."
@@ -655,7 +720,8 @@
       "options": [
         "wasn't",
         "weren't",
-        "didn't be"
+        "didn't be",
+        "am not"
       ],
       "a": 0,
       "h": "To-be phủ định quá khứ."
@@ -665,7 +731,8 @@
       "options": [
         "was",
         "were",
-        "did"
+        "did",
+        "is"
       ],
       "a": 0,
       "h": "Tính chất sự việc quá khứ."
@@ -675,7 +742,8 @@
       "options": [
         "was",
         "were",
-        "did"
+        "did",
+        "is"
       ],
       "a": 0,
       "h": "To-be với danh từ không đếm được."
@@ -685,7 +753,8 @@
       "options": [
         "were",
         "was",
-        "did"
+        "did",
+        "are"
       ],
       "a": 0,
       "h": "Cảm xúc quá khứ số nhiều."
@@ -695,7 +764,8 @@
       "options": [
         "was",
         "did",
-        "were"
+        "were",
+        "is"
       ],
       "a": 0,
       "h": "Hỏi về trạng thái quá khứ."
@@ -705,7 +775,8 @@
       "options": [
         "were",
         "was",
-        "did"
+        "did",
+        "are"
       ],
       "a": 0,
       "h": "Trạng thái sự vật quá khứ."
@@ -715,7 +786,8 @@
       "options": [
         "didn't",
         "wasn't",
-        "not"
+        "not",
+        "don't"
       ],
       "a": 0,
       "h": "Phủ định hành động quá khứ."
@@ -725,7 +797,8 @@
       "options": [
         "wasn't",
         "didn't",
-        "not"
+        "not",
+        "isn't"
       ],
       "a": 0,
       "h": "Phủ định vị trí quá khứ."
@@ -735,7 +808,8 @@
       "options": [
         "was",
         "did",
-        "were"
+        "were",
+        "is"
       ],
       "a": 0,
       "h": "Đánh giá sự việc quá khứ."
@@ -745,7 +819,8 @@
       "options": [
         "did",
         "were",
-        "was"
+        "was",
+        "do"
       ],
       "a": 0,
       "h": "Câu hỏi địa điểm quá khứ."
@@ -755,7 +830,8 @@
       "options": [
         "did",
         "done",
-        "doed"
+        "doed",
+        "doing"
       ],
       "a": 0,
       "h": "Quá khứ của do là did."
@@ -765,7 +841,8 @@
       "options": [
         "lost",
         "losed",
-        "lose"
+        "lose",
+        "losing"
       ],
       "a": 0,
       "h": "Quá khứ của lose là lost."
@@ -775,7 +852,8 @@
       "options": [
         "was",
         "did",
-        "were"
+        "were",
+        "is"
       ],
       "a": 0,
       "h": "Nghề nghiệp quá khứ."
@@ -785,7 +863,8 @@
       "options": [
         "didn't",
         "wasn't",
-        "not"
+        "not",
+        "don't"
       ],
       "a": 0,
       "h": "Phủ định quan sát quá khứ."
@@ -795,7 +874,8 @@
       "options": [
         "wasn't",
         "didn't",
-        "not"
+        "not",
+        "isn't"
       ],
       "a": 0,
       "h": "Tính chất quá khứ."
@@ -805,7 +885,8 @@
       "options": [
         "was",
         "did",
-        "were"
+        "were",
+        "is"
       ],
       "a": 0,
       "h": "Hỏi thời tiết quá khứ."
@@ -815,7 +896,8 @@
       "options": [
         "sold",
         "selled",
-        "sell"
+        "sell",
+        "selling"
       ],
       "a": 0,
       "h": "Quá khứ của sell là sold."
@@ -825,7 +907,8 @@
       "options": [
         "wasn't",
         "weren't",
-        "didn't"
+        "didn't",
+        "isn't"
       ],
       "a": 0,
       "h": "Trạng thái phòng quá khứ."
@@ -837,37 +920,41 @@
       "options": [
         "is playing",
         "plays",
-        "playing"
+        "playing",
+        "played"
       ],
       "a": 0,
-      "h": "(U3) Hành động đang diễn ra tại lúc nói."
+      "h": "Hành động đang diễn ra tại lúc nói."
     },
     {
       "q": "Jane _______ for me khi tôi đến.",
       "options": [
         "was waiting",
         "waited",
-        "is waiting"
+        "is waiting",
+        "wait"
       ],
       "a": 0,
-      "h": "(U6) Hành động đang diễn ra (đợi) bị cắt ngang (đến)."
+      "h": "Hành động đang diễn ra (đợi) bị cắt ngang (đến)."
     },
     {
       "q": "Water _______ at 100 degrees Celsius.",
       "options": [
         "boils",
         "is boiling",
-        "boil"
+        "boil",
+        "boiled"
       ],
       "a": 0,
-      "h": "(U3) Sự thật khoa học dùng Present Simple."
+      "h": "Sự thật khoa học dùng Present Simple."
     },
     {
       "q": "Hurry up! Everybody _______ for you.",
       "options": [
         "is waiting",
         "waits",
-        "wait"
+        "wait",
+        "waited"
       ],
       "a": 0,
       "h": "Tình huống đang diễn ra tại thời điểm nói."
@@ -877,37 +964,41 @@
       "options": [
         "was having",
         "had",
-        "am having"
+        "am having",
+        "have"
       ],
       "a": 0,
-      "h": "(U6) Đang tắm (kéo dài) thì chuông reo."
+      "h": "Đang tắm (kéo dài) thì chuông reo."
     },
     {
       "q": "How fast _______ you driving khi tai nạn xảy ra?",
       "options": [
         "were",
         "did",
-        "was"
+        "was",
+        "are"
       ],
       "a": 0,
-      "h": "(U6) Hỏi về hành động đang diễn ra trong quá khứ."
+      "h": "Hỏi về hành động đang diễn ra trong quá khứ."
     },
     {
       "q": "Tom burnt his hand while he _______.",
       "options": [
         "was cooking",
         "cooked",
-        "is cooking"
+        "is cooking",
+        "cook"
       ],
       "a": 0,
-      "h": "(U6) Đang nấu ăn (kéo dài) thì bị bỏng."
+      "h": "Đang nấu ăn (kéo dài) thì bị bỏng."
     },
     {
       "q": "I _______ Sarah busy, so I didn't disturb her.",
       "options": [
         "saw",
         "was seeing",
-        "see"
+        "see",
+        "seen"
       ],
       "a": 0,
       "h": "Nhận định trạng thái trong quá khứ."
@@ -917,7 +1008,8 @@
       "options": [
         "started",
         "was starting",
-        "is starting"
+        "is starting",
+        "start"
       ],
       "a": 0,
       "h": "Sự việc xảy ra ngắn gọn trong quá khứ."
@@ -927,7 +1019,8 @@
       "options": [
         "was walking",
         "walked",
-        "am walking"
+        "am walking",
+        "walk"
       ],
       "a": 0,
       "h": "Đang đi bộ (kéo dài) thì nghe thấy (cắt ngang)."
@@ -937,7 +1030,8 @@
       "options": [
         "did",
         "were",
-        "do"
+        "do",
+        "was"
       ],
       "a": 0,
       "h": "Câu hỏi quá khứ đơn."
@@ -947,17 +1041,19 @@
       "options": [
         "was trying",
         "tried",
-        "is trying"
+        "is trying",
+        "try"
       ],
       "a": 0,
-      "h": "(U6) Đang trong quá trình tìm việc."
+      "h": "Đang trong quá trình tìm việc."
     },
     {
       "q": "The television was on but no one _______.",
       "options": [
         "was watching",
         "watched",
-        "is watching"
+        "is watching",
+        "watch"
       ],
       "a": 0,
       "h": "Trạng thái đang diễn ra."
@@ -967,7 +1063,8 @@
       "options": [
         "took",
         "was taking",
-        "takes"
+        "takes",
+        "taken"
       ],
       "a": 0,
       "h": "Hành động cắt ngang dùng quá khứ đơn."
@@ -977,17 +1074,19 @@
       "options": [
         "are staying",
         "stay",
-        "stays"
+        "stays",
+        "stayed"
       ],
       "a": 0,
-      "h": "(U1) Tình huống tạm thời dùng Hiện tại tiếp diễn."
+      "h": "Tình huống tạm thời dùng Hiện tại tiếp diễn."
     },
     {
       "q": "It _______ better now. (get)",
       "options": [
         "is getting",
         "gets",
-        "getting"
+        "getting",
+        "got"
       ],
       "a": 0,
       "h": "Sự thay đổi tiến triển."
@@ -997,17 +1096,19 @@
       "options": [
         "are you looking",
         "do you look",
-        "you are looking"
+        "you are looking",
+        "did you look"
       ],
       "a": 0,
-      "h": "(U3) Phàn nàn hoặc thắc mắc hành động đang diễn ra."
+      "h": "Phàn nàn hoặc thắc mắc hành động đang diễn ra."
     },
     {
       "q": "Is anybody _______ to the radio?",
       "options": [
         "listening",
         "listen",
-        "listened"
+        "listened",
+        "listens"
       ],
       "a": 0,
       "h": "Câu hỏi hành động ngay lúc nói."
@@ -1017,7 +1118,8 @@
       "options": [
         "is",
         "does",
-        "was"
+        "was",
+        "did"
       ],
       "a": 0,
       "h": "Hỏi về hoạt động hiện tại."
@@ -1027,17 +1129,19 @@
       "options": [
         "is getting",
         "gets",
-        "getting"
+        "getting",
+        "got"
       ],
       "a": 0,
-      "h": "(U1) Tiến trình thay đổi."
+      "h": "Tiến trình thay đổi."
     },
     {
       "q": "The Amazon _______ into the Atlantic.",
       "options": [
         "flows",
         "is flowing",
-        "flowed"
+        "flowed",
+        "flow"
       ],
       "a": 0,
       "h": "Sự thật địa lý dùng Present Simple."
@@ -1047,7 +1151,8 @@
       "options": [
         "do",
         "am doing",
-        "does"
+        "does",
+        "did"
       ],
       "a": 0,
       "h": "Thói quen thường xuyên."
@@ -1057,7 +1162,8 @@
       "options": [
         "is rising",
         "rises",
-        "rose"
+        "rose",
+        "risen"
       ],
       "a": 0,
       "h": "Lịch trình hôm nay."
@@ -1067,7 +1173,8 @@
       "options": [
         "does",
         "is",
-        "do"
+        "do",
+        "has"
       ],
       "a": 0,
       "h": "Lịch chiếu phim."
@@ -1077,7 +1184,8 @@
       "options": [
         "am not feeling",
         "don't feel",
-        "doesn't feel"
+        "doesn't feel",
+        "wasn't feeling"
       ],
       "a": 0,
       "h": "Cảm giác tạm thời."
@@ -1087,7 +1195,8 @@
       "options": [
         "isn't doing",
         "doesn't do",
-        "not do"
+        "not do",
+        "wasn't doing"
       ],
       "a": 0,
       "h": "Đang không làm gì."
@@ -1097,7 +1206,8 @@
       "options": [
         "are always losing",
         "always lose",
-        "lose always"
+        "lose always",
+        "lost always"
       ],
       "a": 0,
       "h": "Phàn nàn thói quen xấu."
@@ -1107,7 +1217,8 @@
       "options": [
         "is increasing",
         "increases",
-        "increasing"
+        "increasing",
+        "increased"
       ],
       "a": 0,
       "h": "Xu hướng thay đổi."
@@ -1117,7 +1228,8 @@
       "options": [
         "am looking",
         "look",
-        "looked"
+        "looked",
+        "was looking"
       ],
       "a": 0,
       "h": "Tìm kiếm lúc này."
@@ -1127,7 +1239,8 @@
       "options": [
         "am coming",
         "come",
-        "will come"
+        "will come",
+        "came"
       ],
       "a": 0,
       "h": "Sắp sửa đi cùng."
@@ -1137,7 +1250,8 @@
       "options": [
         "are",
         "do",
-        "does"
+        "does",
+        "is"
       ],
       "a": 0,
       "h": "Đi đâu lúc này."
@@ -1147,7 +1261,8 @@
       "options": [
         "are",
         "do",
-        "is"
+        "is",
+        "were"
       ],
       "a": 0,
       "h": "Đang nói chuyện gì."
@@ -1157,7 +1272,8 @@
       "options": [
         "am not",
         "don't",
-        "doesn't"
+        "doesn't",
+        "wasn't"
       ],
       "a": 0,
       "h": "Hiện tại tiếp diễn phủ định."
@@ -1167,7 +1283,8 @@
       "options": [
         "is having",
         "has",
-        "having"
+        "having",
+        "had"
       ],
       "a": 0,
       "h": "Đang tắm lúc này."
@@ -1177,7 +1294,8 @@
       "options": [
         "are playing",
         "play",
-        "plays"
+        "plays",
+        "played"
       ],
       "a": 0,
       "h": "Đang chơi đùa."
@@ -1187,7 +1305,8 @@
       "options": [
         "are singing",
         "sing",
-        "sings"
+        "sings",
+        "sang"
       ],
       "a": 0,
       "h": "Đang hót."
@@ -1197,7 +1316,8 @@
       "options": [
         "is",
         "does",
-        "are"
+        "are",
+        "was"
       ],
       "a": 0,
       "h": "Hỏi về thời tiết lúc này."
@@ -1207,7 +1327,8 @@
       "options": [
         "am not",
         "don't",
-        "isn't"
+        "isn't",
+        "wasn't"
       ],
       "a": 0,
       "h": "Đang không xem."
@@ -1217,7 +1338,8 @@
       "options": [
         "is trying",
         "tries",
-        "try"
+        "try",
+        "tried"
       ],
       "a": 0,
       "h": "Đang cố gắng."
@@ -1227,7 +1349,8 @@
       "options": [
         "have",
         "am having",
-        "has"
+        "has",
+        "had"
       ],
       "a": 0,
       "h": "Thói quen cố định."
@@ -1237,7 +1360,8 @@
       "options": [
         "is",
         "is being",
-        "does"
+        "does",
+        "was"
       ],
       "a": 0,
       "h": "Trạng thái thói quen."
@@ -1247,7 +1371,8 @@
       "options": [
         "are",
         "do",
-        "is"
+        "is",
+        "were"
       ],
       "a": 0,
       "h": "Tần suất trạng thái."
@@ -1257,7 +1382,8 @@
       "options": [
         "closes",
         "is closing",
-        "close"
+        "close",
+        "closed"
       ],
       "a": 0,
       "h": "Giờ đóng cửa."
@@ -1267,7 +1393,8 @@
       "options": [
         "does",
         "is",
-        "do"
+        "do",
+        "was"
       ],
       "a": 0,
       "h": "Giờ xe chạy."
@@ -1277,7 +1404,8 @@
       "options": [
         "am reading",
         "read",
-        "reads"
+        "reads",
+        "reading"
       ],
       "a": 0,
       "h": "Đang đọc lúc này."
@@ -1287,7 +1415,8 @@
       "options": [
         "isn't",
         "doesn't",
-        "not"
+        "not",
+        "wasn't"
       ],
       "a": 0,
       "h": "Hôm nay không làm."
@@ -1297,7 +1426,8 @@
       "options": [
         "are",
         "do",
-        "will"
+        "will",
+        "did"
       ],
       "a": 0,
       "h": "Kế hoạch tương lai."
@@ -1307,7 +1437,8 @@
       "options": [
         "does",
         "is doing",
-        "do"
+        "do",
+        "did"
       ],
       "a": 0,
       "h": "Thói quen học bài."
@@ -1317,7 +1448,8 @@
       "options": [
         "is",
         "does",
-        "are"
+        "are",
+        "was"
       ],
       "a": 0,
       "h": "Đang làm việc ở đâu."
@@ -1327,7 +1459,8 @@
       "options": [
         "are",
         "do",
-        "is"
+        "is",
+        "were"
       ],
       "a": 0,
       "h": "Đang chạy vì sao."
@@ -1337,7 +1470,8 @@
       "options": [
         "have",
         "am having",
-        "has"
+        "has",
+        "had"
       ],
       "a": 0,
       "h": "Trạng thái đau đầu."
@@ -1347,7 +1481,8 @@
       "options": [
         "is",
         "is being",
-        "does"
+        "does",
+        "was"
       ],
       "a": 0,
       "h": "Tính cách."
@@ -1357,7 +1492,8 @@
       "options": [
         "never help",
         "are never helping",
-        "not help"
+        "not help",
+        "didn't helped"
       ],
       "a": 0,
       "h": "Thói quen xấu."
@@ -1367,7 +1503,8 @@
       "options": [
         "closes",
         "is closing",
-        "close"
+        "close",
+        "closed"
       ],
       "a": 0,
       "h": "Lịch đóng cửa."
@@ -1377,7 +1514,8 @@
       "options": [
         "do",
         "are",
-        "is"
+        "is",
+        "were"
       ],
       "a": 0,
       "h": "Hỏi ý kiến."
@@ -1387,7 +1525,8 @@
       "options": [
         "am buying",
         "buy",
-        "buys"
+        "buys",
+        "bought"
       ],
       "a": 0,
       "h": "Dự định sắp tới."
@@ -1397,7 +1536,8 @@
       "options": [
         "isn't",
         "doesn't",
-        "not"
+        "not",
+        "wasn't"
       ],
       "a": 0,
       "h": "Không đang ăn."
@@ -1407,7 +1547,8 @@
       "options": [
         "are",
         "do",
-        "is"
+        "is",
+        "were"
       ],
       "a": 0,
       "h": "Đang nghe nhạc."
@@ -1417,7 +1558,8 @@
       "options": [
         "usually walks",
         "is usually walking",
-        "walks usually"
+        "walks usually",
+        "walk usually"
       ],
       "a": 0,
       "h": "Thói quen đi bộ."
@@ -1427,7 +1569,8 @@
       "options": [
         "is",
         "does",
-        "be"
+        "be",
+        "was"
       ],
       "a": 0,
       "h": "Đang ở đâu."
@@ -1437,7 +1580,8 @@
       "options": [
         "are",
         "do",
-        "is"
+        "is",
+        "were"
       ],
       "a": 0,
       "h": "Đang khóc sao."
@@ -1447,7 +1591,8 @@
       "options": [
         "am",
         "do",
-        "be"
+        "be",
+        "was"
       ],
       "a": 0,
       "h": "Đang đói."
@@ -1457,7 +1602,8 @@
       "options": [
         "is",
         "is being",
-        "does"
+        "does",
+        "was"
       ],
       "a": 0,
       "h": "Trạng thái bận rộn."
@@ -1467,7 +1613,8 @@
       "options": [
         "never answer",
         "are never answering",
-        "not answer"
+        "not answer",
+        "didn't answered"
       ],
       "a": 0,
       "h": "Thói quen liên lạc."
@@ -1477,7 +1624,8 @@
       "options": [
         "starts",
         "is starting",
-        "start"
+        "start",
+        "started"
       ],
       "a": 0,
       "h": "Lịch học."
@@ -1487,7 +1635,8 @@
       "options": [
         "is",
         "does",
-        "do"
+        "do",
+        "was"
       ],
       "a": 0,
       "h": "Tính cách/Ngoại hình."
@@ -1497,7 +1646,8 @@
       "options": [
         "am",
         "do",
-        "will"
+        "will",
+        "was"
       ],
       "a": 0,
       "h": "Đang đi nghỉ."
@@ -1509,57 +1659,63 @@
       "options": [
         "has lost",
         "lost",
-        "lose"
+        "lose",
+        "have lost"
       ],
-      "a": 0,
-      "h": "(U7) Vừa xảy ra để lại kết quả hiện tại."
+      "a": 3,
+      "h": "Vừa xảy ra để lại kết quả hiện tại. Chú ý 'I' đi với 'have'."
     },
     {
       "q": "Have you _______ been to Australia?",
       "options": [
         "ever",
         "never",
-        "yet"
+        "yet",
+        "already"
       ],
       "a": 0,
-      "h": "(U8) Hỏi về trải nghiệm cá nhân."
+      "h": "Hỏi về trải nghiệm cá nhân dùng ever."
     },
     {
       "q": "This is the first time I _______ a car.",
       "options": [
         "have driven",
         "drive",
-        "drove"
+        "drove",
+        "am driving"
       ],
       "a": 0,
-      "h": "(U8) Cấu trúc 'This is the first time'."
+      "h": "Cấu trúc 'This is the first time'."
     },
     {
       "q": "Jim is on holiday. He's _______ to Italy.",
       "options": [
         "gone",
         "been",
-        "went"
+        "went",
+        "going"
       ],
       "a": 0,
-      "h": "(U7) Đi và chưa quay về dùng 'gone'."
+      "h": "Đi và chưa quay về dùng 'gone'."
     },
     {
       "q": "Everything is going well. We _______ any problems so far.",
       "options": [
         "haven't had",
         "didn't have",
-        "don't have"
+        "don't have",
+        "aren't having"
       ],
       "a": 0,
-      "h": "(U8) 'So far' là dấu hiệu của Hiện tại hoàn thành."
+      "h": "'So far' là dấu hiệu của Hiện tại hoàn thành."
     },
     {
       "q": "Suzanne _______ a baby. (Vừa mới sinh xong)",
       "options": [
         "has had",
         "had",
-        "have had"
+        "have had",
+        "is having"
       ],
       "a": 0,
       "h": "Tin tức/Sự việc vừa xảy ra."
@@ -1569,7 +1725,8 @@
       "options": [
         "has happened",
         "happens",
-        "happened"
+        "happened",
+        "is happening"
       ],
       "a": 0,
       "h": "Số lần lặp lại trải nghiệm."
@@ -1579,7 +1736,8 @@
       "options": [
         "have already done",
         "already did",
-        "already do"
+        "already do",
+        "already done"
       ],
       "a": 0,
       "h": "Xong sớm hơn dự kiến."
@@ -1589,7 +1747,8 @@
       "options": [
         "stopped",
         "stop",
-        "stopping"
+        "stopping",
+        "stops"
       ],
       "a": 0,
       "h": "'Yet' dùng trong câu hỏi hoàn thành."
@@ -1599,7 +1758,8 @@
       "options": [
         "have seen",
         "saw",
-        "see"
+        "see",
+        "am seeing"
       ],
       "a": 0,
       "h": "Kinh nghiệm gần đây."
@@ -1609,7 +1769,8 @@
       "options": [
         "has lost",
         "is losing",
-        "lost"
+        "lost",
+        "have lost"
       ],
       "a": 0,
       "h": "Kết quả hiện tại của việc đã mất."
@@ -1619,7 +1780,8 @@
       "options": [
         "have",
         "has",
-        "am"
+        "am",
+        "was"
       ],
       "a": 0,
       "h": "Trải nghiệm tiêu cực."
@@ -1629,7 +1791,8 @@
       "options": [
         "have bought",
         "bought",
-        "buy"
+        "buy",
+        "are buying"
       ],
       "a": 0,
       "h": "Hành động vừa mới hoàn thành."
@@ -1639,17 +1802,19 @@
       "options": [
         "has grown",
         "grew",
-        "grows"
+        "grows",
+        "is growing"
       ],
       "a": 0,
-      "h": "(U7) Sự thay đổi có kết quả hiện tại."
+      "h": "Sự thay đổi có kết quả hiện tại."
     },
     {
       "q": "Is she here? No, she _______.",
       "options": [
         "has just gone",
         "just went",
-        "goes"
+        "goes",
+        "just goes"
       ],
       "a": 0,
       "h": "Vừa mới rời đi."
@@ -1659,7 +1824,8 @@
       "options": [
         "have known",
         "know",
-        "are knowing"
+        "are knowing",
+        "knew"
       ],
       "a": 0,
       "h": "Khoảng thời gian với động từ trạng thái."
@@ -1669,7 +1835,8 @@
       "options": [
         "haven't",
         "didn't",
-        "don't"
+        "don't",
+        "am not"
       ],
       "a": 0,
       "h": "Kể từ mốc thời gian."
@@ -1679,7 +1846,8 @@
       "options": [
         "have just",
         "just",
-        "just arrived"
+        "just arrived",
+        "are just"
       ],
       "a": 0,
       "h": "Vừa mới tới."
@@ -1689,7 +1857,8 @@
       "options": [
         "already",
         "yet",
-        "ever"
+        "ever",
+        "just"
       ],
       "a": 0,
       "h": "Đã xong chưa (sớm)."
@@ -1699,7 +1868,8 @@
       "options": [
         "have",
         "has",
-        "am"
+        "am",
+        "was"
       ],
       "a": 0,
       "h": "Trải nghiệm từ trước tới nay."
@@ -1709,7 +1879,8 @@
       "options": [
         "had",
         "have",
-        "has"
+        "has",
+        "having"
       ],
       "a": 0,
       "h": "Ăn sáng chưa."
@@ -1719,7 +1890,8 @@
       "options": [
         "hasn't",
         "isn't",
-        "wasn't"
+        "wasn't",
+        "doesn't"
       ],
       "a": 0,
       "h": "Trạng thái hôm nay."
@@ -1729,7 +1901,8 @@
       "options": [
         "have just",
         "just",
-        "just bought"
+        "just bought",
+        "are just"
       ],
       "a": 0,
       "h": "Vừa mới mua xong."
@@ -1739,7 +1912,8 @@
       "options": [
         "have never",
         "never",
-        "never seen"
+        "never seen",
+        "am never"
       ],
       "a": 0,
       "h": "Trước đây chưa từng."
@@ -1749,7 +1923,8 @@
       "options": [
         "stopped",
         "stop",
-        "stopping"
+        "stopping",
+        "stops"
       ],
       "a": 0,
       "h": "Đã tạnh chưa."
@@ -1759,7 +1934,8 @@
       "options": [
         "have already",
         "already",
-        "already left"
+        "already left",
+        "are already"
       ],
       "a": 0,
       "h": "Đã rời đi rồi."
@@ -1769,7 +1945,8 @@
       "options": [
         "haven't",
         "didn't",
-        "don't"
+        "don't",
+        "am not"
       ],
       "a": 0,
       "h": "Chưa xong việc."
@@ -1779,7 +1956,8 @@
       "options": [
         "already",
         "yet",
-        "ever"
+        "ever",
+        "just"
       ],
       "a": 0,
       "h": "Đã tìm thấy chưa."
@@ -1789,7 +1967,8 @@
       "options": [
         "have just",
         "just",
-        "just seen"
+        "just seen",
+        "are just"
       ],
       "a": 0,
       "h": "Vừa mới xem xong."
@@ -1799,7 +1978,8 @@
       "options": [
         "have",
         "has",
-        "am"
+        "am",
+        "was"
       ],
       "a": 0,
       "h": "Trải nghiệm đi du lịch."
@@ -1811,7 +1991,8 @@
       "options": [
         "has been learning",
         "is learning",
-        "learns"
+        "learns",
+        "learned"
       ],
       "a": 0,
       "h": "(U9) Nhấn mạnh quá trình kéo dài."
@@ -1821,7 +2002,8 @@
       "options": [
         "is being",
         "is",
-        "be"
+        "be",
+        "has been"
       ],
       "a": 0,
       "h": "(U4) 'Is being' chỉ cách cư xử tạm thời."
@@ -1831,7 +2013,8 @@
       "options": [
         "Have you been playing",
         "Have you played",
-        "Are you playing"
+        "Are you playing",
+        "Did you play"
       ],
       "a": 0,
       "h": "(U10) Hành động vừa dừng lại và có kết quả."
@@ -1841,7 +2024,8 @@
       "options": [
         "think",
         "am thinking",
-        "thinks"
+        "thinks",
+        "thought"
       ],
       "a": 0,
       "h": "(U4) Ý kiến không dùng tiếp diễn."
@@ -1851,7 +2035,8 @@
       "options": [
         "consists",
         "is consisting",
-        "consist"
+        "consist",
+        "consisted"
       ],
       "a": 0,
       "h": "Động từ trạng thái 'consist'."
@@ -1861,7 +2046,8 @@
       "options": [
         "has broken",
         "has been breaking",
-        "is breaking"
+        "is breaking",
+        "broke"
       ],
       "a": 0,
       "h": "Nhấn mạnh kết quả bị vỡ."
@@ -1871,7 +2057,8 @@
       "options": [
         "have you been",
         "are you",
-        "did you"
+        "did you",
+        "were you"
       ],
       "a": 0,
       "h": "Khoảng thời gian kéo dài."
@@ -1881,7 +2068,8 @@
       "options": [
         "is always losing",
         "always loses",
-        "lose"
+        "lose",
+        "lost"
       ],
       "a": 0,
       "h": "Phàn nàn thói quen lặp lại."
@@ -1891,7 +2079,8 @@
       "options": [
         "am starting",
         "start",
-        "starts"
+        "starts",
+        "started"
       ],
       "a": 0,
       "h": "Tiến trình chuyển đổi trạng thái."
@@ -1901,7 +2090,8 @@
       "options": [
         "tastes",
         "is tasting",
-        "taste"
+        "taste",
+        "tasted"
       ],
       "a": 0,
       "h": "Trạng thái của giác quan."
@@ -1911,7 +2101,8 @@
       "options": [
         "does",
         "is",
-        "doing"
+        "doing",
+        "has"
       ],
       "a": 0,
       "h": "'Belong' là động từ trạng thái."
@@ -1921,7 +2112,8 @@
       "options": [
         "am thinking",
         "think",
-        "thinks"
+        "thinks",
+        "thought"
       ],
       "a": 0,
       "h": "Hành động suy nghĩ."
@@ -1931,7 +2123,8 @@
       "options": [
         "have bought",
         "bought",
-        "buy"
+        "buy",
+        "am buying"
       ],
       "a": 0,
       "h": "Kết quả hành động."
@@ -1941,7 +2134,8 @@
       "options": [
         "are you being",
         "are you",
-        "do you be"
+        "do you be",
+        "were you"
       ],
       "a": 0,
       "h": "Đang cư xử tạm thời."
@@ -1951,7 +2145,8 @@
       "options": [
         "has",
         "is",
-        "does"
+        "does",
+        "did"
       ],
       "a": 0,
       "h": "Tần suất trải nghiệm."
@@ -1961,7 +2156,8 @@
       "options": [
         "has been raining",
         "is raining",
-        "rains"
+        "rains",
+        "rained"
       ],
       "a": 0,
       "h": "Quá trình liên tục."
@@ -1971,7 +2167,8 @@
       "options": [
         "have been studying",
         "study",
-        "am studying"
+        "am studying",
+        "studied"
       ],
       "a": 0,
       "h": "Quá trình gần đây."
@@ -1981,7 +2178,8 @@
       "options": [
         "hasn't been feeling",
         "isn't feeling",
-        "not feel"
+        "not feel",
+        "didn't feel"
       ],
       "a": 0,
       "h": "Sức khỏe gần đây."
@@ -1991,7 +2189,8 @@
       "options": [
         "has",
         "is",
-        "was"
+        "was",
+        "does"
       ],
       "a": 0,
       "h": "Thời gian mưa kéo dài."
@@ -2001,7 +2200,8 @@
       "options": [
         "have always wanted",
         "always want",
-        "am always wanting"
+        "am always wanting",
+        "wanted always"
       ],
       "a": 0,
       "h": "Mong muốn từ trước tới nay."
@@ -2011,7 +2211,8 @@
       "options": [
         "has never",
         "is never",
-        "was never"
+        "was never",
+        "does never"
       ],
       "a": 0,
       "h": "Chưa từng hạnh phúc như vậy."
@@ -2021,7 +2222,8 @@
       "options": [
         "have just",
         "just",
-        "just finished"
+        "just finished",
+        "are just"
       ],
       "a": 0,
       "h": "Vừa mới ăn xong."
@@ -2031,7 +2233,8 @@
       "options": [
         "have never",
         "never",
-        "never seen"
+        "never seen",
+        "am never"
       ],
       "a": 0,
       "h": "Trước đây chưa từng gặp."
@@ -2041,7 +2244,8 @@
       "options": [
         "already",
         "yet",
-        "ever"
+        "ever",
+        "just"
       ],
       "a": 0,
       "h": "Đã tìm thấy chưa."
@@ -2051,7 +2255,8 @@
       "options": [
         "have just",
         "just",
-        "just moved"
+        "just moved",
+        "are just"
       ],
       "a": 0,
       "h": "Vừa mới chuyển nhà."
@@ -2061,7 +2266,8 @@
       "options": [
         "haven't",
         "didn't",
-        "don't"
+        "don't",
+        "am not"
       ],
       "a": 0,
       "h": "Nhiều tuần nay không gặp."
@@ -2071,7 +2277,8 @@
       "options": [
         "already",
         "yet",
-        "ever"
+        "ever",
+        "just"
       ],
       "a": 0,
       "h": "Đã gọi cho bạn chưa."
@@ -2081,7 +2288,8 @@
       "options": [
         "have just",
         "just",
-        "just heard"
+        "just heard",
+        "are just"
       ],
       "a": 0,
       "h": "Vừa mới nghe tin."
@@ -2091,7 +2299,8 @@
       "options": [
         "have",
         "has",
-        "am"
+        "am",
+        "was"
       ],
       "a": 0,
       "h": "Trải nghiệm du lịch."
@@ -2101,7 +2310,8 @@
       "options": [
         "has never",
         "never",
-        "never liked"
+        "never liked",
+        "is never"
       ],
       "a": 0,
       "h": "Chưa từng thích."
@@ -2111,7 +2321,8 @@
       "options": [
         "have",
         "are",
-        "were"
+        "were",
+        "do"
       ],
       "a": 0,
       "h": "Thời gian kết hôn."
