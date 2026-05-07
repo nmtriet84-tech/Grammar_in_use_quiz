@@ -8,7 +8,7 @@
         "are coming"
       ],
       "a": 0,
-      "h": "Look! -> Present Continuous."
+      "h": "(U1) 'Look!' là dấu hiệu Hiện tại tiếp diễn."
     },
     {
       "q": "I never _______ coffee.",
@@ -18,7 +18,7 @@
         "drinks"
       ],
       "a": 0,
-      "h": "Never -> Present Simple."
+      "h": "(U2) 'Never' dùng cho thói quen Hiện tại đơn."
     },
     {
       "q": "The sun _______ in the east.",
@@ -28,7 +28,7 @@
         "rise"
       ],
       "a": 0,
-      "h": "Scientific fact -> Present Simple."
+      "h": "Sự thật hiển nhiên dùng Present Simple."
     },
     {
       "q": "Mozart _______ 600 pieces of music.",
@@ -38,7 +38,7 @@
         "has written"
       ],
       "a": 0,
-      "h": "Finished action -> Past Simple."
+      "h": "(U5) Sự việc trong quá khứ đã chấm dứt."
     },
     {
       "q": "It _______ dark. Shall I turn on the light?",
@@ -48,7 +48,7 @@
         "getting"
       ],
       "a": 0,
-      "h": "Progressive change -> Present Continuous."
+      "h": "(U1) Diễn tả sự thay đổi đang diễn ra."
     },
     {
       "q": "I _______ to work by car usually.",
@@ -58,7 +58,7 @@
         "goes"
       ],
       "a": 0,
-      "h": "Usually -> Present Simple."
+      "h": "(U2) 'Usually' chỉ thói quen Hiện tại đơn."
     },
     {
       "q": "Ann _______ German very well.",
@@ -68,7 +68,7 @@
         "speak"
       ],
       "a": 0,
-      "h": "Ability -> Present Simple."
+      "h": "Khả năng/Sự thật dùng Present Simple."
     },
     {
       "q": "The Olympic Games _______ every 4 years.",
@@ -78,7 +78,7 @@
         "took"
       ],
       "a": 0,
-      "h": "Regular event -> Present Simple."
+      "h": "Lịch trình/Sự kiện định kỳ."
     },
     {
       "q": "It was warm, so I _______ off my coat.",
@@ -88,7 +88,7 @@
         "taked"
       ],
       "a": 0,
-      "h": "Past Simple of 'take'."
+      "h": "(U5) Quá khứ của take là took."
     },
     {
       "q": "I _______ to bed early because I was tired.",
@@ -98,7 +98,7 @@
         "gone"
       ],
       "a": 0,
-      "h": "Past Simple of 'go'."
+      "h": "(U5) Quá khứ của go là went."
     },
     {
       "q": "Bad driving _______ accidents.",
@@ -108,7 +108,7 @@
         "cause"
       ],
       "a": 0,
-      "h": "General fact."
+      "h": "Sự thật khách quan."
     },
     {
       "q": "Rice _______ in Britain.",
@@ -118,7 +118,7 @@
         "not grow"
       ],
       "a": 0,
-      "h": "General fact (Negative)."
+      "h": "Sự thật hiển nhiên."
     },
     {
       "q": "What _______ your father do?",
@@ -128,7 +128,7 @@
         "do"
       ],
       "a": 0,
-      "h": "Profession question."
+      "h": "Câu hỏi Hiện tại đơn."
     },
     {
       "q": "I was very thirsty. I _______ the water quickly.",
@@ -138,7 +138,7 @@
         "drunk"
       ],
       "a": 0,
-      "h": "Past action."
+      "h": "(U5) Quá khứ của drink là drank."
     },
     {
       "q": "The film wasn't very good. I _______ it much.",
@@ -148,7 +148,7 @@
         "don't enjoy"
       ],
       "a": 0,
-      "h": "Past negative."
+      "h": "(U5) Phủ định quá khứ dùng didn't + V1."
     },
     {
       "q": "Sue wasn't hungry, so she _______ anything.",
@@ -158,7 +158,7 @@
         "doesn't eat"
       ],
       "a": 0,
-      "h": "Past negative."
+      "h": "(U5) Phủ định quá khứ đơn."
     },
     {
       "q": "It was a funny situation, but no one _______.",
@@ -168,7 +168,7 @@
         "laughs"
       ],
       "a": 0,
-      "h": "Past event."
+      "h": "Sự việc xảy ra trong quá khứ."
     },
     {
       "q": "The window was open and a bird _______ in.",
@@ -178,7 +178,7 @@
         "flown"
       ],
       "a": 0,
-      "h": "Irregular past verb."
+      "h": "Quá khứ của fly là flew."
     },
     {
       "q": "I _______ Sarah yesterday.",
@@ -188,7 +188,7 @@
         "don't see"
       ],
       "a": 0,
-      "h": "Yesterday -> Past Simple."
+      "h": "(U5) 'Yesterday' là quá khứ đơn."
     },
     {
       "q": "Bees _______ honey.",
@@ -198,7 +198,7 @@
         "are making"
       ],
       "a": 0,
-      "h": "General fact."
+      "h": "Sự thật hiển nhiên."
     },
     {
       "q": "Vegetarians _______ meat.",
@@ -208,7 +208,7 @@
         "doesn't eat"
       ],
       "a": 0,
-      "h": "General fact."
+      "h": "Sự thật hiển nhiên."
     },
     {
       "q": "The pool _______ at 9:00 every day.",
@@ -218,7 +218,17 @@
         "open"
       ],
       "a": 0,
-      "h": "Fixed schedule."
+      "h": "Lịch trình cố định."
+    },
+    {
+      "q": "I usually _______ to work by car.",
+      "options": [
+        "go",
+        "am going",
+        "goes"
+      ],
+      "a": 0,
+      "h": "Thói quen hàng ngày."
     },
     {
       "q": "An atheist _______ in God.",
@@ -228,7 +238,7 @@
         "don't believe"
       ],
       "a": 0,
-      "h": "Belief (State)."
+      "h": "Sự thật về niềm tin."
     },
     {
       "q": "An interpreter _______ from one language to another.",
@@ -238,7 +248,7 @@
         "translate"
       ],
       "a": 0,
-      "h": "Definition/Fact."
+      "h": "Công việc/Sự thật."
     },
     {
       "q": "Liars are people who _______ the truth.",
@@ -248,7 +258,7 @@
         "not telling"
       ],
       "a": 0,
-      "h": "General characteristic."
+      "h": "Định nghĩa/Sự thật."
     },
     {
       "q": "The Amazon _______ into the Atlantic.",
@@ -258,7 +268,7 @@
         "flowed"
       ],
       "a": 0,
-      "h": "Geography fact."
+      "h": "Sự thật địa lý."
     },
     {
       "q": "It is a nice day. I suggest we _______ out.",
@@ -268,7 +278,7 @@
         "goes"
       ],
       "a": 0,
-      "h": "Suggestion."
+      "h": "Suggest dùng Present Simple."
     },
     {
       "q": "How often _______ you read a newspaper?",
@@ -278,7 +288,17 @@
         "does"
       ],
       "a": 0,
-      "h": "Frequency question."
+      "h": "Câu hỏi tần suất."
+    },
+    {
+      "q": "Excuse me, _______ you speak English?",
+      "options": [
+        "do",
+        "are",
+        "does"
+      ],
+      "a": 0,
+      "h": "Hỏi khả năng."
     },
     {
       "q": "Where _______ Maria come from?",
@@ -288,7 +308,7 @@
         "do"
       ],
       "a": 0,
-      "h": "Origin."
+      "h": "Quê quán dùng Hiện tại đơn."
     },
     {
       "q": "What _______ 'punctual' mean?",
@@ -298,7 +318,87 @@
         "do"
       ],
       "a": 0,
-      "h": "Definition question."
+      "h": "Hỏi nghĩa từ vựng."
+    },
+    {
+      "q": "I _______ (not) anything about it.",
+      "options": [
+        "don't know",
+        "am not knowing",
+        "doesn't know"
+      ],
+      "a": 0,
+      "h": "'Know' là động từ trạng thái."
+    },
+    {
+      "q": "It _______ me an hour to get to work.",
+      "options": [
+        "takes",
+        "is taking",
+        "take"
+      ],
+      "a": 0,
+      "h": "Thói quen/Sự thật."
+    },
+    {
+      "q": "We _______ (not) much about them.",
+      "options": [
+        "don't know",
+        "weren't knowing",
+        "didn't know"
+      ],
+      "a": 0,
+      "h": "Hiện tại đơn phủ định."
+    },
+    {
+      "q": "He _______ (not) his work well.",
+      "options": [
+        "doesn't do",
+        "not does",
+        "don't do"
+      ],
+      "a": 0,
+      "h": "Chia động từ phủ định."
+    },
+    {
+      "q": "They _______ (not) to the park often.",
+      "options": [
+        "don't go",
+        "doesn't go",
+        "not go"
+      ],
+      "a": 0,
+      "h": "'They' đi với 'don't'."
+    },
+    {
+      "q": "She _______ (not) French.",
+      "options": [
+        "doesn't speak",
+        "not speaks",
+        "don't speak"
+      ],
+      "a": 0,
+      "h": "Ngôi 3 số ít phủ định."
+    },
+    {
+      "q": "My car _______ (not) much petrol.",
+      "options": [
+        "doesn't use",
+        "don't use",
+        "isn't using"
+      ],
+      "a": 0,
+      "h": "Đặc tính sự vật."
+    },
+    {
+      "q": "I _______ (not) early on Sundays.",
+      "options": [
+        "don't get up",
+        "doesn't get up",
+        "am not getting up"
+      ],
+      "a": 0,
+      "h": "Thói quen cuối tuần."
     },
     {
       "q": "Where _______ your parents live?",
@@ -308,7 +408,7 @@
         "are"
       ],
       "a": 0,
-      "h": "Current residence."
+      "h": "Số nhiều dùng 'do'."
     },
     {
       "q": "How _______ you spell your name?",
@@ -318,7 +418,17 @@
         "does"
       ],
       "a": 0,
-      "h": "Spelling question."
+      "h": "Cách đánh vần."
+    },
+    {
+      "q": "What _______ you do for a living?",
+      "options": [
+        "do",
+        "are",
+        "does"
+      ],
+      "a": 0,
+      "h": "Hỏi nghề nghiệp."
     },
     {
       "q": "Why _______ you so late?",
@@ -328,7 +438,7 @@
         "is"
       ],
       "a": 0,
-      "h": "Be + Adjective."
+      "h": "Đi với tính từ dùng to-be."
     },
     {
       "q": "It _______ (not) rain very much here.",
@@ -338,7 +448,7 @@
         "isn't"
       ],
       "a": 0,
-      "h": "Weather fact."
+      "h": "Thời tiết địa phương."
     },
     {
       "q": "The earth _______ round the sun.",
@@ -348,7 +458,7 @@
         "go"
       ],
       "a": 0,
-      "h": "Universal fact."
+      "h": "Sự thật vũ trụ."
     },
     {
       "q": "Rice _______ in cold climates. (Negative)",
@@ -358,7 +468,37 @@
         "isn't growing"
       ],
       "a": 0,
-      "h": "Climatic fact."
+      "h": "Sự thật phủ định."
+    },
+    {
+      "q": "How long _______ it take to fly to Rome?",
+      "options": [
+        "does",
+        "is",
+        "do"
+      ],
+      "a": 0,
+      "h": "Hỏi về thời gian."
+    },
+    {
+      "q": "They _______ (not) like to be late.",
+      "options": [
+        "don't",
+        "doesn't",
+        "aren't"
+      ],
+      "a": 0,
+      "h": "Cảm xúc/Trạng thái."
+    },
+    {
+      "q": "I _______ (not) understand this sentence.",
+      "options": [
+        "don't",
+        "doesn't",
+        "am not"
+      ],
+      "a": 0,
+      "h": "Hiểu biết dùng Hiện tại đơn."
     },
     {
       "q": "I _______ my arm yesterday. (break)",
@@ -368,7 +508,7 @@
         "broken"
       ],
       "a": 0,
-      "h": "Irregular past."
+      "h": "Quá khứ bất quy tắc."
     },
     {
       "q": "We _______ the film very much. (enjoy)",
@@ -378,7 +518,7 @@
         "were enjoy"
       ],
       "a": 0,
-      "h": "Past experience."
+      "h": "Sự việc đã qua."
     },
     {
       "q": "He _______ a lot of money last year. (spend)",
@@ -388,7 +528,7 @@
         "spend"
       ],
       "a": 0,
-      "h": "Irregular past of spend."
+      "h": "Quá khứ của spend là spent."
     },
     {
       "q": "They _______ a new house in 2020.",
@@ -398,7 +538,7 @@
         "builded"
       ],
       "a": 0,
-      "h": "Specific year -> Past Simple."
+      "h": "Sự việc có mốc thời gian quá khứ."
     },
     {
       "q": "I _______ well last night. (not/sleep)",
@@ -408,7 +548,7 @@
         "don't sleep"
       ],
       "a": 0,
-      "h": "Past negative."
+      "h": "Phủ định quá khứ đơn."
     },
     {
       "q": "The weather _______ good yesterday.",
@@ -418,7 +558,17 @@
         "is"
       ],
       "a": 0,
-      "h": "Past state."
+      "h": "To-be quá khứ số ít."
+    },
+    {
+      "q": "We _______ at the party last week.",
+      "options": [
+        "were",
+        "was",
+        "are"
+      ],
+      "a": 0,
+      "h": "To-be quá khứ số nhiều."
     },
     {
       "q": "Did you _______ out last night?",
@@ -428,7 +578,7 @@
         "going"
       ],
       "a": 0,
-      "h": "Did + V-infinitive."
+      "h": "Sau Did dùng V-nguyên thể."
     },
     {
       "q": "I _______ early this morning.",
@@ -438,7 +588,37 @@
         "waked up"
       ],
       "a": 0,
-      "h": "Past action."
+      "h": "Hành động vừa xảy ra sáng nay."
+    },
+    {
+      "q": "She _______ (not) her keys. (find)",
+      "options": [
+        "didn't find",
+        "not found",
+        "doesn't find"
+      ],
+      "a": 0,
+      "h": "Sự việc quá khứ."
+    },
+    {
+      "q": "They _______ to the cinema. (go)",
+      "options": [
+        "went",
+        "go",
+        "gone"
+      ],
+      "a": 0,
+      "h": "Kể lại sự việc."
+    },
+    {
+      "q": "I _______ a big breakfast. (have)",
+      "options": [
+        "had",
+        "have",
+        "has"
+      ],
+      "a": 0,
+      "h": "Quá khứ của have là had."
     },
     {
       "q": "The train _______ on time.",
@@ -448,7 +628,187 @@
         "was arrive"
       ],
       "a": 0,
-      "h": "Past event."
+      "h": "Sự việc quá khứ."
+    },
+    {
+      "q": "Who _______ you meet yesterday?",
+      "options": [
+        "did",
+        "were",
+        "was"
+      ],
+      "a": 0,
+      "h": "Trợ động từ nghi vấn quá khứ."
+    },
+    {
+      "q": "What _______ you do on Sunday?",
+      "options": [
+        "did",
+        "were",
+        "was"
+      ],
+      "a": 0,
+      "h": "Hỏi về hoạt động quá khứ."
+    },
+    {
+      "q": "I _______ (not) very well.",
+      "options": [
+        "wasn't",
+        "weren't",
+        "didn't be"
+      ],
+      "a": 0,
+      "h": "To-be phủ định quá khứ."
+    },
+    {
+      "q": "The test _______ difficult.",
+      "options": [
+        "was",
+        "were",
+        "did"
+      ],
+      "a": 0,
+      "h": "Tính chất sự việc quá khứ."
+    },
+    {
+      "q": "Everything _______ expensive there.",
+      "options": [
+        "was",
+        "were",
+        "did"
+      ],
+      "a": 0,
+      "h": "To-be với danh từ không đếm được."
+    },
+    {
+      "q": "We _______ happy to see them.",
+      "options": [
+        "were",
+        "was",
+        "did"
+      ],
+      "a": 0,
+      "h": "Cảm xúc quá khứ số nhiều."
+    },
+    {
+      "q": "Why _______ she angry?",
+      "options": [
+        "was",
+        "did",
+        "were"
+      ],
+      "a": 0,
+      "h": "Hỏi về trạng thái quá khứ."
+    },
+    {
+      "q": "The shops _______ closed yesterday.",
+      "options": [
+        "were",
+        "was",
+        "did"
+      ],
+      "a": 0,
+      "h": "Trạng thái sự vật quá khứ."
+    },
+    {
+      "q": "I _______ (not) buy anything.",
+      "options": [
+        "didn't",
+        "wasn't",
+        "not"
+      ],
+      "a": 0,
+      "h": "Phủ định hành động quá khứ."
+    },
+    {
+      "q": "She _______ (not) at home.",
+      "options": [
+        "wasn't",
+        "didn't",
+        "not"
+      ],
+      "a": 0,
+      "h": "Phủ định vị trí quá khứ."
+    },
+    {
+      "q": "The party _______ great.",
+      "options": [
+        "was",
+        "did",
+        "were"
+      ],
+      "a": 0,
+      "h": "Đánh giá sự việc quá khứ."
+    },
+    {
+      "q": "Where _______ they go?",
+      "options": [
+        "did",
+        "were",
+        "was"
+      ],
+      "a": 0,
+      "h": "Câu hỏi địa điểm quá khứ."
+    },
+    {
+      "q": "I _______ my homework late. (do)",
+      "options": [
+        "did",
+        "done",
+        "doed"
+      ],
+      "a": 0,
+      "h": "Quá khứ của do là did."
+    },
+    {
+      "q": "We _______ the game. (lose)",
+      "options": [
+        "lost",
+        "losed",
+        "lose"
+      ],
+      "a": 0,
+      "h": "Quá khứ của lose là lost."
+    },
+    {
+      "q": "He _______ a teacher in 1990.",
+      "options": [
+        "was",
+        "did",
+        "were"
+      ],
+      "a": 0,
+      "h": "Nghề nghiệp quá khứ."
+    },
+    {
+      "q": "I _______ (not) see the sign.",
+      "options": [
+        "didn't",
+        "wasn't",
+        "not"
+      ],
+      "a": 0,
+      "h": "Phủ định quan sát quá khứ."
+    },
+    {
+      "q": "The coffee _______ (not) hot.",
+      "options": [
+        "wasn't",
+        "didn't",
+        "not"
+      ],
+      "a": 0,
+      "h": "Tính chất quá khứ."
+    },
+    {
+      "q": "How _______ the weather?",
+      "options": [
+        "was",
+        "did",
+        "were"
+      ],
+      "a": 0,
+      "h": "Hỏi thời tiết quá khứ."
     },
     {
       "q": "I _______ my bike. (sell)",
@@ -458,7 +818,7 @@
         "sell"
       ],
       "a": 0,
-      "h": "Past Simple of sell."
+      "h": "Quá khứ của sell là sold."
     },
     {
       "q": "The room _______ (not) clean.",
@@ -468,257 +828,7 @@
         "didn't"
       ],
       "a": 0,
-      "h": "Past state negative."
-    },
-    {
-      "q": "Question Placeholder #1 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #5 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #9 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #13 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #17 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #21 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #25 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #29 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #33 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #37 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #41 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #45 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #49 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #53 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #57 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #61 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #65 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #69 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #73 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #77 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #81 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #85 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #89 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #93 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #97 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Trạng thái phòng quá khứ."
     }
   ],
   "medium": [
@@ -730,17 +840,17 @@
         "playing"
       ],
       "a": 0,
-      "h": "Action at the moment."
+      "h": "(U3) Hành động đang diễn ra tại lúc nói."
     },
     {
-      "q": "Jane _______ for me when I arrived.",
+      "q": "Jane _______ for me khi tôi đến.",
       "options": [
         "was waiting",
         "waited",
         "is waiting"
       ],
       "a": 0,
-      "h": "Long action interrupted by short action."
+      "h": "(U6) Hành động đang diễn ra (đợi) bị cắt ngang (đến)."
     },
     {
       "q": "Water _______ at 100 degrees Celsius.",
@@ -750,7 +860,7 @@
         "boil"
       ],
       "a": 0,
-      "h": "General fact."
+      "h": "(U3) Sự thật khoa học dùng Present Simple."
     },
     {
       "q": "Hurry up! Everybody _______ for you.",
@@ -760,7 +870,7 @@
         "wait"
       ],
       "a": 0,
-      "h": "Current focus."
+      "h": "Tình huống đang diễn ra tại thời điểm nói."
     },
     {
       "q": "The doorbell rang while I _______ a shower.",
@@ -770,17 +880,17 @@
         "am having"
       ],
       "a": 0,
-      "h": "Long past action."
+      "h": "(U6) Đang tắm (kéo dài) thì chuông reo."
     },
     {
-      "q": "How fast _______ you driving when it happened?",
+      "q": "How fast _______ you driving khi tai nạn xảy ra?",
       "options": [
         "were",
         "did",
         "was"
       ],
       "a": 0,
-      "h": "Question about past progress."
+      "h": "(U6) Hỏi về hành động đang diễn ra trong quá khứ."
     },
     {
       "q": "Tom burnt his hand while he _______.",
@@ -790,7 +900,17 @@
         "is cooking"
       ],
       "a": 0,
-      "h": "While + past continuous."
+      "h": "(U6) Đang nấu ăn (kéo dài) thì bị bỏng."
+    },
+    {
+      "q": "I _______ Sarah busy, so I didn't disturb her.",
+      "options": [
+        "saw",
+        "was seeing",
+        "see"
+      ],
+      "a": 0,
+      "h": "Nhận định trạng thái trong quá khứ."
     },
     {
       "q": "It _______ to rain while we were out.",
@@ -800,7 +920,7 @@
         "is starting"
       ],
       "a": 0,
-      "h": "Past event."
+      "h": "Sự việc xảy ra ngắn gọn trong quá khứ."
     },
     {
       "q": "I _______ along the street when I heard footsteps.",
@@ -810,7 +930,27 @@
         "am walking"
       ],
       "a": 0,
-      "h": "Past progress."
+      "h": "Đang đi bộ (kéo dài) thì nghe thấy (cắt ngang)."
+    },
+    {
+      "q": "What _______ you do last night?",
+      "options": [
+        "did",
+        "were",
+        "do"
+      ],
+      "a": 0,
+      "h": "Câu hỏi quá khứ đơn."
+    },
+    {
+      "q": "I haven't seen Alan for ages. When I last saw him, he _______ to find a job.",
+      "options": [
+        "was trying",
+        "tried",
+        "is trying"
+      ],
+      "a": 0,
+      "h": "(U6) Đang trong quá trình tìm việc."
     },
     {
       "q": "The television was on but no one _______.",
@@ -820,17 +960,17 @@
         "is watching"
       ],
       "a": 0,
-      "h": "Continuous state."
+      "h": "Trạng thái đang diễn ra."
     },
     {
-      "q": "I _______ a photo of you while you weren't looking.",
+      "q": "I _______ a photograph of you while you weren't looking.",
       "options": [
         "took",
         "was taking",
         "takes"
       ],
       "a": 0,
-      "h": "Short action cutting long action."
+      "h": "Hành động cắt ngang dùng quá khứ đơn."
     },
     {
       "q": "They _______ with friends until they find a flat.",
@@ -840,7 +980,7 @@
         "stays"
       ],
       "a": 0,
-      "h": "Temporary situation."
+      "h": "(U1) Tình huống tạm thời dùng Hiện tại tiếp diễn."
     },
     {
       "q": "It _______ better now. (get)",
@@ -850,7 +990,7 @@
         "getting"
       ],
       "a": 0,
-      "h": "Change in progress."
+      "h": "Sự thay đổi tiến triển."
     },
     {
       "q": "Why _______ at me like that?",
@@ -860,7 +1000,7 @@
         "you are looking"
       ],
       "a": 0,
-      "h": "Current activity."
+      "h": "(U3) Phàn nàn hoặc thắc mắc hành động đang diễn ra."
     },
     {
       "q": "Is anybody _______ to the radio?",
@@ -870,7 +1010,7 @@
         "listened"
       ],
       "a": 0,
-      "h": "Present progress."
+      "h": "Câu hỏi hành động ngay lúc nói."
     },
     {
       "q": "What _______ she studying? Medicine.",
@@ -880,7 +1020,7 @@
         "was"
       ],
       "a": 0,
-      "h": "Current major."
+      "h": "Hỏi về hoạt động hiện tại."
     },
     {
       "q": "It _______ dark. Shall I turn on the light?",
@@ -890,7 +1030,7 @@
         "getting"
       ],
       "a": 0,
-      "h": "Changing state."
+      "h": "(U1) Tiến trình thay đổi."
     },
     {
       "q": "The Amazon _______ into the Atlantic.",
@@ -900,7 +1040,7 @@
         "flowed"
       ],
       "a": 0,
-      "h": "Static fact."
+      "h": "Sự thật địa lý dùng Present Simple."
     },
     {
       "q": "I _______ (usually) my homework on Saturday.",
@@ -910,7 +1050,217 @@
         "does"
       ],
       "a": 0,
-      "h": "Habit."
+      "h": "Thói quen thường xuyên."
+    },
+    {
+      "q": "The sun _______ at 6:00 today.",
+      "options": [
+        "is rising",
+        "rises",
+        "rose"
+      ],
+      "a": 0,
+      "h": "Lịch trình hôm nay."
+    },
+    {
+      "q": "What time _______ the film start?",
+      "options": [
+        "does",
+        "is",
+        "do"
+      ],
+      "a": 0,
+      "h": "Lịch chiếu phim."
+    },
+    {
+      "q": "I _______ (not) very well today.",
+      "options": [
+        "am not feeling",
+        "don't feel",
+        "doesn't feel"
+      ],
+      "a": 0,
+      "h": "Cảm giác tạm thời."
+    },
+    {
+      "q": "She _______ (not) anything right now.",
+      "options": [
+        "isn't doing",
+        "doesn't do",
+        "not do"
+      ],
+      "a": 0,
+      "h": "Đang không làm gì."
+    },
+    {
+      "q": "They _______ (always) their keys.",
+      "options": [
+        "are always losing",
+        "always lose",
+        "lose always"
+      ],
+      "a": 0,
+      "h": "Phàn nàn thói quen xấu."
+    },
+    {
+      "q": "The population _______ very fast. (increase)",
+      "options": [
+        "is increasing",
+        "increases",
+        "increasing"
+      ],
+      "a": 0,
+      "h": "Xu hướng thay đổi."
+    },
+    {
+      "q": "I _______ for my book. Have you seen it?",
+      "options": [
+        "am looking",
+        "look",
+        "looked"
+      ],
+      "a": 0,
+      "h": "Tìm kiếm lúc này."
+    },
+    {
+      "q": "Wait! I _______ with you.",
+      "options": [
+        "am coming",
+        "come",
+        "will come"
+      ],
+      "a": 0,
+      "h": "Sắp sửa đi cùng."
+    },
+    {
+      "q": "Where _______ you going?",
+      "options": [
+        "are",
+        "do",
+        "does"
+      ],
+      "a": 0,
+      "h": "Đi đâu lúc này."
+    },
+    {
+      "q": "What _______ they talking about?",
+      "options": [
+        "are",
+        "do",
+        "is"
+      ],
+      "a": 0,
+      "h": "Đang nói chuyện gì."
+    },
+    {
+      "q": "I _______ (not) using the computer.",
+      "options": [
+        "am not",
+        "don't",
+        "doesn't"
+      ],
+      "a": 0,
+      "h": "Hiện tại tiếp diễn phủ định."
+    },
+    {
+      "q": "She _______ a shower at the moment.",
+      "options": [
+        "is having",
+        "has",
+        "having"
+      ],
+      "a": 0,
+      "h": "Đang tắm lúc này."
+    },
+    {
+      "q": "The children _______ in the garden.",
+      "options": [
+        "are playing",
+        "play",
+        "plays"
+      ],
+      "a": 0,
+      "h": "Đang chơi đùa."
+    },
+    {
+      "q": "Listen! The birds _______.",
+      "options": [
+        "are singing",
+        "sing",
+        "sings"
+      ],
+      "a": 0,
+      "h": "Đang hót."
+    },
+    {
+      "q": "Why _______ it raining so hard?",
+      "options": [
+        "is",
+        "does",
+        "are"
+      ],
+      "a": 0,
+      "h": "Hỏi về thời tiết lúc này."
+    },
+    {
+      "q": "I _______ (not) watching TV.",
+      "options": [
+        "am not",
+        "don't",
+        "isn't"
+      ],
+      "a": 0,
+      "h": "Đang không xem."
+    },
+    {
+      "q": "Look! That man _______ to open your car.",
+      "options": [
+        "is trying",
+        "tries",
+        "try"
+      ],
+      "a": 0,
+      "h": "Đang cố gắng."
+    },
+    {
+      "q": "I _______ (always) dinner at 7.",
+      "options": [
+        "have",
+        "am having",
+        "has"
+      ],
+      "a": 0,
+      "h": "Thói quen cố định."
+    },
+    {
+      "q": "She _______ (usually) late.",
+      "options": [
+        "is",
+        "is being",
+        "does"
+      ],
+      "a": 0,
+      "h": "Trạng thái thói quen."
+    },
+    {
+      "q": "They _______ (never) late for school.",
+      "options": [
+        "are",
+        "do",
+        "is"
+      ],
+      "a": 0,
+      "h": "Tần suất trạng thái."
+    },
+    {
+      "q": "The shop _______ at 5:00.",
+      "options": [
+        "closes",
+        "is closing",
+        "close"
+      ],
+      "a": 0,
+      "h": "Giờ đóng cửa."
     },
     {
       "q": "What time _______ the bus leave?",
@@ -920,7 +1270,7 @@
         "do"
       ],
       "a": 0,
-      "h": "Schedule."
+      "h": "Giờ xe chạy."
     },
     {
       "q": "I _______ a book now.",
@@ -930,7 +1280,17 @@
         "reads"
       ],
       "a": 0,
-      "h": "Reading now."
+      "h": "Đang đọc lúc này."
+    },
+    {
+      "q": "She _______ (not) working today.",
+      "options": [
+        "isn't",
+        "doesn't",
+        "not"
+      ],
+      "a": 0,
+      "h": "Hôm nay không làm."
     },
     {
       "q": "We _______ having a party next week.",
@@ -940,7 +1300,17 @@
         "will"
       ],
       "a": 0,
-      "h": "Arrangement."
+      "h": "Kế hoạch tương lai."
+    },
+    {
+      "q": "He _______ (usually) his homework.",
+      "options": [
+        "does",
+        "is doing",
+        "do"
+      ],
+      "a": 0,
+      "h": "Thói quen học bài."
     },
     {
       "q": "Where _______ she working now?",
@@ -950,27 +1320,57 @@
         "are"
       ],
       "a": 0,
-      "h": "Current job location."
+      "h": "Đang làm việc ở đâu."
     },
     {
-      "q": "Why _______ they crying?",
+      "q": "Why _______ they running?",
       "options": [
         "are",
         "do",
         "is"
       ],
       "a": 0,
-      "h": "Present reason."
+      "h": "Đang chạy vì sao."
     },
     {
-      "q": "The class _______ at 8:00.",
+      "q": "I _______ a headache. (have)",
       "options": [
-        "starts",
-        "is starting",
-        "start"
+        "have",
+        "am having",
+        "has"
       ],
       "a": 0,
-      "h": "Schedule."
+      "h": "Trạng thái đau đầu."
+    },
+    {
+      "q": "She _______ (always) helpful.",
+      "options": [
+        "is",
+        "is being",
+        "does"
+      ],
+      "a": 0,
+      "h": "Tính cách."
+    },
+    {
+      "q": "They _______ (never) help me.",
+      "options": [
+        "never help",
+        "are never helping",
+        "not help"
+      ],
+      "a": 0,
+      "h": "Thói quen xấu."
+    },
+    {
+      "q": "The bank _______ at 4:30.",
+      "options": [
+        "closes",
+        "is closing",
+        "close"
+      ],
+      "a": 0,
+      "h": "Lịch đóng cửa."
     },
     {
       "q": "What _______ you think of the book?",
@@ -980,257 +1380,127 @@
         "is"
       ],
       "a": 0,
-      "h": "State verb question."
+      "h": "Hỏi ý kiến."
     },
     {
-      "q": "Question Placeholder #2 from Units 1-10",
+      "q": "I _______ a new house soon.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "am buying",
+        "buy",
+        "buys"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Dự định sắp tới."
     },
     {
-      "q": "Question Placeholder #6 from Units 1-10",
+      "q": "She _______ (not) eating anything.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "isn't",
+        "doesn't",
+        "not"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Không đang ăn."
     },
     {
-      "q": "Question Placeholder #10 from Units 1-10",
+      "q": "We _______ listening to music.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "are",
+        "do",
+        "is"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Đang nghe nhạc."
     },
     {
-      "q": "Question Placeholder #14 from Units 1-10",
+      "q": "He _______ (usually) walks to work.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "usually walks",
+        "is usually walking",
+        "walks usually"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Thói quen đi bộ."
     },
     {
-      "q": "Question Placeholder #18 from Units 1-10",
+      "q": "Where _______ he now?",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "is",
+        "does",
+        "be"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Đang ở đâu."
     },
     {
-      "q": "Question Placeholder #22 from Units 1-10",
+      "q": "Why _______ you crying?",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "are",
+        "do",
+        "is"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Đang khóc sao."
     },
     {
-      "q": "Question Placeholder #26 from Units 1-10",
+      "q": "I _______ hungry. (be)",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "am",
+        "do",
+        "be"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Đang đói."
     },
     {
-      "q": "Question Placeholder #30 from Units 1-10",
+      "q": "She _______ (always) busy.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "is",
+        "is being",
+        "does"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Trạng thái bận rộn."
     },
     {
-      "q": "Question Placeholder #34 from Units 1-10",
+      "q": "They _______ (never) answer the phone.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "never answer",
+        "are never answering",
+        "not answer"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Thói quen liên lạc."
     },
     {
-      "q": "Question Placeholder #38 from Units 1-10",
+      "q": "The class _______ at 8:00.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "starts",
+        "is starting",
+        "start"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Lịch học."
     },
     {
-      "q": "Question Placeholder #42 from Units 1-10",
+      "q": "What _______ he like?",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "is",
+        "does",
+        "do"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Tính cách/Ngoại hình."
     },
     {
-      "q": "Question Placeholder #46 from Units 1-10",
+      "q": "I _______ going on holiday.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "am",
+        "do",
+        "will"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #50 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #54 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #58 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #62 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #66 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #70 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #74 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #78 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #82 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #86 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #90 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #94 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #98 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Đang đi nghỉ."
     }
   ],
   "hard": [
@@ -1242,7 +1512,7 @@
         "lose"
       ],
       "a": 0,
-      "h": "Present Perfect (Result)."
+      "h": "(U7) Vừa xảy ra để lại kết quả hiện tại."
     },
     {
       "q": "Have you _______ been to Australia?",
@@ -1252,7 +1522,7 @@
         "yet"
       ],
       "a": 0,
-      "h": "Life experience."
+      "h": "(U8) Hỏi về trải nghiệm cá nhân."
     },
     {
       "q": "This is the first time I _______ a car.",
@@ -1262,7 +1532,7 @@
         "drove"
       ],
       "a": 0,
-      "h": "Structure: First time + Perf."
+      "h": "(U8) Cấu trúc 'This is the first time'."
     },
     {
       "q": "Jim is on holiday. He's _______ to Italy.",
@@ -1272,7 +1542,7 @@
         "went"
       ],
       "a": 0,
-      "h": "Gone vs Been."
+      "h": "(U7) Đi và chưa quay về dùng 'gone'."
     },
     {
       "q": "Everything is going well. We _______ any problems so far.",
@@ -1282,17 +1552,17 @@
         "don't have"
       ],
       "a": 0,
-      "h": "So far -> Present Perfect."
+      "h": "(U8) 'So far' là dấu hiệu của Hiện tại hoàn thành."
     },
     {
-      "q": "Suzanne _______ a baby.",
+      "q": "Suzanne _______ a baby. (Vừa mới sinh xong)",
       "options": [
         "has had",
         "had",
         "have had"
       ],
       "a": 0,
-      "h": "Recent news."
+      "h": "Tin tức/Sự việc vừa xảy ra."
     },
     {
       "q": "I've lost my key again. It's the second time this _______.",
@@ -1302,7 +1572,7 @@
         "happened"
       ],
       "a": 0,
-      "h": "Frequency of experience."
+      "h": "Số lần lặp lại trải nghiệm."
     },
     {
       "q": "I _______ (already) my homework.",
@@ -1312,7 +1582,7 @@
         "already do"
       ],
       "a": 0,
-      "h": "Already + Perfect."
+      "h": "Xong sớm hơn dự kiến."
     },
     {
       "q": "Has it _______ raining yet?",
@@ -1322,7 +1592,17 @@
         "stopping"
       ],
       "a": 0,
-      "h": "Yet question."
+      "h": "'Yet' dùng trong câu hỏi hoàn thành."
+    },
+    {
+      "q": "I _______ Sarah recently.",
+      "options": [
+        "have seen",
+        "saw",
+        "see"
+      ],
+      "a": 0,
+      "h": "Kinh nghiệm gần đây."
     },
     {
       "q": "He _______ his passport. He can't go.",
@@ -1332,7 +1612,7 @@
         "lost"
       ],
       "a": 0,
-      "h": "Result at present."
+      "h": "Kết quả hiện tại của việc đã mất."
     },
     {
       "q": "I _______ never eaten this before.",
@@ -1342,27 +1622,27 @@
         "am"
       ],
       "a": 0,
-      "h": "Negative experience."
+      "h": "Trải nghiệm tiêu cực."
     },
     {
-      "q": "We _______ a new car.",
+      "q": "We _______ a new car. (Recent purchase)",
       "options": [
         "have bought",
         "bought",
         "buy"
       ],
       "a": 0,
-      "h": "Recent action."
+      "h": "Hành động vừa mới hoàn thành."
     },
     {
-      "q": "Tim _______ a beard now.",
+      "q": "Tim _______ a beard now. (Change)",
       "options": [
         "has grown",
         "grew",
         "grows"
       ],
       "a": 0,
-      "h": "Visible change."
+      "h": "(U7) Sự thay đổi có kết quả hiện tại."
     },
     {
       "q": "Is she here? No, she _______.",
@@ -1372,7 +1652,7 @@
         "goes"
       ],
       "a": 0,
-      "h": "Just completed."
+      "h": "Vừa mới rời đi."
     },
     {
       "q": "They _______ each other for years.",
@@ -1382,7 +1662,7 @@
         "are knowing"
       ],
       "a": 0,
-      "h": "State verb duration."
+      "h": "Khoảng thời gian với động từ trạng thái."
     },
     {
       "q": "I _______ (not) seen her since June.",
@@ -1392,7 +1672,7 @@
         "don't"
       ],
       "a": 0,
-      "h": "Since -> Perfect."
+      "h": "Kể từ mốc thời gian."
     },
     {
       "q": "We _______ (just) arrived home.",
@@ -1402,7 +1682,7 @@
         "just arrived"
       ],
       "a": 0,
-      "h": "Recent arrival."
+      "h": "Vừa mới tới."
     },
     {
       "q": "Has he _______ finished his dinner?",
@@ -1412,7 +1692,7 @@
         "ever"
       ],
       "a": 0,
-      "h": "Already in question."
+      "h": "Đã xong chưa (sớm)."
     },
     {
       "q": "I _______ never been so happy.",
@@ -1422,7 +1702,57 @@
         "am"
       ],
       "a": 0,
-      "h": "Experience."
+      "h": "Trải nghiệm từ trước tới nay."
+    },
+    {
+      "q": "Have you _______ your breakfast yet?",
+      "options": [
+        "had",
+        "have",
+        "has"
+      ],
+      "a": 0,
+      "h": "Ăn sáng chưa."
+    },
+    {
+      "q": "She _______ (not) been here today.",
+      "options": [
+        "hasn't",
+        "isn't",
+        "wasn't"
+      ],
+      "a": 0,
+      "h": "Trạng thái hôm nay."
+    },
+    {
+      "q": "We _______ (just) bought a house.",
+      "options": [
+        "have just",
+        "just",
+        "just bought"
+      ],
+      "a": 0,
+      "h": "Vừa mới mua xong."
+    },
+    {
+      "q": "I _______ (never) seen him so angry.",
+      "options": [
+        "have never",
+        "never",
+        "never seen"
+      ],
+      "a": 0,
+      "h": "Trước đây chưa từng."
+    },
+    {
+      "q": "Has it _______ raining?",
+      "options": [
+        "stopped",
+        "stop",
+        "stopping"
+      ],
+      "a": 0,
+      "h": "Đã tạnh chưa."
     },
     {
       "q": "They _______ (already) left.",
@@ -1432,7 +1762,7 @@
         "already left"
       ],
       "a": 0,
-      "h": "Early completion."
+      "h": "Đã rời đi rồi."
     },
     {
       "q": "I _______ (not) finished my work yet.",
@@ -1442,257 +1772,37 @@
         "don't"
       ],
       "a": 0,
-      "h": "Yet negative."
+      "h": "Chưa xong việc."
     },
     {
-      "q": "Question Placeholder #3 from Units 1-10",
+      "q": "Has she _______ found her keys?",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "already",
+        "yet",
+        "ever"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Đã tìm thấy chưa."
     },
     {
-      "q": "Question Placeholder #7 from Units 1-10",
+      "q": "We _______ (just) seen a movie.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "have just",
+        "just",
+        "just seen"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Vừa mới xem xong."
     },
     {
-      "q": "Question Placeholder #11 from Units 1-10",
+      "q": "I _______ never been to London.",
       "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
+        "have",
+        "has",
+        "am"
       ],
       "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #15 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #19 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #23 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #27 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #31 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #35 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #39 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #43 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #47 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #51 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #55 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #59 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #63 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #67 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #71 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #75 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #79 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #83 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #87 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #91 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #95 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #99 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Trải nghiệm đi du lịch."
     }
   ],
   "vhard": [
@@ -1704,7 +1814,7 @@
         "learns"
       ],
       "a": 0,
-      "h": "Continuous activity duration."
+      "h": "(U9) Nhấn mạnh quá trình kéo dài."
     },
     {
       "q": "I can't understand why he _______ so selfish today.",
@@ -1714,7 +1824,7 @@
         "be"
       ],
       "a": 0,
-      "h": "Temporary behavior."
+      "h": "(U4) 'Is being' chỉ cách cư xử tạm thời."
     },
     {
       "q": "Where have you been? _______ tennis?",
@@ -1724,7 +1834,7 @@
         "Are you playing"
       ],
       "a": 0,
-      "h": "Visible result of activity."
+      "h": "(U10) Hành động vừa dừng lại và có kết quả."
     },
     {
       "q": "I _______ you should sell your car.",
@@ -1734,7 +1844,7 @@
         "thinks"
       ],
       "a": 0,
-      "h": "Stative verb (opinion)."
+      "h": "(U4) Ý kiến không dùng tiếp diễn."
     },
     {
       "q": "Air _______ mainly of nitrogen and oxygen.",
@@ -1744,7 +1854,7 @@
         "consist"
       ],
       "a": 0,
-      "h": "Stative verb."
+      "h": "Động từ trạng thái 'consist'."
     },
     {
       "q": "Somebody _______ that window.",
@@ -1754,7 +1864,7 @@
         "is breaking"
       ],
       "a": 0,
-      "h": "Single finished action."
+      "h": "Nhấn mạnh kết quả bị vỡ."
     },
     {
       "q": "How long _______ you waiting for me?",
@@ -1764,7 +1874,7 @@
         "did you"
       ],
       "a": 0,
-      "h": "Activity duration."
+      "h": "Khoảng thời gian kéo dài."
     },
     {
       "q": "He _______ it. (Complaint)",
@@ -1774,7 +1884,7 @@
         "lose"
       ],
       "a": 0,
-      "h": "Annoying habit."
+      "h": "Phàn nàn thói quen lặp lại."
     },
     {
       "q": "I _______ to feel tired. Can we stop?",
@@ -1784,7 +1894,7 @@
         "starts"
       ],
       "a": 0,
-      "h": "Process of starting."
+      "h": "Tiến trình chuyển đổi trạng thái."
     },
     {
       "q": "This sauce _______ really good.",
@@ -1794,7 +1904,7 @@
         "taste"
       ],
       "a": 0,
-      "h": "Perception state."
+      "h": "Trạng thái của giác quan."
     },
     {
       "q": "Who _______ this umbrella belong to?",
@@ -1804,7 +1914,7 @@
         "doing"
       ],
       "a": 0,
-      "h": "Stative verb (possession)."
+      "h": "'Belong' là động từ trạng thái."
     },
     {
       "q": "I _______ of selling my car.",
@@ -1814,7 +1924,17 @@
         "thinks"
       ],
       "a": 0,
-      "h": "Action of considering."
+      "h": "Hành động suy nghĩ."
+    },
+    {
+      "q": "I _______ a new car. (Recent completed)",
+      "options": [
+        "have bought",
+        "bought",
+        "buy"
+      ],
+      "a": 0,
+      "h": "Kết quả hành động."
     },
     {
       "q": "You look sensible, so why _______ so silly?",
@@ -1824,7 +1944,7 @@
         "do you be"
       ],
       "a": 0,
-      "h": "Temporary mode."
+      "h": "Đang cư xử tạm thời."
     },
     {
       "q": "How many times _______ he fallen?",
@@ -1834,7 +1954,7 @@
         "does"
       ],
       "a": 0,
-      "h": "Countable finished events."
+      "h": "Tần suất trải nghiệm."
     },
     {
       "q": "It _______ for two hours. (rain)",
@@ -1844,7 +1964,27 @@
         "rains"
       ],
       "a": 0,
-      "h": "Continuous rainfall."
+      "h": "Quá trình liên tục."
+    },
+    {
+      "q": "I _______ English recently.",
+      "options": [
+        "have been studying",
+        "study",
+        "am studying"
+      ],
+      "a": 0,
+      "h": "Quá trình gần đây."
+    },
+    {
+      "q": "She _______ (not) very well lately.",
+      "options": [
+        "hasn't been feeling",
+        "isn't feeling",
+        "not feel"
+      ],
+      "a": 0,
+      "h": "Sức khỏe gần đây."
     },
     {
       "q": "How long _______ it been raining?",
@@ -1854,7 +1994,117 @@
         "was"
       ],
       "a": 0,
-      "h": "Duration question."
+      "h": "Thời gian mưa kéo dài."
+    },
+    {
+      "q": "I _______ (always) to see her.",
+      "options": [
+        "have always wanted",
+        "always want",
+        "am always wanting"
+      ],
+      "a": 0,
+      "h": "Mong muốn từ trước tới nay."
+    },
+    {
+      "q": "She _______ (never) been so happy.",
+      "options": [
+        "has never",
+        "is never",
+        "was never"
+      ],
+      "a": 0,
+      "h": "Chưa từng hạnh phúc như vậy."
+    },
+    {
+      "q": "We _______ (just) finished dinner.",
+      "options": [
+        "have just",
+        "just",
+        "just finished"
+      ],
+      "a": 0,
+      "h": "Vừa mới ăn xong."
+    },
+    {
+      "q": "I _______ (never) seen him before.",
+      "options": [
+        "have never",
+        "never",
+        "never seen"
+      ],
+      "a": 0,
+      "h": "Trước đây chưa từng gặp."
+    },
+    {
+      "q": "Has she _______ found a job?",
+      "options": [
+        "already",
+        "yet",
+        "ever"
+      ],
+      "a": 0,
+      "h": "Đã tìm thấy chưa."
+    },
+    {
+      "q": "They _______ (just) moved house.",
+      "options": [
+        "have just",
+        "just",
+        "just moved"
+      ],
+      "a": 0,
+      "h": "Vừa mới chuyển nhà."
+    },
+    {
+      "q": "I _______ (not) seen her for weeks.",
+      "options": [
+        "haven't",
+        "didn't",
+        "don't"
+      ],
+      "a": 0,
+      "h": "Nhiều tuần nay không gặp."
+    },
+    {
+      "q": "Has he _______ called you?",
+      "options": [
+        "already",
+        "yet",
+        "ever"
+      ],
+      "a": 0,
+      "h": "Đã gọi cho bạn chưa."
+    },
+    {
+      "q": "We _______ (just) heard the news.",
+      "options": [
+        "have just",
+        "just",
+        "just heard"
+      ],
+      "a": 0,
+      "h": "Vừa mới nghe tin."
+    },
+    {
+      "q": "I _______ never been to Paris.",
+      "options": [
+        "have",
+        "has",
+        "am"
+      ],
+      "a": 0,
+      "h": "Trải nghiệm du lịch."
+    },
+    {
+      "q": "She _______ (never) liked him.",
+      "options": [
+        "has never",
+        "never",
+        "never liked"
+      ],
+      "a": 0,
+      "h": "Chưa từng thích."
     },
     {
       "q": "How long _______ they been married?",
@@ -1864,257 +2114,7 @@
         "were"
       ],
       "a": 0,
-      "h": "State duration."
-    },
-    {
-      "q": "Question Placeholder #4 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #8 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #12 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #16 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #20 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #24 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #28 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #32 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #36 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #40 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #44 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #48 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #52 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #56 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #60 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #64 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #68 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #72 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #76 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #80 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #84 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #88 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #92 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #96 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
-    },
-    {
-      "q": "Question Placeholder #100 from Units 1-10",
-      "options": [
-        "Correct Option",
-        "Wrong A",
-        "Wrong B"
-      ],
-      "a": 0,
-      "h": "Grammar insight from Units 1-10."
+      "h": "Thời gian kết hôn."
     }
   ]
 }
