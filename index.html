@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grammar in use - Pro Ultra Edition</title>
+    <title>Grammar in use - Gen Z Edition</title>
     <style>
         :root { --primary: #6366f1; --secondary: #a855f7; --easy: #22c55e; --medium: #eab308; --hard: #f97316; --vhard: #ef4444; --bg: #f8fafc; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 10px; }
         .quiz-card { background: white; width: 100%; max-width: 700px; padding: 35px; border-radius: 30px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1); position: relative; }
-        h1 { background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 2.5rem; margin: 0; font-weight: 800; }
+        h1 { background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 2.8rem; margin: 0; font-weight: 800; }
+        
+        /* Stats & Leaderboard */
         .db-stats { display: flex; justify-content: space-around; margin: 20px 0; gap: 10px; flex-wrap: wrap; }
         .stat-badge { padding: 8px 12px; border-radius: 12px; font-size: 11px; font-weight: bold; color: white; text-align: center; flex: 1; min-width: 80px; }
         .leaderboard { background: #f1f5f9; padding: 20px; border-radius: 20px; margin: 20px 0; border: 1px solid #e2e8f0; }
         .top-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e2e8f0; font-size: 14px; font-weight: 500; }
+        
+        /* Quiz Area */
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-        #timer { font-size: 22px; font-weight: 800; color: white; background: var(--vhard); padding: 8px 20px; border-radius: 50px; min-width: 45px; text-align: center; }
+        #timer { font-size: 22px; font-weight: 800; color: white; background: var(--vhard); padding: 8px 25px; border-radius: 50px; min-width: 45px; text-align: center; box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3); }
         .progress-bar { height: 10px; background: #f1f5f9; border-radius: 5px; margin-bottom: 25px; overflow: hidden; }
         #progress-fill { height: 100%; background: linear-gradient(to right, var(--primary), var(--secondary)); width: 0%; transition: 0.5s; }
-        .option-btn { width: 100%; padding: 16px; border: 2px solid #f1f5f9; border-radius: 15px; background: #f8fafc; cursor: pointer; text-align: left; font-size: 16px; margin-bottom: 10px; transition: 0.3s; }
+        .option-btn { width: 100%; padding: 18px; border: 2px solid #f1f5f9; border-radius: 15px; background: #f8fafc; cursor: pointer; text-align: left; font-size: 16px; margin-bottom: 10px; transition: 0.3s; font-weight: 500; }
         .option-btn:hover:not(.disabled) { border-color: var(--primary); background: #f5f3ff; transform: translateX(5px); }
         .option-btn.correct { border-color: var(--easy) !important; background: #f0fdf4 !important; color: #166534; font-weight: bold; }
         .option-btn.wrong { border-color: var(--vhard) !important; background: #fef2f2 !important; color: #991b1b; }
-        .hint-box { margin-top: 15px; padding: 15px; background: #fffbeb; border-radius: 12px; font-size: 0.95rem; display: none; border-left: 5px solid #fbbf24; line-height: 1.5; }
-        .btn-action { background: var(--primary); color: white; border: none; padding: 18px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: 0.3s; width: 100%; font-size: 18px; }
+        
+        /* Modal & History */
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); justify-content: center; align-items: center; z-index: 1000; backdrop-filter: blur(8px); }
-        .modal-content { background: white; padding: 35px; border-radius: 35px; text-align: center; width: 90%; max-width: 500px; }
+        .modal-content { background: white; padding: 35px; border-radius: 35px; text-align: center; width: 90%; max-width: 550px; max-height: 90vh; overflow-y: auto; }
+        .genz-comment { font-style: italic; color: var(--primary); font-weight: 700; font-size: 1.3rem; margin: 15px 0; line-height: 1.4; padding: 10px; border-left: 5px solid var(--secondary); background: #f5f3ff; border-radius: 0 15px 15px 0; }
+        .history-container { margin-top: 25px; text-align: left; }
+        .history-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .history-table th { background: #f1f5f9; padding: 10px; border-radius: 10px 10px 0 0; }
+        .history-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; }
+        
+        .btn-action { background: var(--primary); color: white; border: none; padding: 18px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: 0.3s; width: 100%; font-size: 18px; box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3); }
+        .btn-action:hover { transform: translateY(-3px); opacity: 0.9; }
+        .hint-box { margin-top: 15px; padding: 15px; background: #fffbeb; border-radius: 12px; font-size: 0.95rem; display: none; border-left: 5px solid #fbbf24; }
     </style>
 </head>
 <body>
@@ -32,57 +45,102 @@
 <div class="quiz-card" id="setup-screen">
     <h1>Grammar in use</h1>
     <div class="db-stats">
-        <div class="stat-badge" style="background:var(--easy)">HỆ DỄ<br><span id="cnt-easy">...</span> câu</div>
-        <div class="stat-badge" style="background:var(--medium)">HỆ TB<br><span id="cnt-med">...</span> câu</div>
-        <div class="stat-badge" style="background:var(--hard)">HỆ PRO<br><span id="cnt-hard">...</span> câu</div>
-        <div class="stat-badge" style="background:var(--vhard)">HỆ HACK<br><span id="cnt-vhard">...</span> câu</div>
+        <div class="stat-badge" style="background:var(--easy)">HỆ DỄ<br><span id="cnt-easy">...</span></div>
+        <div class="stat-badge" style="background:var(--medium)">HỆ TB<br><span id="cnt-med">...</span></div>
+        <div class="stat-badge" style="background:var(--hard)">HỆ PRO<br><span id="cnt-hard">...</span></div>
+        <div class="stat-badge" style="background:var(--vhard)">HỆ HACK<br><span id="cnt-vhard">...</span></div>
     </div>
-    <div id="welcome-msg" style="text-align:center; margin: 10px 0; font-weight: 600; color: #475569;"></div>
-    <div class="leaderboard"><h3 style="text-align:center; margin-top:0; color: var(--primary);">🏆 CHIẾN THẦN TOP 5</h3><div id="top-list">Đang kết nối database...</div></div>
-    <div class="input-group" id="name-input-area"><input type="text" id="student-name" placeholder="Nickname của bạn..." style="width: 80%; padding: 15px; border: 2px solid #e2e8f0; border-radius: 15px; font-size: 18px; outline: none; text-align: center;"></div>
-    <button class="btn-action" onclick="startQuiz()">BẮT ĐẦU ÔN TẬP</button>
+    <div id="welcome-msg" style="text-align:center; margin: 15px 0; font-weight: 600; color: #475569;"></div>
+    <div class="leaderboard"><h3 style="text-align:center; margin-top:0; color: var(--primary);">🏆 BXH CHIẾN THẦN</h3><div id="top-list">Đang kết nối...</div></div>
+    <div class="input-group" id="name-input-area"><input type="text" id="student-name" placeholder="Nickname của bạn..." style="width: 85%; padding: 18px; border: 3px solid #e2e8f0; border-radius: 20px; font-size: 18px; outline: none; text-align: center;"></div>
+    <button class="btn-action" onclick="startQuiz()">LÀM BÀI LUÔN!</button>
 </div>
 
 <div class="quiz-card" id="quiz-screen" style="display:none">
-    <div class="header"><span id="q-counter" style="font-weight:700; color:#64748b;"></span><div id="timer-box"><span id="timer">15</span></div></div>
+    <div class="header"><span id="q-counter" style="font-weight:700; color:#64748b; font-size: 18px;"></span><div id="timer-box"><span id="timer">15</span></div></div>
     <div class="progress-bar"><div id="progress-fill"></div></div>
-    <div id="question" style="font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; color: #1e293b;"></div>
+    <div id="question" style="font-size: 1.4rem; font-weight: 600; margin-bottom: 25px; color: #0f172a; line-height: 1.4;"></div>
     <div id="options" class="options-grid"></div>
     <div id="hint" class="hint-box"></div>
-    <div id="review-nav" style="display:none; justify-content: space-between; margin-top: 20px; gap: 10px;"><button onclick="navReview(-1)" class="btn-action" style="background:#64748b; padding: 12px; width: 45%;">Câu trước</button><button onclick="navReview(1)" class="btn-action" style="padding: 12px; width: 45%;">Câu sau</button></div>
-    <div id="exit-review" style="display:none; text-align:center; margin-top: 20px;"><button onclick="location.reload()" style="background:none; border:none; color:var(--primary); font-weight:bold; cursor:pointer; font-size: 16px;">Thoát xem lại</button></div>
+    <div id="review-nav" style="display:none; justify-content: space-between; margin-top: 20px; gap: 15px;"><button onclick="navReview(-1)" class="btn-action" style="background:#64748b; padding: 12px; width: 45%;">Câu trước</button><button onclick="navReview(1)" class="btn-action" style="padding: 12px; width: 45%;">Câu sau</button></div>
+    <div id="exit-review" style="display:none; text-align:center; margin-top: 20px;"><button onclick="location.reload()" style="background:none; border:none; color:var(--primary); font-weight:bold; cursor:pointer;">Kết thúc xem lại</button></div>
 </div>
 
-<div class="modal" id="result-modal"><div class="modal-content"><h2 id="result-title" style="margin:0; font-size: 1.8rem;">KẾT QUẢ</h2><div id="result-score" style="font-size: 60px; font-weight: 900; color: var(--primary); margin: 15px 0;"></div><div id="result-info" style="text-align:left; background:#f8fafc; padding:20px; border-radius:20px; margin-bottom:20px; font-size: 0.95rem; line-height: 1.6;"></div><button class="btn-action" style="background:var(--secondary); margin-bottom: 12px;" onclick="openReview()">XEM LẠI BÀI</button><button class="btn-action" onclick="location.reload()">HỌC TIẾP</button></div></div>
+<div class="modal" id="result-modal">
+    <div class="modal-content">
+        <h2 style="margin:0; font-size: 2rem;">KẾT QUẢ</h2>
+        <div id="genz-comment" class="genz-comment"></div>
+        <div id="result-score" style="font-size: 70px; font-weight: 900; color: var(--primary); margin: 10px 0;"></div>
+        <div id="result-info" style="text-align:left; background:#f8fafc; padding:20px; border-radius:20px; margin-bottom:20px; font-size: 0.95rem; line-height: 1.6;"></div>
+        
+        <div style="display:flex; gap:10px; margin-bottom: 25px;">
+            <button class="btn-action" style="background:var(--secondary); flex:1;" onclick="openReview()">XEM LẠI BÀI</button>
+            <button class="btn-action" style="flex:1;" onclick="location.reload()">THỬ LẠI</button>
+        </div>
+
+        <div class="history-container">
+            <h4 style="margin-bottom:10px; color: #475569;">Lịch sử làm bài của bạn:</h4>
+            <div style="max-height: 150px; overflow-y: auto; border: 1px solid #f1f5f9; border-radius: 15px;">
+                <table class="history-table" id="history-log">
+                    <thead><tr><th>Ngày</th><th>Điểm</th><th>Thời gian</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxred1fOkNnb2LRaKMskMdHczZdA9vo-IMuqwkqHNa0Xi045oHb8l8kVkkrs4B0IMwQ/exec';
 let db = {};
 
-// Hàm tải database từ tệp JSON bên ngoài
+const genzComments = {
+    elite: [
+        "Gánh team còng lưng! Anh ngữ kiểu này là 'out trình' rồi! 🏆",
+        "Đỉnh của chóp! Flex nhẹ cái điểm số cho thiên hạ trầm trồ nào! 🔥",
+        "Hệ tư tưởng Anh ngữ gọi tên bạn. Quá cháy! ✨",
+        "Keo lỳ thực sự! Trình này đi thi quốc tế luôn Khôi ơi! 💅"
+    ],
+    good: [
+        "Cũng ra gì và này nọ đấy! Sắp thành truyền thuyết rồi! 🌟",
+        "Xịn xò con bò! Thêm tí nữa là 'vô đối' luôn! 🚀",
+        "Phong độ ổn định, không hề giả trân chút nào! 👍",
+        "Được của ló! Tiếp tục phát huy nhé chiến thần! ✨"
+    ],
+    average: [
+        "Ổn áp đấy, nhưng vẫn còn 'non và xanh' lắm nhé! 🍉",
+        "Tạm được thôi, đừng tự mãn kẻo 'ra chuồng gà' chơi đó! 🐔",
+        "Hệ mầm non đang chớm nở. Cố gắng cày thêm đi bạn ơi! 🌱",
+        "Cũng ổn, nhưng mà 'cái nết' học hành này cần chăm hơn tí! 🤔"
+    ],
+    poor: [
+        "Xu cà na! Cái nết này là học trước quên sau rồi! 💀",
+        "Tầm này thì chịu rồi! Reset làm lại cuộc đời gấp Khôi ơi! 🚩",
+        "Học hành kiểu 'ô dề' quá! Tập trung vào không là toang đấy! 😤",
+        "Ét ô ét! Cần giải cứu môn tiếng Anh ngay lập tức! 🆘"
+    ]
+};
+
 async function loadDatabase() {
     try {
         const response = await fetch('./questions.json');
-        if (!response.ok) throw new Error('File not found');
         db = await response.json();
-        document.getElementById('cnt-easy').innerText = db.easy.length;
-        document.getElementById('cnt-med').innerText = db.medium.length;
-        document.getElementById('cnt-hard').innerText = db.hard.length;
-        document.getElementById('cnt-vhard').innerText = db.vhard.length;
-    } catch (e) {
-        alert("Lỗi: Không tìm thấy questions.json! Hãy đảm bảo file này nằm cùng thư mục với index.html.");
-    }
+        document.getElementById('cnt-easy').innerText = db.easy.length + ' câu';
+        document.getElementById('cnt-med').innerText = db.medium.length + ' câu';
+        document.getElementById('cnt-hard').innerText = db.hard.length + ' câu';
+        document.getElementById('cnt-vhard').innerText = db.vhard.length + ' câu';
+    } catch (e) { console.error(e); }
 }
 
 let quizQuestions = [], userAnswers = [], currentIndex = 0, score = 0, timer, startTime, studentName = "", isReview = false;
 
 window.onload = async () => {
     await loadDatabase();
-    const savedName = localStorage.getItem('studentName');
-    if (savedName) {
-        studentName = savedName;
-        document.getElementById('name-input-area').style.display = 'none';
-        document.getElementById('welcome-msg').innerText = `Chào mừng trở lại, ${savedName}! 🔥`;
+    const saved = localStorage.getItem('studentName');
+    if (saved) { 
+        studentName = saved; 
+        document.getElementById('name-input-area').style.display = 'none'; 
+        document.getElementById('welcome-msg').innerText = `Chào mừng trở lại, ${saved}! 🔥`; 
     }
     loadLeaderboard();
 };
@@ -91,9 +149,7 @@ async function loadLeaderboard() {
     try {
         const response = await fetch(SCRIPT_URL);
         const topData = await response.json();
-        document.getElementById('top-list').innerHTML = topData.map((u, i) => `
-            <div class="top-item"><span>#${i+1} ${u.name}</span><span style="font-weight:bold; color:var(--primary)">${u.score}đ (Hạng ${u.rank})</span></div>
-        `).join('') || "Chưa có dữ liệu.";
+        document.getElementById('top-list').innerHTML = topData.map((u, i) => `<div class="top-item"><span>#${i+1} ${u.name}</span><span style="font-weight:bold; color:var(--primary)">${u.score}đ (Hạng ${u.rank})</span></div>`).join('') || "Chưa có dữ liệu.";
     } catch (e) { document.getElementById('top-list').innerText = "Không thể tải BXH."; }
 }
 
@@ -102,32 +158,34 @@ function shuffle(arr) { return arr.sort(() => Math.random() - 0.5); }
 function startQuiz() {
     if (!studentName) {
         studentName = document.getElementById('student-name').value.trim();
-        if (!studentName) return alert("Nickname là bắt buộc!");
+        if (!studentName) return alert("Hú! Nhập cái tên để còn ghi danh bảng vàng nào!");
         localStorage.setItem('studentName', studentName);
     }
     document.getElementById('setup-screen').style.display = 'none';
     document.getElementById('quiz-screen').style.display = 'block';
 
     let lastMissed = parseInt(localStorage.getItem('lastMissed') || 0);
-    const total = 20 + lastMissed;
+    const totalTarget = 20 + lastMissed;
     
-    // Tỉ lệ 40:30:20:10
-    const counts = {
-        easy: Math.max(Math.round(total * 0.4), 1),
-        medium: Math.max(Math.round(total * 0.3), 1),
-        hard: Math.max(Math.round(total * 0.2), 1),
-        vhard: Math.max(Math.round(total * 0.1), 1)
+    let pool = {
+        easy: shuffle([...db.easy]), medium: shuffle([...db.medium]), 
+        hard: shuffle([...db.hard]), vhard: shuffle([...db.vhard])
     };
 
     quizQuestions = [
-        ...shuffle([...db.easy]).slice(0, counts.easy),
-        ...shuffle([...db.medium]).slice(0, counts.medium),
-        ...shuffle([...db.hard]).slice(0, counts.hard),
-        ...shuffle([...db.vhard]).slice(0, counts.vhard)
-    ];
+        ...pool.easy.slice(0, Math.round(totalTarget * 0.4)),
+        ...pool.medium.slice(0, Math.round(totalTarget * 0.3)),
+        ...pool.hard.slice(0, Math.round(totalTarget * 0.2)),
+        ...pool.vhard.slice(0, Math.round(totalTarget * 0.1))
+    ].filter(q => q && q.q);
+
+    if (quizQuestions.length < 20) {
+        let all = shuffle([...pool.easy.slice(10), ...pool.medium.slice(10)]);
+        while (quizQuestions.length < 20 && all.length > 0) quizQuestions.push(all.pop());
+    }
     
     shuffle(quizQuestions);
-    startTime = new Date();
+    startTime = new Date(); currentIndex = 0; score = 0; userAnswers = [];
     showQuestion();
 }
 
@@ -147,7 +205,7 @@ function showQuestion() {
         btn.className = 'option-btn';
         btn.innerText = opt.t;
         if (isReview) {
-            btn.classList.add('disabled');
+            btn.style.pointerEvents = 'none';
             if (opt.id === q.a) btn.classList.add('correct');
             if (userAnswers[currentIndex] === opt.id && opt.id !== q.a) btn.classList.add('wrong');
             document.getElementById('hint').style.display = 'block';
@@ -170,8 +228,7 @@ function showQuestion() {
 function selectOption(id) {
     userAnswers[currentIndex] = id;
     if (id === quizQuestions[currentIndex].a) score++;
-    currentIndex++;
-    showQuestion();
+    currentIndex++; showQuestion();
 }
 
 function endQuiz() {
@@ -180,10 +237,33 @@ function endQuiz() {
     const missed = quizQuestions.length - score;
     localStorage.setItem('lastMissed', missed);
     const finalScore = ((score / quizQuestions.length) * 10).toFixed(1);
+    const timeStr = new Date().toLocaleDateString('vi-VN') + ' ' + new Date().toLocaleTimeString('vi-VN', {hour: '2-digit', minute:'2-digit'});
+
+    // Lưu lịch sử vào LocalStorage
+    const history = JSON.parse(localStorage.getItem('userHistory') || '[]');
+    history.unshift({ date: timeStr, score: finalScore, time: duration + 's' });
+    localStorage.setItem('userHistory', JSON.stringify(history.slice(0, 10))); // Giữ 10 lần gần nhất
+
+    // Hiển thị Modal
     document.getElementById('result-modal').style.display = 'flex';
     document.getElementById('result-score').innerText = `${finalScore}đ`;
-    document.getElementById('result-info').innerHTML = `✅ Đúng: ${score}/${quizQuestions.length}<br>⏳ Thời gian: ${duration}s<br>⚠️ Sai: ${missed} câu (Lượt tới tăng đề)`;
-    fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify({timestamp: new Date().toLocaleString('vi-VN'), name: studentName, score: finalScore, duration: duration, details: `Đúng ${score}/${quizQuestions.length}`})});
+    
+    // Chọn comment ngẫu nhiên
+    let comment = "";
+    const p = parseFloat(finalScore);
+    if (p >= 9) comment = shuffle(genzComments.elite)[0];
+    else if (p >= 7) comment = shuffle(genzComments.good)[0];
+    else if (p >= 5) comment = shuffle(genzComments.average)[0];
+    else comment = shuffle(genzComments.poor)[0];
+    
+    document.getElementById('genz-comment').innerText = comment;
+    document.getElementById('result-info').innerHTML = `👤 <b>Nickname:</b> ${studentName}<br>✅ <b>Kết quả:</b> Đúng ${score}/${quizQuestions.length} câu<br>⏳ <b>Thời gian:</b> ${duration} giây<br>⚠️ <b>Lần tới:</b> Đề tăng thêm ${missed} câu.`;
+
+    // Hiển thị bảng lịch sử
+    const logBody = document.querySelector('#history-log tbody');
+    logBody.innerHTML = history.map(h => `<tr><td>${h.date}</td><td><b>${h.score}</b></td><td>${h.time}</td></tr>`).join('');
+
+    fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify({timestamp: timeStr, name: studentName, score: finalScore, duration: duration, details: `Đúng ${score}/${quizQuestions.length}`})});
 }
 
 function openReview() { isReview = true; currentIndex = 0; document.getElementById('result-modal').style.display = 'none'; document.getElementById('timer-box').style.display = 'none'; document.getElementById('review-nav').style.display = 'flex'; document.getElementById('exit-review').style.display = 'block'; showQuestion(); }
