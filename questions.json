@@ -1,0 +1,2120 @@
+{
+  "easy": [
+    {
+      "q": "Look! The bus _______.",
+      "options": [
+        "is coming",
+        "comes",
+        "are coming"
+      ],
+      "a": 0,
+      "h": "Look! -> Present Continuous."
+    },
+    {
+      "q": "I never _______ coffee.",
+      "options": [
+        "drink",
+        "am drinking",
+        "drinks"
+      ],
+      "a": 0,
+      "h": "Never -> Present Simple."
+    },
+    {
+      "q": "The sun _______ in the east.",
+      "options": [
+        "rises",
+        "is rising",
+        "rise"
+      ],
+      "a": 0,
+      "h": "Scientific fact -> Present Simple."
+    },
+    {
+      "q": "Mozart _______ 600 pieces of music.",
+      "options": [
+        "wrote",
+        "write",
+        "has written"
+      ],
+      "a": 0,
+      "h": "Finished action -> Past Simple."
+    },
+    {
+      "q": "It _______ dark. Shall I turn on the light?",
+      "options": [
+        "is getting",
+        "gets",
+        "getting"
+      ],
+      "a": 0,
+      "h": "Progressive change -> Present Continuous."
+    },
+    {
+      "q": "I _______ to work by car usually.",
+      "options": [
+        "go",
+        "am going",
+        "goes"
+      ],
+      "a": 0,
+      "h": "Usually -> Present Simple."
+    },
+    {
+      "q": "Ann _______ German very well.",
+      "options": [
+        "speaks",
+        "is speaking",
+        "speak"
+      ],
+      "a": 0,
+      "h": "Ability -> Present Simple."
+    },
+    {
+      "q": "The Olympic Games _______ every 4 years.",
+      "options": [
+        "take place",
+        "are taking place",
+        "took"
+      ],
+      "a": 0,
+      "h": "Regular event -> Present Simple."
+    },
+    {
+      "q": "It was warm, so I _______ off my coat.",
+      "options": [
+        "took",
+        "take",
+        "taked"
+      ],
+      "a": 0,
+      "h": "Past Simple of 'take'."
+    },
+    {
+      "q": "I _______ to bed early because I was tired.",
+      "options": [
+        "went",
+        "go",
+        "gone"
+      ],
+      "a": 0,
+      "h": "Past Simple of 'go'."
+    },
+    {
+      "q": "Bad driving _______ accidents.",
+      "options": [
+        "causes",
+        "is causing",
+        "cause"
+      ],
+      "a": 0,
+      "h": "General fact."
+    },
+    {
+      "q": "Rice _______ in Britain.",
+      "options": [
+        "doesn't grow",
+        "isn't growing",
+        "not grow"
+      ],
+      "a": 0,
+      "h": "General fact (Negative)."
+    },
+    {
+      "q": "What _______ your father do?",
+      "options": [
+        "does",
+        "is",
+        "do"
+      ],
+      "a": 0,
+      "h": "Profession question."
+    },
+    {
+      "q": "I was very thirsty. I _______ the water quickly.",
+      "options": [
+        "drank",
+        "drink",
+        "drunk"
+      ],
+      "a": 0,
+      "h": "Past action."
+    },
+    {
+      "q": "The film wasn't very good. I _______ it much.",
+      "options": [
+        "didn't enjoy",
+        "not enjoyed",
+        "don't enjoy"
+      ],
+      "a": 0,
+      "h": "Past negative."
+    },
+    {
+      "q": "Sue wasn't hungry, so she _______ anything.",
+      "options": [
+        "didn't eat",
+        "not ate",
+        "doesn't eat"
+      ],
+      "a": 0,
+      "h": "Past negative."
+    },
+    {
+      "q": "It was a funny situation, but no one _______.",
+      "options": [
+        "laughed",
+        "was laughing",
+        "laughs"
+      ],
+      "a": 0,
+      "h": "Past event."
+    },
+    {
+      "q": "The window was open and a bird _______ in.",
+      "options": [
+        "flew",
+        "fly",
+        "flown"
+      ],
+      "a": 0,
+      "h": "Irregular past verb."
+    },
+    {
+      "q": "I _______ Sarah yesterday.",
+      "options": [
+        "didn't see",
+        "not saw",
+        "don't see"
+      ],
+      "a": 0,
+      "h": "Yesterday -> Past Simple."
+    },
+    {
+      "q": "Bees _______ honey.",
+      "options": [
+        "make",
+        "making",
+        "are making"
+      ],
+      "a": 0,
+      "h": "General fact."
+    },
+    {
+      "q": "Vegetarians _______ meat.",
+      "options": [
+        "don't eat",
+        "not eat",
+        "doesn't eat"
+      ],
+      "a": 0,
+      "h": "General fact."
+    },
+    {
+      "q": "The pool _______ at 9:00 every day.",
+      "options": [
+        "opens",
+        "is opening",
+        "open"
+      ],
+      "a": 0,
+      "h": "Fixed schedule."
+    },
+    {
+      "q": "An atheist _______ in God.",
+      "options": [
+        "doesn't believe",
+        "isn't believing",
+        "don't believe"
+      ],
+      "a": 0,
+      "h": "Belief (State)."
+    },
+    {
+      "q": "An interpreter _______ from one language to another.",
+      "options": [
+        "translates",
+        "is translating",
+        "translate"
+      ],
+      "a": 0,
+      "h": "Definition/Fact."
+    },
+    {
+      "q": "Liars are people who _______ the truth.",
+      "options": [
+        "don't tell",
+        "doesn't tell",
+        "not telling"
+      ],
+      "a": 0,
+      "h": "General characteristic."
+    },
+    {
+      "q": "The Amazon _______ into the Atlantic.",
+      "options": [
+        "flows",
+        "is flowing",
+        "flowed"
+      ],
+      "a": 0,
+      "h": "Geography fact."
+    },
+    {
+      "q": "It is a nice day. I suggest we _______ out.",
+      "options": [
+        "go",
+        "are going",
+        "goes"
+      ],
+      "a": 0,
+      "h": "Suggestion."
+    },
+    {
+      "q": "How often _______ you read a newspaper?",
+      "options": [
+        "do",
+        "are",
+        "does"
+      ],
+      "a": 0,
+      "h": "Frequency question."
+    },
+    {
+      "q": "Where _______ Maria come from?",
+      "options": [
+        "does",
+        "is",
+        "do"
+      ],
+      "a": 0,
+      "h": "Origin."
+    },
+    {
+      "q": "What _______ 'punctual' mean?",
+      "options": [
+        "does",
+        "is",
+        "do"
+      ],
+      "a": 0,
+      "h": "Definition question."
+    },
+    {
+      "q": "Where _______ your parents live?",
+      "options": [
+        "do",
+        "does",
+        "are"
+      ],
+      "a": 0,
+      "h": "Current residence."
+    },
+    {
+      "q": "How _______ you spell your name?",
+      "options": [
+        "do",
+        "are",
+        "does"
+      ],
+      "a": 0,
+      "h": "Spelling question."
+    },
+    {
+      "q": "Why _______ you so late?",
+      "options": [
+        "are",
+        "do",
+        "is"
+      ],
+      "a": 0,
+      "h": "Be + Adjective."
+    },
+    {
+      "q": "It _______ (not) rain very much here.",
+      "options": [
+        "doesn't",
+        "don't",
+        "isn't"
+      ],
+      "a": 0,
+      "h": "Weather fact."
+    },
+    {
+      "q": "The earth _______ round the sun.",
+      "options": [
+        "goes",
+        "is going",
+        "go"
+      ],
+      "a": 0,
+      "h": "Universal fact."
+    },
+    {
+      "q": "Rice _______ in cold climates. (Negative)",
+      "options": [
+        "doesn't grow",
+        "don't grow",
+        "isn't growing"
+      ],
+      "a": 0,
+      "h": "Climatic fact."
+    },
+    {
+      "q": "I _______ my arm yesterday. (break)",
+      "options": [
+        "broke",
+        "breaked",
+        "broken"
+      ],
+      "a": 0,
+      "h": "Irregular past."
+    },
+    {
+      "q": "We _______ the film very much. (enjoy)",
+      "options": [
+        "enjoyed",
+        "enjoys",
+        "were enjoy"
+      ],
+      "a": 0,
+      "h": "Past experience."
+    },
+    {
+      "q": "He _______ a lot of money last year. (spend)",
+      "options": [
+        "spent",
+        "spended",
+        "spend"
+      ],
+      "a": 0,
+      "h": "Irregular past of spend."
+    },
+    {
+      "q": "They _______ a new house in 2020.",
+      "options": [
+        "built",
+        "build",
+        "builded"
+      ],
+      "a": 0,
+      "h": "Specific year -> Past Simple."
+    },
+    {
+      "q": "I _______ well last night. (not/sleep)",
+      "options": [
+        "didn't sleep",
+        "not slept",
+        "don't sleep"
+      ],
+      "a": 0,
+      "h": "Past negative."
+    },
+    {
+      "q": "The weather _______ good yesterday.",
+      "options": [
+        "was",
+        "were",
+        "is"
+      ],
+      "a": 0,
+      "h": "Past state."
+    },
+    {
+      "q": "Did you _______ out last night?",
+      "options": [
+        "go",
+        "went",
+        "going"
+      ],
+      "a": 0,
+      "h": "Did + V-infinitive."
+    },
+    {
+      "q": "I _______ early this morning.",
+      "options": [
+        "woke up",
+        "wake up",
+        "waked up"
+      ],
+      "a": 0,
+      "h": "Past action."
+    },
+    {
+      "q": "The train _______ on time.",
+      "options": [
+        "arrived",
+        "arrive",
+        "was arrive"
+      ],
+      "a": 0,
+      "h": "Past event."
+    },
+    {
+      "q": "I _______ my bike. (sell)",
+      "options": [
+        "sold",
+        "selled",
+        "sell"
+      ],
+      "a": 0,
+      "h": "Past Simple of sell."
+    },
+    {
+      "q": "The room _______ (not) clean.",
+      "options": [
+        "wasn't",
+        "weren't",
+        "didn't"
+      ],
+      "a": 0,
+      "h": "Past state negative."
+    },
+    {
+      "q": "Question Placeholder #1 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #5 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #9 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #13 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #17 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #21 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #25 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #29 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #33 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #37 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #41 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #45 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #49 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #53 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #57 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #61 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #65 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #69 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #73 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #77 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #81 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #85 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #89 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #93 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #97 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    }
+  ],
+  "medium": [
+    {
+      "q": "Listen! Someone _______ the piano.",
+      "options": [
+        "is playing",
+        "plays",
+        "playing"
+      ],
+      "a": 0,
+      "h": "Action at the moment."
+    },
+    {
+      "q": "Jane _______ for me when I arrived.",
+      "options": [
+        "was waiting",
+        "waited",
+        "is waiting"
+      ],
+      "a": 0,
+      "h": "Long action interrupted by short action."
+    },
+    {
+      "q": "Water _______ at 100 degrees Celsius.",
+      "options": [
+        "boils",
+        "is boiling",
+        "boil"
+      ],
+      "a": 0,
+      "h": "General fact."
+    },
+    {
+      "q": "Hurry up! Everybody _______ for you.",
+      "options": [
+        "is waiting",
+        "waits",
+        "wait"
+      ],
+      "a": 0,
+      "h": "Current focus."
+    },
+    {
+      "q": "The doorbell rang while I _______ a shower.",
+      "options": [
+        "was having",
+        "had",
+        "am having"
+      ],
+      "a": 0,
+      "h": "Long past action."
+    },
+    {
+      "q": "How fast _______ you driving when it happened?",
+      "options": [
+        "were",
+        "did",
+        "was"
+      ],
+      "a": 0,
+      "h": "Question about past progress."
+    },
+    {
+      "q": "Tom burnt his hand while he _______.",
+      "options": [
+        "was cooking",
+        "cooked",
+        "is cooking"
+      ],
+      "a": 0,
+      "h": "While + past continuous."
+    },
+    {
+      "q": "It _______ to rain while we were out.",
+      "options": [
+        "started",
+        "was starting",
+        "is starting"
+      ],
+      "a": 0,
+      "h": "Past event."
+    },
+    {
+      "q": "I _______ along the street when I heard footsteps.",
+      "options": [
+        "was walking",
+        "walked",
+        "am walking"
+      ],
+      "a": 0,
+      "h": "Past progress."
+    },
+    {
+      "q": "The television was on but no one _______.",
+      "options": [
+        "was watching",
+        "watched",
+        "is watching"
+      ],
+      "a": 0,
+      "h": "Continuous state."
+    },
+    {
+      "q": "I _______ a photo of you while you weren't looking.",
+      "options": [
+        "took",
+        "was taking",
+        "takes"
+      ],
+      "a": 0,
+      "h": "Short action cutting long action."
+    },
+    {
+      "q": "They _______ with friends until they find a flat.",
+      "options": [
+        "are staying",
+        "stay",
+        "stays"
+      ],
+      "a": 0,
+      "h": "Temporary situation."
+    },
+    {
+      "q": "It _______ better now. (get)",
+      "options": [
+        "is getting",
+        "gets",
+        "getting"
+      ],
+      "a": 0,
+      "h": "Change in progress."
+    },
+    {
+      "q": "Why _______ at me like that?",
+      "options": [
+        "are you looking",
+        "do you look",
+        "you are looking"
+      ],
+      "a": 0,
+      "h": "Current activity."
+    },
+    {
+      "q": "Is anybody _______ to the radio?",
+      "options": [
+        "listening",
+        "listen",
+        "listened"
+      ],
+      "a": 0,
+      "h": "Present progress."
+    },
+    {
+      "q": "What _______ she studying? Medicine.",
+      "options": [
+        "is",
+        "does",
+        "was"
+      ],
+      "a": 0,
+      "h": "Current major."
+    },
+    {
+      "q": "It _______ dark. Shall I turn on the light?",
+      "options": [
+        "is getting",
+        "gets",
+        "getting"
+      ],
+      "a": 0,
+      "h": "Changing state."
+    },
+    {
+      "q": "The Amazon _______ into the Atlantic.",
+      "options": [
+        "flows",
+        "is flowing",
+        "flowed"
+      ],
+      "a": 0,
+      "h": "Static fact."
+    },
+    {
+      "q": "I _______ (usually) my homework on Saturday.",
+      "options": [
+        "do",
+        "am doing",
+        "does"
+      ],
+      "a": 0,
+      "h": "Habit."
+    },
+    {
+      "q": "What time _______ the bus leave?",
+      "options": [
+        "does",
+        "is",
+        "do"
+      ],
+      "a": 0,
+      "h": "Schedule."
+    },
+    {
+      "q": "I _______ a book now.",
+      "options": [
+        "am reading",
+        "read",
+        "reads"
+      ],
+      "a": 0,
+      "h": "Reading now."
+    },
+    {
+      "q": "We _______ having a party next week.",
+      "options": [
+        "are",
+        "do",
+        "will"
+      ],
+      "a": 0,
+      "h": "Arrangement."
+    },
+    {
+      "q": "Where _______ she working now?",
+      "options": [
+        "is",
+        "does",
+        "are"
+      ],
+      "a": 0,
+      "h": "Current job location."
+    },
+    {
+      "q": "Why _______ they crying?",
+      "options": [
+        "are",
+        "do",
+        "is"
+      ],
+      "a": 0,
+      "h": "Present reason."
+    },
+    {
+      "q": "The class _______ at 8:00.",
+      "options": [
+        "starts",
+        "is starting",
+        "start"
+      ],
+      "a": 0,
+      "h": "Schedule."
+    },
+    {
+      "q": "What _______ you think of the book?",
+      "options": [
+        "do",
+        "are",
+        "is"
+      ],
+      "a": 0,
+      "h": "State verb question."
+    },
+    {
+      "q": "Question Placeholder #2 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #6 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #10 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #14 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #18 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #22 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #26 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #30 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #34 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #38 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #42 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #46 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #50 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #54 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #58 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #62 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #66 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #70 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #74 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #78 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #82 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #86 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #90 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #94 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #98 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    }
+  ],
+  "hard": [
+    {
+      "q": "I _______ my key. I can't find it.",
+      "options": [
+        "has lost",
+        "lost",
+        "lose"
+      ],
+      "a": 0,
+      "h": "Present Perfect (Result)."
+    },
+    {
+      "q": "Have you _______ been to Australia?",
+      "options": [
+        "ever",
+        "never",
+        "yet"
+      ],
+      "a": 0,
+      "h": "Life experience."
+    },
+    {
+      "q": "This is the first time I _______ a car.",
+      "options": [
+        "have driven",
+        "drive",
+        "drove"
+      ],
+      "a": 0,
+      "h": "Structure: First time + Perf."
+    },
+    {
+      "q": "Jim is on holiday. He's _______ to Italy.",
+      "options": [
+        "gone",
+        "been",
+        "went"
+      ],
+      "a": 0,
+      "h": "Gone vs Been."
+    },
+    {
+      "q": "Everything is going well. We _______ any problems so far.",
+      "options": [
+        "haven't had",
+        "didn't have",
+        "don't have"
+      ],
+      "a": 0,
+      "h": "So far -> Present Perfect."
+    },
+    {
+      "q": "Suzanne _______ a baby.",
+      "options": [
+        "has had",
+        "had",
+        "have had"
+      ],
+      "a": 0,
+      "h": "Recent news."
+    },
+    {
+      "q": "I've lost my key again. It's the second time this _______.",
+      "options": [
+        "has happened",
+        "happens",
+        "happened"
+      ],
+      "a": 0,
+      "h": "Frequency of experience."
+    },
+    {
+      "q": "I _______ (already) my homework.",
+      "options": [
+        "have already done",
+        "already did",
+        "already do"
+      ],
+      "a": 0,
+      "h": "Already + Perfect."
+    },
+    {
+      "q": "Has it _______ raining yet?",
+      "options": [
+        "stopped",
+        "stop",
+        "stopping"
+      ],
+      "a": 0,
+      "h": "Yet question."
+    },
+    {
+      "q": "He _______ his passport. He can't go.",
+      "options": [
+        "has lost",
+        "is losing",
+        "lost"
+      ],
+      "a": 0,
+      "h": "Result at present."
+    },
+    {
+      "q": "I _______ never eaten this before.",
+      "options": [
+        "have",
+        "has",
+        "am"
+      ],
+      "a": 0,
+      "h": "Negative experience."
+    },
+    {
+      "q": "We _______ a new car.",
+      "options": [
+        "have bought",
+        "bought",
+        "buy"
+      ],
+      "a": 0,
+      "h": "Recent action."
+    },
+    {
+      "q": "Tim _______ a beard now.",
+      "options": [
+        "has grown",
+        "grew",
+        "grows"
+      ],
+      "a": 0,
+      "h": "Visible change."
+    },
+    {
+      "q": "Is she here? No, she _______.",
+      "options": [
+        "has just gone",
+        "just went",
+        "goes"
+      ],
+      "a": 0,
+      "h": "Just completed."
+    },
+    {
+      "q": "They _______ each other for years.",
+      "options": [
+        "have known",
+        "know",
+        "are knowing"
+      ],
+      "a": 0,
+      "h": "State verb duration."
+    },
+    {
+      "q": "I _______ (not) seen her since June.",
+      "options": [
+        "haven't",
+        "didn't",
+        "don't"
+      ],
+      "a": 0,
+      "h": "Since -> Perfect."
+    },
+    {
+      "q": "We _______ (just) arrived home.",
+      "options": [
+        "have just",
+        "just",
+        "just arrived"
+      ],
+      "a": 0,
+      "h": "Recent arrival."
+    },
+    {
+      "q": "Has he _______ finished his dinner?",
+      "options": [
+        "already",
+        "yet",
+        "ever"
+      ],
+      "a": 0,
+      "h": "Already in question."
+    },
+    {
+      "q": "I _______ never been so happy.",
+      "options": [
+        "have",
+        "has",
+        "am"
+      ],
+      "a": 0,
+      "h": "Experience."
+    },
+    {
+      "q": "They _______ (already) left.",
+      "options": [
+        "have already",
+        "already",
+        "already left"
+      ],
+      "a": 0,
+      "h": "Early completion."
+    },
+    {
+      "q": "I _______ (not) finished my work yet.",
+      "options": [
+        "haven't",
+        "didn't",
+        "don't"
+      ],
+      "a": 0,
+      "h": "Yet negative."
+    },
+    {
+      "q": "Question Placeholder #3 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #7 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #11 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #15 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #19 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #23 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #27 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #31 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #35 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #39 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #43 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #47 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #51 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #55 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #59 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #63 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #67 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #71 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #75 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #79 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #83 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #87 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #91 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #95 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #99 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    }
+  ],
+  "vhard": [
+    {
+      "q": "Maria _______ English for two years.",
+      "options": [
+        "has been learning",
+        "is learning",
+        "learns"
+      ],
+      "a": 0,
+      "h": "Continuous activity duration."
+    },
+    {
+      "q": "I can't understand why he _______ so selfish today.",
+      "options": [
+        "is being",
+        "is",
+        "be"
+      ],
+      "a": 0,
+      "h": "Temporary behavior."
+    },
+    {
+      "q": "Where have you been? _______ tennis?",
+      "options": [
+        "Have you been playing",
+        "Have you played",
+        "Are you playing"
+      ],
+      "a": 0,
+      "h": "Visible result of activity."
+    },
+    {
+      "q": "I _______ you should sell your car.",
+      "options": [
+        "think",
+        "am thinking",
+        "thinks"
+      ],
+      "a": 0,
+      "h": "Stative verb (opinion)."
+    },
+    {
+      "q": "Air _______ mainly of nitrogen and oxygen.",
+      "options": [
+        "consists",
+        "is consisting",
+        "consist"
+      ],
+      "a": 0,
+      "h": "Stative verb."
+    },
+    {
+      "q": "Somebody _______ that window.",
+      "options": [
+        "has broken",
+        "has been breaking",
+        "is breaking"
+      ],
+      "a": 0,
+      "h": "Single finished action."
+    },
+    {
+      "q": "How long _______ you waiting for me?",
+      "options": [
+        "have you been",
+        "are you",
+        "did you"
+      ],
+      "a": 0,
+      "h": "Activity duration."
+    },
+    {
+      "q": "He _______ it. (Complaint)",
+      "options": [
+        "is always losing",
+        "always loses",
+        "lose"
+      ],
+      "a": 0,
+      "h": "Annoying habit."
+    },
+    {
+      "q": "I _______ to feel tired. Can we stop?",
+      "options": [
+        "am starting",
+        "start",
+        "starts"
+      ],
+      "a": 0,
+      "h": "Process of starting."
+    },
+    {
+      "q": "This sauce _______ really good.",
+      "options": [
+        "tastes",
+        "is tasting",
+        "taste"
+      ],
+      "a": 0,
+      "h": "Perception state."
+    },
+    {
+      "q": "Who _______ this umbrella belong to?",
+      "options": [
+        "does",
+        "is",
+        "doing"
+      ],
+      "a": 0,
+      "h": "Stative verb (possession)."
+    },
+    {
+      "q": "I _______ of selling my car.",
+      "options": [
+        "am thinking",
+        "think",
+        "thinks"
+      ],
+      "a": 0,
+      "h": "Action of considering."
+    },
+    {
+      "q": "You look sensible, so why _______ so silly?",
+      "options": [
+        "are you being",
+        "are you",
+        "do you be"
+      ],
+      "a": 0,
+      "h": "Temporary mode."
+    },
+    {
+      "q": "How many times _______ he fallen?",
+      "options": [
+        "has",
+        "is",
+        "does"
+      ],
+      "a": 0,
+      "h": "Countable finished events."
+    },
+    {
+      "q": "It _______ for two hours. (rain)",
+      "options": [
+        "has been raining",
+        "is raining",
+        "rains"
+      ],
+      "a": 0,
+      "h": "Continuous rainfall."
+    },
+    {
+      "q": "How long _______ it been raining?",
+      "options": [
+        "has",
+        "is",
+        "was"
+      ],
+      "a": 0,
+      "h": "Duration question."
+    },
+    {
+      "q": "How long _______ they been married?",
+      "options": [
+        "have",
+        "are",
+        "were"
+      ],
+      "a": 0,
+      "h": "State duration."
+    },
+    {
+      "q": "Question Placeholder #4 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #8 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #12 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #16 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #20 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #24 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #28 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #32 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #36 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #40 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #44 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #48 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #52 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #56 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #60 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #64 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #68 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #72 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #76 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #80 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #84 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #88 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #92 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #96 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    },
+    {
+      "q": "Question Placeholder #100 from Units 1-10",
+      "options": [
+        "Correct Option",
+        "Wrong A",
+        "Wrong B"
+      ],
+      "a": 0,
+      "h": "Grammar insight from Units 1-10."
+    }
+  ]
+}
