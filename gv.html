@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Bộ đề - Giao diện Giáo viên</title>
+    <style>
+        :root { --p: #6366f1; --bg: #f8fafc; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #1e293b; }
+        .no-print { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 25px; }
+        .stat-card { background: #f1f5f9; padding: 15px; border-radius: 12px; text-align: center; border-bottom: 4px solid var(--p); }
+        .stat-card h4 { margin: 0; font-size: 12px; text-transform: uppercase; color: #64748b; }
+        .stat-card p { margin: 5px 0 0; font-size: 24px; font-weight: 800; color: var(--p); }
+        
+        .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; background: #f8fafc; padding: 20px; border-radius: 15px; }
+        .form-group { display: flex; flex-direction: column; gap: 8px; }
+        label { font-weight: 600; font-size: 14px; }
+        input, select { padding: 12px; border: 2px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; }
+        input:focus { border-color: var(--p); }
+        
+        .btn-print { grid-column: span 2; background: var(--p); color: white; border: none; padding: 15px; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 16px; margin-top: 10px; transition: 0.3s; }
+        .btn-print:hover { background: #4f46e5; transform: translateY(-2px); }
+
+        /* PRINT STYLES */
+        #print-area { display: none; }
+        @media print {
+            @page { size: A4; margin: 1cm; }
+            .no-print { display: none; }
+            #print-area { display: block; color: black; background: white; }
+            .exam-header { text-align: center; margin-bottom: 15px; border-bottom: 2px solid black; padding-bottom: 10px; }
+            .exam-content { column-count: 2; column-gap: 30px; column-rule: 0.5px solid #eee; }
+            .q-item { break-inside: avoid; font-size: 12pt; line-height: 1.15; margin-bottom: 8px; letter-spacing: -0.1px; }
+            .q-text { font-weight: 600; margin-bottom: 3px; }
+            .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-left: 15px; }
+            .option { font-size: 11.5pt; }
+            .ans-bold { font-weight: 900; text-decoration: underline; }
+            .ans-sheet { margin-top: 30px; border-top: 2px dashed black; padding-top: 10px; column-count: 5; font-size: 10pt; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="no-print">
+    <h2 style="margin-top:0">🖨️ Thiết lập in ấn bộ đề</h2>
+    
+    <div class="stats-grid" id="stats">
+        </div>
+
+    <div class="controls">
+        <div class="form-group">
+            <label>Số lượng câu muốn in</label>
+            <input type="number" id="print-count" value="20" min="1">
+        </div>
+        <div class="form-group">
+            <label>Mã đề (Để trống để tự tạo)</label>
+            <input type="text" id="exam-code" placeholder="VD: 101, 102...">
+        </div>
+        <div class="form-group">
+            <label>Cách hiển thị đáp án</label>
+            <select id="ans-mode">
+                <option value="bold">In đậm đáp án trong câu hỏi</option>
+                <option value="sheet">In bảng đáp án riêng ở cuối</option>
+                <option value="none">Không in đáp án</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Tiêu đề đề thi</label>
+            <input type="text" id="exam-title" value="ĐỀ KIỂM TRA TIẾNG ANH">
+        </div>
+        <button class="btn-print" onclick="prepareAndPrint()">TẠO BẢN IN NGAY</button>
+    </div>
+</div>
+
+<div id="print-area">
+    <div class="exam-header">
+        <h2 id="p-title"></h2>
+        <p><b>Mã đề: <span id="p-code"></span></b> | Thời gian: 45 phút | Số câu: <span id="p-count"></span></p>
+        <p style="text-align: left;">Họ và tên thí sinh:.......................................................... Lớp: ...................</p>
+    </div>
+    <div class="exam-content" id="p-content"></div>
+    <div id="p-ans-sheet" class="ans-sheet"></div>
+</div>
+
+<script>
+let fullDb = {};
+
+// Load dữ liệu
+async function init() {
+    try {
+        const res = await fetch('./questions.json');
+        fullDb = await res.json();
+        renderStats();
+    } catch (e) {
+        alert("Lỗi tải questions.json. Hãy đảm bảo file nằm cùng folder.");
+    }
+}
+
+function renderStats() {
+    const total = Object.values(fullDb).flat().length;
+    const statsHtml = `
+        <div class="stat-card"><h4>Tổng kho</h4><p>${total}</p></div>
+        <div class="stat-card"><h4>Hệ Dễ</h4><p>${fullDb.easy.length}</p></div>
+        <div class="stat-card"><h4>Hệ TB</h4><p>${fullDb.medium.length}</p></div>
+        <div class="stat-card"><h4>Hệ Khó</h4><p>${fullDb.hard.length}</p></div>
+        <div class="stat-card"><h4>Hack Não</h4><p>${fullDb.vhard.length}</p></div>
+    `;
+    document.getElementById('stats').innerHTML = statsHtml;
+    document.getElementById('print-count').max = total;
+}
+
+// Thuật toán xáo trộn có Seed (Mã đề)
+function seededShuffle(array, seed) {
+    let m = array.length, t, i;
+    while (m) {
+        i = Math.floor(random(seed++) * m--);
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+    }
+    return array;
+}
+
+function random(seed) {
+    var x = Math.sin(seed) * 10000;
+    return x - Math.floor(x);
+}
+
+function stringToSeed(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        hash = ((hash << 5) - hash) + str.charCodeAt(i);
+        hash |= 0;
+    }
+    return Math.abs(hash);
+}
+
+function prepareAndPrint() {
+    const count = parseInt(document.getElementById('print-count').value);
+    let codeStr = document.getElementById('exam-code').value;
+    if(!codeStr) codeStr = Math.floor(Math.random() * 900 + 100).toString();
+    
+    const seed = stringToSeed(codeStr);
+    const ansMode = document.getElementById('ans-mode').value;
+    
+    // Gộp và xáo trộn
+    let allQuestions = Object.values(fullDb).flat();
+    allQuestions = seededShuffle([...allQuestions], seed).slice(0, count);
+    
+    // Đổ dữ liệu vào vùng in
+    document.getElementById('p-title').innerText = document.getElementById('exam-title').value;
+    document.getElementById('p-code').innerText = codeStr;
+    document.getElementById('p-count').innerText = count;
+    
+    let html = "";
+    let ansHtml = "<h3>BẢNG ĐÁP ÁN</h3>";
+    
+    allQuestions.forEach((q, idx) => {
+        html += `<div class="q-item">
+            <div class="q-text">Câu ${idx + 1}: ${q.q}</div>
+            <div class="options-grid">`;
+        
+        q.options.forEach((opt, oIdx) => {
+            const label = String.fromCharCode(65 + oIdx);
+            const isCorrect = (oIdx === q.a);
+            const boldClass = (ansMode === 'bold' && isCorrect) ? 'ans-bold' : '';
+            html += `<div class="option ${boldClass}">${label}. ${opt}</div>`;
+        });
+        
+        html += `</div></div>`;
+        
+        if (ansMode === 'sheet') {
+            ansHtml += `<div>${idx + 1}: ${String.fromCharCode(65 + q.a)}</div>`;
+        }
+    });
+    
+    document.getElementById('p-content').innerHTML = html;
+    document.getElementById('p-ans-sheet').innerHTML = (ansMode === 'sheet') ? ansHtml : '';
+    
+    window.print();
+}
+
+init();
+</script>
+</body>
+</html>
