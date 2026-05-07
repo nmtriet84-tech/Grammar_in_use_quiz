@@ -2,130 +2,143 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Grammar in use - Pro Max</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar in use - Pro Ultra Edition</title>
     <style>
         :root { --primary: #6366f1; --secondary: #a855f7; --easy: #22c55e; --medium: #eab308; --hard: #f97316; --vhard: #ef4444; --bg: #f8fafc; }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 10px; }
-        .quiz-card { background: white; width: 100%; max-width: 650px; padding: 30px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 10px; }
+        .quiz-card { background: white; width: 100%; max-width: 700px; padding: 35px; border-radius: 30px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1); position: relative; }
         h1 { background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 2.5rem; margin: 0; font-weight: 800; }
-        .leaderboard { background: #f1f5f9; padding: 20px; border-radius: 15px; margin: 20px 0; font-size: 14px; }
-        .top-item { display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 5px 0; }
-        #timer { background: var(--vhard); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; }
-        .option-btn { width: 100%; padding: 15px; margin: 8px 0; border: 2px solid #f1f5f9; border-radius: 12px; cursor: pointer; text-align: left; transition: 0.3s; }
-        .option-btn.correct { background: #dcfce7; border-color: var(--easy); font-weight: bold; }
-        .option-btn.wrong { background: #fee2e2; border-color: var(--vhard); }
-        .hint-box { margin-top: 15px; padding: 15px; background: #fffbeb; border-left: 5px solid #fbbf24; border-radius: 8px; display: none; font-size: 0.9rem; }
-        .btn-main { width: 100%; padding: 15px; background: var(--primary); color: white; border: none; border-radius: 50px; font-weight: bold; cursor: pointer; font-size: 1.1rem; }
+        .db-stats { display: flex; justify-content: space-around; margin: 20px 0; gap: 10px; flex-wrap: wrap; }
+        .stat-badge { padding: 8px 12px; border-radius: 12px; font-size: 11px; font-weight: bold; color: white; text-align: center; flex: 1; min-width: 80px; }
+        .leaderboard { background: #f1f5f9; padding: 20px; border-radius: 20px; margin: 20px 0; border: 1px solid #e2e8f0; }
+        .top-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e2e8f0; font-size: 14px; font-weight: 500; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        #timer { font-size: 22px; font-weight: 800; color: white; background: var(--vhard); padding: 8px 20px; border-radius: 50px; min-width: 45px; text-align: center; }
+        .progress-bar { height: 10px; background: #f1f5f9; border-radius: 5px; margin-bottom: 25px; overflow: hidden; }
+        #progress-fill { height: 100%; background: linear-gradient(to right, var(--primary), var(--secondary)); width: 0%; transition: 0.5s; }
+        .option-btn { width: 100%; padding: 16px; border: 2px solid #f1f5f9; border-radius: 15px; background: #f8fafc; cursor: pointer; text-align: left; font-size: 16px; margin-bottom: 10px; transition: 0.3s; }
+        .option-btn:hover:not(.disabled) { border-color: var(--primary); background: #f5f3ff; transform: translateX(5px); }
+        .option-btn.correct { border-color: var(--easy) !important; background: #f0fdf4 !important; color: #166534; font-weight: bold; }
+        .option-btn.wrong { border-color: var(--vhard) !important; background: #fef2f2 !important; color: #991b1b; }
+        .hint-box { margin-top: 15px; padding: 15px; background: #fffbeb; border-radius: 12px; font-size: 0.95rem; display: none; border-left: 5px solid #fbbf24; line-height: 1.5; }
+        .btn-action { background: var(--primary); color: white; border: none; padding: 18px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: 0.3s; width: 100%; font-size: 18px; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); justify-content: center; align-items: center; z-index: 1000; backdrop-filter: blur(8px); }
+        .modal-content { background: white; padding: 35px; border-radius: 35px; text-align: center; width: 90%; max-width: 500px; }
     </style>
 </head>
 <body>
 
 <div class="quiz-card" id="setup-screen">
     <h1>Grammar in use</h1>
-    <div id="welcome" style="text-align:center; margin-top: 10px; font-weight: 600;"></div>
-    <div class="leaderboard">
-        <h4 style="text-align:center; margin-top:0">🏆 TOP 5 CHIẾN THẦN</h4>
-        <div id="top-list">Đang tải bảng xếp hạng...</div>
+    <div class="db-stats">
+        <div class="stat-badge" style="background:var(--easy)">HỆ DỄ<br><span id="cnt-easy">...</span> câu</div>
+        <div class="stat-badge" style="background:var(--medium)">HỆ TB<br><span id="cnt-med">...</span> câu</div>
+        <div class="stat-badge" style="background:var(--hard)">HỆ PRO<br><span id="cnt-hard">...</span> câu</div>
+        <div class="stat-badge" style="background:var(--vhard)">HỆ HACK<br><span id="cnt-vhard">...</span> câu</div>
     </div>
-    <input type="text" id="user-name" placeholder="Nhập tên của bạn..." style="width:100%; padding:15px; margin-bottom:20px; border-radius:12px; border:1px solid #ddd; text-align:center">
-    <button class="btn-main" onclick="startQuiz()">BẮT ĐẦU THỬ THÁCH</button>
+    <div id="welcome-msg" style="text-align:center; margin: 10px 0; font-weight: 600; color: #475569;"></div>
+    <div class="leaderboard"><h3 style="text-align:center; margin-top:0; color: var(--primary);">🏆 CHIẾN THẦN TOP 5</h3><div id="top-list">Đang kết nối database...</div></div>
+    <div class="input-group" id="name-input-area"><input type="text" id="student-name" placeholder="Nickname của bạn..." style="width: 80%; padding: 15px; border: 2px solid #e2e8f0; border-radius: 15px; font-size: 18px; outline: none; text-align: center;"></div>
+    <button class="btn-action" onclick="startQuiz()">BẮT ĐẦU ÔN TẬP</button>
 </div>
 
 <div class="quiz-card" id="quiz-screen" style="display:none">
-    <div style="display:flex; justify-content:space-between; margin-bottom:15px">
-        <span id="counter" style="font-weight:bold"></span>
-        <span id="timer">15</span>
-    </div>
-    <div id="question" style="font-size:1.2rem; font-weight:600; margin-bottom:20px"></div>
-    <div id="options"></div>
+    <div class="header"><span id="q-counter" style="font-weight:700; color:#64748b;"></span><div id="timer-box"><span id="timer">15</span></div></div>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+    <div id="question" style="font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; color: #1e293b;"></div>
+    <div id="options" class="options-grid"></div>
     <div id="hint" class="hint-box"></div>
-    <div id="review-nav" style="display:none; margin-top:20px; text-align:center">
-        <button onclick="navReview(-1)">Câu trước</button> <button onclick="navReview(1)">Câu sau</button>
-        <p><button onclick="location.reload()" style="background:none; border:none; color:var(--primary); cursor:pointer">Thoát xem lại</button></p>
-    </div>
+    <div id="review-nav" style="display:none; justify-content: space-between; margin-top: 20px; gap: 10px;"><button onclick="navReview(-1)" class="btn-action" style="background:#64748b; padding: 12px; width: 45%;">Câu trước</button><button onclick="navReview(1)" class="btn-action" style="padding: 12px; width: 45%;">Câu sau</button></div>
+    <div id="exit-review" style="display:none; text-align:center; margin-top: 20px;"><button onclick="location.reload()" style="background:none; border:none; color:var(--primary); font-weight:bold; cursor:pointer; font-size: 16px;">Thoát xem lại</button></div>
 </div>
 
-<div class="modal" id="result-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000">
-    <div style="background:white; padding:40px; border-radius:30px; text-align:center; max-width:400px; width:90%">
-        <h2 id="msg"></h2>
-        <div id="score" style="font-size:3rem; font-weight:900; color:var(--primary); margin:20px 0"></div>
-        <div id="info" style="text-align:left; margin-bottom:20px; font-size:0.9rem"></div>
-        <button class="btn-main" onclick="openReview()" style="background:var(--secondary); margin-bottom:10px">XEM LẠI BÀI</button>
-        <button class="btn-main" onclick="location.reload()">LÀM TIẾP LẦN SAU</button>
-    </div>
-</div>
+<div class="modal" id="result-modal"><div class="modal-content"><h2 id="result-title" style="margin:0; font-size: 1.8rem;">KẾT QUẢ</h2><div id="result-score" style="font-size: 60px; font-weight: 900; color: var(--primary); margin: 15px 0;"></div><div id="result-info" style="text-align:left; background:#f8fafc; padding:20px; border-radius:20px; margin-bottom:20px; font-size: 0.95rem; line-height: 1.6;"></div><button class="btn-action" style="background:var(--secondary); margin-bottom: 12px;" onclick="openReview()">XEM LẠI BÀI</button><button class="btn-action" onclick="location.reload()">HỌC TIẾP</button></div></div>
 
 <script>
-const URL = 'https://script.google.com/macros/s/AKfycbxred1fOkNnb2LRaKMskMdHczZdA9vo-IMuqwkqHNa0Xi045oHb8l8kVkkrs4B0IMwQ/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxred1fOkNnb2LRaKMskMdHczZdA9vo-IMuqwkqHNa0Xi045oHb8l8kVkkrs4B0IMwQ/exec';
+let db = {};
 
-const db = {
-    easy: [
-        {q: "Look! The bus _______.", options: ["is coming", "comes", "are coming"], a: 0, h: "💡 (Unit 1) Dùng am/is/are + V-ing khi có từ nhận biết 'Look!'."},
-        {q: "I never _______ coffee.", options: ["drink", "am drinking", "drinks"], a: 0, h: "💡 (Unit 2) Hiện tại đơn diễn tả thói quen với trạng từ tần suất 'never'."}
-    ],
-    medium: [
-        {q: "Listen! Someone _______ the piano.", options: ["is playing", "plays", "playing"], a: 0, h: "💡 (Unit 3) Hiện tại tiếp diễn cho hành động đang diễn ra ngay lúc nói."},
-        {q: "Jane _______ for me when I arrived.", options: ["was waiting", "waited", "is waiting"], a: 0, h: "💡 (Unit 6) Quá khứ tiếp diễn cho hành động đang xảy ra thì có việc khác xen vào."}
-    ],
-    hard: [
-        {q: "I _______ my key. I can't find it anywhere.", options: ["has lost", "lost", "lose"], a: 0, h: "💡 (Unit 7) Hiện tại hoàn thành cho việc vừa xảy ra và để lại kết quả hiện tại."},
-        {q: "Have you _______ been to Australia?", options: ["ever", "never", "yet"], a: 0, h: "💡 (Unit 8) Dùng 'ever' để hỏi về trải nghiệm tính đến thời điểm hiện tại."}
-    ],
-    vhard: [
-        {q: "Maria _______ English for two years.", options: ["has been learning", "is learning", "learns"], a: 0, h: "💡 (Unit 9) Nhấn mạnh tính liên tục của hành động kéo dài dùng Hiện tại hoàn thành tiếp diễn."},
-        {q: "I _______ you should sell your car.", options: ["think", "am thinking", "thinks"], a: 0, h: "💡 (Unit 4) Động từ trạng thái 'think' (ý kiến) không dùng ở thì tiếp diễn."}
-    ]
-};
+// Hàm tải database từ tệp JSON bên ngoài
+async function loadDatabase() {
+    try {
+        const response = await fetch('./questions.json');
+        if (!response.ok) throw new Error('File not found');
+        db = await response.json();
+        document.getElementById('cnt-easy').innerText = db.easy.length;
+        document.getElementById('cnt-med').innerText = db.medium.length;
+        document.getElementById('cnt-hard').innerText = db.hard.length;
+        document.getElementById('cnt-vhard').innerText = db.vhard.length;
+    } catch (e) {
+        alert("Lỗi: Không tìm thấy questions.json! Hãy đảm bảo file này nằm cùng thư mục với index.html.");
+    }
+}
 
-let quiz = [], userAns = [], current = 0, score = 0, timer, startT, name = "", isReview = false;
+let quizQuestions = [], userAnswers = [], currentIndex = 0, score = 0, timer, startTime, studentName = "", isReview = false;
 
 window.onload = async () => {
-    const saved = localStorage.getItem('name');
-    if (saved) {
-        name = saved;
-        document.getElementById('user-name').style.display = 'none';
-        document.getElementById('welcome').innerText = `Chào mừng trở lại, ${name}!`;
+    await loadDatabase();
+    const savedName = localStorage.getItem('studentName');
+    if (savedName) {
+        studentName = savedName;
+        document.getElementById('name-input-area').style.display = 'none';
+        document.getElementById('welcome-msg').innerText = `Chào mừng trở lại, ${savedName}! 🔥`;
     }
-    try {
-        const res = await fetch(URL);
-        const top = await res.json();
-        document.getElementById('top-list').innerHTML = top.map((u, i) => `<div class="top-item"><span>#${i+1} ${u.name}</span><span>${u.score}đ (Hạng ${u.rank})</span></div>`).join('') || "Chưa có dữ liệu.";
-    } catch (e) { document.getElementById('top-list').innerText = "Lỗi tải bảng xếp hạng."; }
+    loadLeaderboard();
 };
 
-function shuffle(a) { return a.sort(() => 0.5 - Math.random()); }
+async function loadLeaderboard() {
+    try {
+        const response = await fetch(SCRIPT_URL);
+        const topData = await response.json();
+        document.getElementById('top-list').innerHTML = topData.map((u, i) => `
+            <div class="top-item"><span>#${i+1} ${u.name}</span><span style="font-weight:bold; color:var(--primary)">${u.score}đ (Hạng ${u.rank})</span></div>
+        `).join('') || "Chưa có dữ liệu.";
+    } catch (e) { document.getElementById('top-list').innerText = "Không thể tải BXH."; }
+}
+
+function shuffle(arr) { return arr.sort(() => Math.random() - 0.5); }
 
 function startQuiz() {
-    if (!name) {
-        name = document.getElementById('user-name').value.trim();
-        if (!name) return alert("Vui lòng nhập tên!");
-        localStorage.setItem('name', name);
+    if (!studentName) {
+        studentName = document.getElementById('student-name').value.trim();
+        if (!studentName) return alert("Nickname là bắt buộc!");
+        localStorage.setItem('studentName', studentName);
     }
     document.getElementById('setup-screen').style.display = 'none';
     document.getElementById('quiz-screen').style.display = 'block';
+
+    let lastMissed = parseInt(localStorage.getItem('lastMissed') || 0);
+    const total = 20 + lastMissed;
     
-    let extra = parseInt(localStorage.getItem('extra') || 0);
-    const total = 20 + extra;
-    
-    quiz = [
-        ...shuffle([...db.easy]).slice(0, Math.round(total*0.4)),
-        ...shuffle([...db.medium]).slice(0, Math.round(total*0.3)),
-        ...shuffle([...db.hard]).slice(0, Math.round(total*0.2)),
-        ...shuffle([...db.vhard]).slice(0, Math.round(total*0.1))
+    // Tỉ lệ 40:30:20:10
+    const counts = {
+        easy: Math.max(Math.round(total * 0.4), 1),
+        medium: Math.max(Math.round(total * 0.3), 1),
+        hard: Math.max(Math.round(total * 0.2), 1),
+        vhard: Math.max(Math.round(total * 0.1), 1)
+    };
+
+    quizQuestions = [
+        ...shuffle([...db.easy]).slice(0, counts.easy),
+        ...shuffle([...db.medium]).slice(0, counts.medium),
+        ...shuffle([...db.hard]).slice(0, counts.hard),
+        ...shuffle([...db.vhard]).slice(0, counts.vhard)
     ];
-    shuffle(quiz);
-    startT = new Date();
-    show();
+    
+    shuffle(quizQuestions);
+    startTime = new Date();
+    showQuestion();
 }
 
-function show() {
-    if (current >= quiz.length) return endQuiz();
-    const q = quiz[current];
-    document.getElementById('counter').innerText = `CÂU ${current + 1}/${quiz.length}`;
-    document.getElementById('progress-fill')?.style.setProperty('width', `${(current/quiz.length)*100}%`);
+function showQuestion() {
+    if (currentIndex >= quizQuestions.length) return endQuiz();
+    const q = quizQuestions[currentIndex];
+    document.getElementById('q-counter').innerText = `STEP ${currentIndex + 1}/${quizQuestions.length}`;
+    document.getElementById('progress-fill').style.width = `${(currentIndex / quizQuestions.length) * 100}%`;
     document.getElementById('question').innerText = q.q;
-    const optArea = document.getElementById('options');
-    optArea.innerHTML = '';
+    const optDiv = document.getElementById('options');
+    optDiv.innerHTML = '';
     
     if (!q.shuffled) { q.shuffled = q.options.map((t, i) => ({t, id: i})); shuffle(q.shuffled); }
 
@@ -134,12 +147,13 @@ function show() {
         btn.className = 'option-btn';
         btn.innerText = opt.t;
         if (isReview) {
+            btn.classList.add('disabled');
             if (opt.id === q.a) btn.classList.add('correct');
-            if (userAns[current] === opt.id && opt.id !== q.a) btn.classList.add('wrong');
+            if (userAnswers[currentIndex] === opt.id && opt.id !== q.a) btn.classList.add('wrong');
             document.getElementById('hint').style.display = 'block';
             document.getElementById('hint').innerText = q.h;
-        } else { btn.onclick = () => select(opt.id); }
-        optArea.appendChild(btn);
+        } else { btn.onclick = () => selectOption(opt.id); }
+        optDiv.appendChild(btn);
     });
 
     if (!isReview) {
@@ -148,34 +162,32 @@ function show() {
         clearInterval(timer);
         timer = setInterval(() => {
             left--; document.getElementById('timer').innerText = left;
-            if (left <= 0) select(-1);
+            if (left <= 0) selectOption(-1);
         }, 1000);
     }
 }
 
-function select(id) {
-    userAns[current] = id;
-    if (id === quiz[current].a) score++;
-    current++; show();
+function selectOption(id) {
+    userAnswers[currentIndex] = id;
+    if (id === quizQuestions[currentIndex].a) score++;
+    currentIndex++;
+    showQuestion();
 }
 
 function endQuiz() {
     clearInterval(timer);
-    const dur = Math.floor((new Date() - startT) / 1000);
-    const missed = quiz.length - score;
-    localStorage.setItem('extra', missed);
-    const finalScore = ((score / quiz.length) * 10).toFixed(1);
-
+    const duration = Math.floor((new Date() - startTime) / 1000);
+    const missed = quizQuestions.length - score;
+    localStorage.setItem('lastMissed', missed);
+    const finalScore = ((score / quizQuestions.length) * 10).toFixed(1);
     document.getElementById('result-modal').style.display = 'flex';
-    document.getElementById('score').innerText = `${finalScore}đ`;
-    document.getElementById('msg').innerText = finalScore >= 8 ? "QUÁ CHÁY! 🔥" : "XU CÀ NA! 💀";
-    document.getElementById('info').innerHTML = `✅ Đúng: ${score}/${quiz.length}<br>⏳ Thời gian: ${dur}s<br>⚠️ Sai (Tăng đề lần sau): ${missed} câu`;
-    
-    fetch(URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify({timestamp: new Date().toLocaleString('vi-VN'), name: name, score: finalScore, duration: dur, details: `Đúng ${score}/${quiz.length}`})});
+    document.getElementById('result-score').innerText = `${finalScore}đ`;
+    document.getElementById('result-info').innerHTML = `✅ Đúng: ${score}/${quizQuestions.length}<br>⏳ Thời gian: ${duration}s<br>⚠️ Sai: ${missed} câu (Lượt tới tăng đề)`;
+    fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify({timestamp: new Date().toLocaleString('vi-VN'), name: studentName, score: finalScore, duration: duration, details: `Đúng ${score}/${quizQuestions.length}`})});
 }
 
-function openReview() { isReview = true; current = 0; document.getElementById('result-modal').style.display = 'none'; document.getElementById('timer').parentNode.style.display = 'none'; document.getElementById('review-nav').style.display = 'block'; show(); }
-function navReview(n) { current += n; if (current < 0) current = 0; if (current >= quiz.length) current = quiz.length - 1; show(); }
+function openReview() { isReview = true; currentIndex = 0; document.getElementById('result-modal').style.display = 'none'; document.getElementById('timer-box').style.display = 'none'; document.getElementById('review-nav').style.display = 'flex'; document.getElementById('exit-review').style.display = 'block'; showQuestion(); }
+function navReview(n) { currentIndex += n; if (currentIndex < 0) currentIndex = 0; if (currentIndex >= quizQuestions.length) currentIndex = quizQuestions.length - 1; showQuestion(); }
 </script>
 </body>
 </html>
