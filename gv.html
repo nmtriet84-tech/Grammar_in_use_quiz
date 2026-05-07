@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý Bộ đề - Giao diện Giáo viên</title>
+    <title>Quản lý Bộ đề - Giao diện In ấn Giáo viên</title>
     <style>
-        :root { --p: #6366f1; --bg: #f8fafc; }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #1e293b; }
-        .no-print { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 25px; }
+        :root { --p: #6366f1; --bg: #f8fafc; --print-fz: 12pt; }
+        body { font-family: 'Times New Roman', Times, serif; background: var(--bg); margin: 0; padding: 20px; color: #000; }
+        
+        /* GIAO DIỆN CÀI ĐẶT (KHÔNG IN) */
+        .no-print { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); font-family: 'Segoe UI', sans-serif; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-bottom: 25px; }
         .stat-card { background: #f1f5f9; padding: 15px; border-radius: 12px; text-align: center; border-bottom: 4px solid var(--p); }
         .stat-card h4 { margin: 0; font-size: 12px; text-transform: uppercase; color: #64748b; }
         .stat-card p { margin: 5px 0 0; font-size: 24px; font-weight: 800; color: var(--p); }
@@ -22,107 +24,110 @@
         .btn-print { grid-column: span 2; background: var(--p); color: white; border: none; padding: 15px; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 16px; margin-top: 10px; transition: 0.3s; }
         .btn-print:hover { background: #4f46e5; transform: translateY(-2px); }
 
-        /* PRINT STYLES */
+        /* ĐỊNH DẠNG BẢN IN (TỐI ƯU TIẾT KIỆM GIẤY) */
         #print-area { display: none; }
         @media print {
-            @page { size: A4; margin: 1cm; }
+            @page { size: A4; margin: 10mm 10mm 15mm 10mm; } /* Lề cực sát biên */
             .no-print { display: none; }
-            #print-area { display: block; color: black; background: white; }
-            .exam-header { text-align: center; margin-bottom: 15px; border-bottom: 2px solid black; padding-bottom: 10px; }
-            .exam-content { column-count: 2; column-gap: 30px; column-rule: 0.5px solid #eee; }
-            .q-item { break-inside: avoid; font-size: 12pt; line-height: 1.15; margin-bottom: 8px; letter-spacing: -0.1px; }
-            .q-text { font-weight: 600; margin-bottom: 3px; }
-            .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-left: 15px; }
-            .option { font-size: 11.5pt; }
+            #print-area { display: block; width: 100%; }
+            
+            /* Header đề thi */
+            .exam-header { display: flex; justify-content: space-between; border-bottom: 2px solid black; padding-bottom: 10px; margin-bottom: 12px; font-size: var(--print-fz); }
+            .header-left, .header-right { text-align: center; }
+            .header-left { width: 40%; font-weight: bold; }
+            .header-right { width: 60%; }
+            .exam-title { font-size: calc(var(--print-fz) + 2pt); font-weight: bold; margin: 5px 0; text-transform: uppercase;}
+            
+            /* Box điền tên */
+            .student-info { margin-bottom: 15px; font-size: calc(var(--print-fz) - 1pt); }
+            
+            /* Nội dung 2 cột khít nhau */
+            .exam-content { column-count: 2; column-gap: 8mm; column-rule: 0.5px solid #ccc; }
+            
+            /* Định dạng câu hỏi chữ gần */
+            .q-item { break-inside: avoid; font-size: var(--print-fz); line-height: 1.15; margin-bottom: 8px; letter-spacing: -0.15px; text-align: justify;}
+            .q-text { font-weight: bold; margin-bottom: 2px; }
+            .options-grid { display: flex; flex-direction: column; margin-left: 10px; gap: 1px;}
+            .option { font-size: calc(var(--print-fz) - 0.5pt); }
+            
+            /* Highlight đáp án */
             .ans-bold { font-weight: 900; text-decoration: underline; }
-            .ans-sheet { margin-top: 30px; border-top: 2px dashed black; padding-top: 10px; column-count: 5; font-size: 10pt; }
+            
+            /* Trang đáp án riêng biệt */
+            .page-break { page-break-before: always; }
+            .ans-sheet-wrapper { text-align: center; margin-top: 20px; }
+            .ans-sheet-title { font-size: calc(var(--print-fz) + 4pt); font-weight: bold; margin-bottom: 20px; text-transform: uppercase;}
+            .ans-sheet { column-count: 5; font-size: calc(var(--print-fz) + 1pt); text-align: left; }
+            .ans-item { margin-bottom: 5px; font-weight: bold; }
         }
     </style>
 </head>
 <body>
 
 <div class="no-print">
-    <h2 style="margin-top:0">🖨️ Thiết lập in ấn bộ đề</h2>
+    <h2 style="margin-top:0; color:var(--p)">🖨️ TRÌNH TẠO ĐỀ THI BẢN IN (TỐI ƯU HÓA)</h2>
     
     <div class="stats-grid" id="stats">
         </div>
 
     <div class="controls">
         <div class="form-group">
-            <label>Số lượng câu muốn in</label>
-            <input type="number" id="print-count" value="20" min="1">
+            <label>Số lượng câu cần in</label>
+            <input type="number" id="print-count" value="40" min="1">
         </div>
         <div class="form-group">
-            <label>Mã đề (Để trống để tự tạo)</label>
-            <input type="text" id="exam-code" placeholder="VD: 101, 102...">
+            <label>Mã đề (Bỏ trống = Tạo ngẫu nhiên)</label>
+            <input type="text" id="exam-code" placeholder="VD: 101, A01...">
         </div>
         <div class="form-group">
-            <label>Cách hiển thị đáp án</label>
+            <label>Cỡ chữ in (Font size)</label>
+            <input type="number" id="font-size" value="12" min="9" max="16" step="0.5">
+        </div>
+        <div class="form-group">
+            <label>Hiển thị đáp án</label>
             <select id="ans-mode">
-                <option value="bold">In đậm đáp án trong câu hỏi</option>
-                <option value="sheet">In bảng đáp án riêng ở cuối</option>
-                <option value="none">Không in đáp án</option>
+                <option value="sheet">In Bảng đáp án (Sang trang mới)</option>
+                <option value="bold">In đậm đáp án thẳng vào câu hỏi</option>
+                <option value="none">Chỉ in đề (Không đáp án)</option>
             </select>
         </div>
-        <div class="form-group">
-            <label>Tiêu đề đề thi</label>
-            <input type="text" id="exam-title" value="ĐỀ KIỂM TRA TIẾNG ANH">
+        <div class="form-group" style="grid-column: span 2;">
+            <label>Tên bài kiểm tra</label>
+            <input type="text" id="exam-title" value="ĐỀ KIỂM TRA MÔN TIẾNG ANH">
         </div>
-        <button class="btn-print" onclick="prepareAndPrint()">TẠO BẢN IN NGAY</button>
+        <button class="btn-print" onclick="prepareAndPrint()">TẠO BẢN IN</button>
     </div>
 </div>
 
 <div id="print-area">
     <div class="exam-header">
-        <h2 id="p-title"></h2>
-        <p><b>Mã đề: <span id="p-code"></span></b> | Thời gian: 45 phút | Số câu: <span id="p-count"></span></p>
-        <p style="text-align: left;">Họ và tên thí sinh:.......................................................... Lớp: ...................</p>
+        <div class="header-left">
+            TRƯỜNG / TRUNG TÂM<br>
+            TỔ NGOẠI NGỮ
+        </div>
+        <div class="header-right">
+            <div class="exam-title" id="p-title">ĐỀ KIỂM TRA</div>
+            Thời gian làm bài: 45 phút<br>
+            <b>Mã đề thi: <span id="p-code"></span></b>
+        </div>
     </div>
+    
+    <div class="student-info">
+        Họ, tên thí sinh:..................................................................... Lớp: .............................
+    </div>
+
     <div class="exam-content" id="p-content"></div>
-    <div id="p-ans-sheet" class="ans-sheet"></div>
+    
+    <div id="p-ans-wrapper" class="ans-sheet-wrapper"></div>
 </div>
 
 <script>
 let fullDb = {};
+let currentSeed = 0;
 
-// Load dữ liệu
-async function init() {
-    try {
-        const res = await fetch('./questions.json');
-        fullDb = await res.json();
-        renderStats();
-    } catch (e) {
-        alert("Lỗi tải questions.json. Hãy đảm bảo file nằm cùng folder.");
-    }
-}
-
-function renderStats() {
-    const total = Object.values(fullDb).flat().length;
-    const statsHtml = `
-        <div class="stat-card"><h4>Tổng kho</h4><p>${total}</p></div>
-        <div class="stat-card"><h4>Hệ Dễ</h4><p>${fullDb.easy.length}</p></div>
-        <div class="stat-card"><h4>Hệ TB</h4><p>${fullDb.medium.length}</p></div>
-        <div class="stat-card"><h4>Hệ Khó</h4><p>${fullDb.hard.length}</p></div>
-        <div class="stat-card"><h4>Hack Não</h4><p>${fullDb.vhard.length}</p></div>
-    `;
-    document.getElementById('stats').innerHTML = statsHtml;
-    document.getElementById('print-count').max = total;
-}
-
-// Thuật toán xáo trộn có Seed (Mã đề)
-function seededShuffle(array, seed) {
-    let m = array.length, t, i;
-    while (m) {
-        i = Math.floor(random(seed++) * m--);
-        t = array[m];
-        array[m] = array[i];
-        array[i] = t;
-    }
-    return array;
-}
-
-function random(seed) {
-    var x = Math.sin(seed) * 10000;
+// Hàm tạo số ngẫu nhiên dựa trên Seed (Mã đề)
+function myRandom() {
+    var x = Math.sin(currentSeed++) * 10000;
     return x - Math.floor(x);
 }
 
@@ -135,49 +140,113 @@ function stringToSeed(str) {
     return Math.abs(hash);
 }
 
+// Hàm xáo trộn mảng nhưng đảm bảo trật tự giữ nguyên nếu Seed không đổi
+function seededShuffle(array) {
+    let m = array.length, t, i;
+    while (m) {
+        i = Math.floor(myRandom() * m--);
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+    }
+    return array;
+}
+
+async function init() {
+    try {
+        const res = await fetch('./questions.json');
+        fullDb = await res.json();
+        
+        const total = Object.values(fullDb).flat().length;
+        document.getElementById('stats').innerHTML = `
+            <div class="stat-card"><h4>Tổng số câu</h4><p>${total}</p></div>
+            <div class="stat-card"><h4>Hệ Dễ</h4><p>${fullDb.easy.length}</p></div>
+            <div class="stat-card"><h4>Hệ TB</h4><p>${fullDb.medium.length}</p></div>
+            <div class="stat-card"><h4>Hệ Khó</h4><p>${fullDb.hard.length}</p></div>
+            <div class="stat-card"><h4>Hack Não</h4><p>${fullDb.vhard.length}</p></div>
+        `;
+        document.getElementById('print-count').max = total;
+    } catch (e) {
+        alert("Lỗi kết nối database (questions.json).");
+    }
+}
+
 function prepareAndPrint() {
     const count = parseInt(document.getElementById('print-count').value);
-    let codeStr = document.getElementById('exam-code').value;
-    if(!codeStr) codeStr = Math.floor(Math.random() * 900 + 100).toString();
+    let codeStr = document.getElementById('exam-code').value.trim();
     
-    const seed = stringToSeed(codeStr);
+    // Nếu để trống mã đề, tự tạo mã 3 chữ số ngẫu nhiên
+    if(!codeStr) {
+        codeStr = Math.floor(Math.random() * 900 + 100).toString();
+        document.getElementById('exam-code').value = codeStr;
+    }
+    
     const ansMode = document.getElementById('ans-mode').value;
+    const fontSize = document.getElementById('font-size').value;
     
-    // Gộp và xáo trộn
-    let allQuestions = Object.values(fullDb).flat();
-    allQuestions = seededShuffle([...allQuestions], seed).slice(0, count);
+    // Cập nhật cỡ chữ in qua biến CSS
+    document.documentElement.style.setProperty('--print-fz', fontSize + 'pt');
     
-    // Đổ dữ liệu vào vùng in
+    // Đặt hạt giống thuật toán theo Mã Đề
+    currentSeed = stringToSeed(codeStr);
+    
+    // Deep Copy toàn bộ database để không ảnh hưởng dữ liệu gốc khi xáo trộn
+    let allQuestions = JSON.parse(JSON.stringify(Object.values(fullDb).flat()));
+    
+    // BƯỚC 1: Xáo trộn câu hỏi
+    let selectedQuestions = seededShuffle(allQuestions).slice(0, count);
+    
+    // Điền Header
     document.getElementById('p-title').innerText = document.getElementById('exam-title').value;
     document.getElementById('p-code').innerText = codeStr;
-    document.getElementById('p-count').innerText = count;
     
     let html = "";
-    let ansHtml = "<h3>BẢNG ĐÁP ÁN</h3>";
+    let ansHtml = `
+        <div class="page-break"></div>
+        <div class="ans-sheet-title">ĐÁP ÁN MÃ ĐỀ ${codeStr}</div>
+        <div class="ans-sheet">
+    `;
     
-    allQuestions.forEach((q, idx) => {
+    // BƯỚC 2: Xử lý và xáo trộn đáp án từng câu
+    selectedQuestions.forEach((q, idx) => {
+        // Gắn cờ (isCorrect) để theo dõi đáp án đúng trước khi trộn
+        let optionsWithTracker = q.options.map((opt, i) => ({ text: opt, isCorrect: (i === q.a) }));
+        
+        // Xáo trộn 4 đáp án (Vẫn tuân theo chuỗi Seed của mã đề này)
+        seededShuffle(optionsWithTracker);
+        
         html += `<div class="q-item">
             <div class="q-text">Câu ${idx + 1}: ${q.q}</div>
             <div class="options-grid">`;
         
-        q.options.forEach((opt, oIdx) => {
-            const label = String.fromCharCode(65 + oIdx);
-            const isCorrect = (oIdx === q.a);
-            const boldClass = (ansMode === 'bold' && isCorrect) ? 'ans-bold' : '';
-            html += `<div class="option ${boldClass}">${label}. ${opt}</div>`;
+        let correctLabel = "";
+        
+        optionsWithTracker.forEach((optObj, oIdx) => {
+            const label = String.fromCharCode(65 + oIdx); // Trả về A, B, C, D
+            if (optObj.isCorrect) correctLabel = label;
+            
+            const boldClass = (ansMode === 'bold' && optObj.isCorrect) ? 'ans-bold' : '';
+            html += `<div class="option ${boldClass}">${label}. ${optObj.text}</div>`;
         });
         
         html += `</div></div>`;
         
-        if (ansMode === 'sheet') {
-            ansHtml += `<div>${idx + 1}: ${String.fromCharCode(65 + q.a)}</div>`;
-        }
+        // Ghi nhận vào bảng đáp án
+        ansHtml += `<div class="ans-item">Câu ${idx + 1}: ${correctLabel}</div>`;
     });
+    ansHtml += `</div>`;
     
+    // Render nội dung
     document.getElementById('p-content').innerHTML = html;
-    document.getElementById('p-ans-sheet').innerHTML = (ansMode === 'sheet') ? ansHtml : '';
     
-    window.print();
+    if (ansMode === 'sheet') {
+        document.getElementById('p-ans-wrapper').innerHTML = ansHtml;
+    } else {
+        document.getElementById('p-ans-wrapper').innerHTML = "";
+    }
+    
+    // Gọi lệnh in của trình duyệt
+    setTimeout(() => { window.print(); }, 300);
 }
 
 init();
