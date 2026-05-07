@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar in use - Pro Quiz</title>
+    <style>
+        :root { --primary: #6366f1; --secondary: #a855f7; --easy: #22c55e; --medium: #eab308; --hard: #f97316; --vhard: #ef4444; --bg: #f8fafc; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 10px; }
+        .quiz-card { background: white; width: 100%; max-width: 650px; padding: 35px; border-radius: 30px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1); position: relative; }
+        h1 { background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 2.8rem; margin: 0; font-weight: 800; }
+        .input-group { margin: 30px 0; text-align: center; }
+        input[type="text"] { width: 85%; padding: 18px; border: 3px solid #e2e8f0; border-radius: 20px; font-size: 18px; outline: none; transition: 0.3s; text-align: center; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        #timer { font-size: 24px; font-weight: 800; color: white; background: var(--vhard); padding: 8px 25px; border-radius: 50px; }
+        .progress-bar { height: 10px; background: #f1f5f9; border-radius: 5px; margin-bottom: 30px; overflow: hidden; }
+        #progress-fill { height: 100%; background: linear-gradient(to right, var(--primary), var(--secondary)); width: 0%; transition: 0.5s; }
+        .difficulty-tag { display: inline-block; padding: 6px 18px; border-radius: 50px; font-size: 13px; font-weight: 800; color: white; margin-bottom: 15px; }
+        .question-text { font-size: 1.3rem; color: #0f172a; margin-bottom: 25px; font-weight: 600; min-height: 50px; }
+        .options-grid { display: grid; gap: 12px; }
+        .option-btn { padding: 18px; border: 2px solid #f1f5f9; border-radius: 15px; background: #f8fafc; cursor: pointer; text-align: left; font-size: 16px; transition: 0.3s; }
+        .option-btn:hover:not(.disabled) { border-color: var(--primary); background: #eff6ff; transform: translateX(5px); }
+        .option-btn.correct { border-color: var(--easy) !important; background: #f0fdf4 !important; color: #166534; font-weight: bold; }
+        .option-btn.wrong { border-color: var(--vhard) !important; background: #fef2f2 !important; color: #991b1b; }
+        .hint-box { margin-top: 20px; padding: 15px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 12px; color: #92400e; font-size: 0.95rem; display: none; border-left: 5px solid #fbbf24; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); justify-content: center; align-items: center; z-index: 1000; backdrop-filter: blur(8px); }
+        .modal-content { background: white; padding: 35px; border-radius: 35px; text-align: center; width: 90%; max-width: 500px; }
+        .btn-action { background: var(--primary); color: white; border: none; padding: 15px 35px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: 0.3s; margin: 5px; }
+        .review-nav { display: none; justify-content: space-between; margin-top: 25px; }
+    </style>
+</head>
+<body>
+
+<div class="quiz-card" id="setup-screen">
+    <h1>Grammar in use</h1>
+    <div class="input-group">
+        <input type="text" id="student-name" placeholder="Nhập tên của bạn...">
+    </div>
+    <div style="text-align:center">
+        <button class="btn-action" onclick="startQuiz()" style="font-size: 20px;">BẮT ĐẦU</button>
+    </div>
+</div>
+
+<div class="quiz-card" id="quiz-screen" style="display:none">
+    <div class="header">
+        <span id="q-counter" style="font-weight:700; color:#64748b;"></span>
+        <div id="timer-box"><span id="timer">15</span></div>
+    </div>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+    <div id="diff-tag" class="difficulty-tag"></div>
+    <div id="question" class="question-text"></div>
+    <div id="options" class="options-grid"></div>
+    <div id="hint" class="hint-box"></div>
+    
+    <div class="review-nav" id="review-controls">
+        <button class="btn-action" style="background:#64748b" onclick="navReview(-1)">Câu trước</button>
+        <button class="btn-action" onclick="navReview(1)">Câu sau</button>
+    </div>
+    <div id="exit-review" style="display:none; text-align:center; margin-top:15px">
+        <button onclick="location.reload()" style="color:var(--primary); border:none; background:none; font-weight:bold; cursor:pointer">Thoát xem lại</button>
+    </div>
+</div>
+
+<div class="modal" id="result-modal">
+    <div class="modal-content">
+        <h2 id="comment-title" style="margin:0">KẾT QUẢ</h2>
+        <div id="result-info" style="text-align:left; background:#f8fafc; padding:20px; border-radius:20px; margin:15px 0; font-size: 0.9rem;"></div>
+        <div id="result-score" style="font-size: 50px; font-weight: 900; color: var(--primary); margin: 10px 0;"></div>
+        <div style="display:flex; justify-content:center;">
+            <button class="btn-action" style="background:var(--secondary)" onclick="openReview()">Xem lại bài</button>
+            <button class="btn-action" onclick="location.reload()">Thử lại</button>
+        </div>
+    </div>
+</div>
+
+<script>
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxred1fOkNnb2LRaKMskMdHczZdA9vo-IMuqwkqHNa0Xi045oHb8l8kVkkrs4B0IMwQ/exec';
+
+const db = {
+    easy: [
+        {q: "Look! The bus _______.", options: ["is coming", "comes", "are coming", "is come"], a: 0, h: "💡 Dùng Hiện tại tiếp diễn cho hành động đang xảy ra khi có dấu hiệu 'Look!'."},
+        {q: "I never _______ coffee.", options: ["drink", "am drinking", "drinks", "drinking"], a: 0, h: "💡 Hiện tại đơn diễn tả thói quen lặp đi lặp lại với 'never'."},
+        {q: "Mozart _______ more than 600 pieces of music.", options: ["wrote", "write", "writed", "was write"], a: 0, h: "💡 Quá khứ đơn cho sự việc đã kết thúc hoàn toàn trong quá khứ."}
+    ],
+    medium: [
+        {q: "Listen! Someone _______ the piano.", options: ["is playing", "plays", "playing", "are playing"], a: 0, h: "💡 Có dấu hiệu 'Listen!' nên dùng Hiện tại tiếp diễn."},
+        {q: "Jane _______ for me when I arrived.", options: ["was waiting", "waited", "is waiting", "waiting"], a: 0, h: "💡 Quá khứ tiếp diễn cho hành động đang xảy ra thì hành động khác xen vào."}
+    ],
+    hard: [
+        {q: "I _______ my key. I can't find it anywhere.", options: ["has lost", "lost", "lose", "am losing"], a: 0, h: "💡 Hiện tại hoàn thành diễn tả hành động quá khứ có kết quả ở hiện tại."},
+        {q: "Have you _______ been to Australia?", options: ["ever", "never", "yet", "just"], a: 0, h: "💡 Dùng 'ever' để hỏi về trải nghiệm tính đến hiện tại."}
+    ],
+    vhard: [
+        {q: "Maria _______ English for two years.", options: ["has been learning", "is learning", "learns", "has learned"], a: 0, h: "💡 Hiện tại hoàn thành tiếp diễn nhấn mạnh sự kéo dài của hành động."},
+        {q: "Look! Somebody _______ that window.", options: ["has broken", "has been breaking", "is breaking", "broke"], a: 0, h: "💡 Nhấn mạnh kết quả của hành động vừa xảy ra dùng Hiện tại hoàn thành."}
+    ]
+};
+
+let quizQuestions = [], userAnswers = [], currentIndex = 0, score = 0, timer, startTime, studentName = "", isReview = false;
+
+function shuffle(arr) { return arr.sort(() => Math.random() - 0.5); }
+
+function startQuiz() {
+    studentName = document.getElementById('student-name').value.trim();
+    if (!studentName) return alert("Vui lòng nhập tên!");
+    document.getElementById('setup-screen').style.display = 'none';
+    document.getElementById('quiz-screen').style.display = 'block';
+    const total = Math.floor(Math.random() * 11) + 10;
+    quizQuestions = [
+        ...shuffle([...db.easy]).slice(0, Math.round(total*0.4)).map(i=>({...i, d:'Dễ', c:'var(--easy)'})),
+        ...shuffle([...db.medium]).slice(0, Math.round(total*0.3)).map(i=>({...i, d:'TB', c:'var(--medium)'})),
+        ...shuffle([...db.hard]).slice(0, Math.round(total*0.2)).map(i=>({...i, d:'Khó', c:'var(--hard)'})),
+        ...shuffle([...db.vhard]).slice(0, Math.round(total*0.1)).map(i=>({...i, d:'V.Khó', c:'var(--vhard)'}))
+    ];
+    shuffle(quizQuestions);
+    startTime = new Date();
+    showQuestion();
+}
+
+function showQuestion() {
+    if (currentIndex >= quizQuestions.length) return endQuiz();
+    const q = quizQuestions[currentIndex];
+    document.getElementById('q-counter').innerText = `CÂU ${currentIndex + 1}/${quizQuestions.length}`;
+    document.getElementById('progress-fill').style.width = `${(currentIndex / quizQuestions.length) * 100}%`;
+    document.getElementById('diff-tag').innerText = q.d;
+    document.getElementById('diff-tag').style.backgroundColor = q.c;
+    document.getElementById('question').innerText = q.q;
+    const optDiv = document.getElementById('options');
+    optDiv.innerHTML = '';
+    
+    if (!q.shuffled) {
+        q.shuffled = q.options.map((t, i) => ({t, id: i}));
+        shuffle(q.shuffled);
+    }
+
+    q.shuffled.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'option-btn';
+        btn.innerText = opt.t;
+        if (isReview) {
+            if (opt.id === q.a) btn.classList.add('correct');
+            if (userAnswers[currentIndex] === opt.id && opt.id !== q.a) btn.classList.add('wrong');
+            document.getElementById('hint').style.display = 'block';
+            document.getElementById('hint').innerText = q.h;
+        } else {
+            btn.onclick = () => selectOption(opt.id);
+        }
+        optDiv.appendChild(btn);
+    });
+
+    if (!isReview) {
+        let left = 15;
+        document.getElementById('timer').innerText = left;
+        clearInterval(timer);
+        timer = setInterval(() => {
+            left--; document.getElementById('timer').innerText = left;
+            if (left <= 0) selectOption(-1);
+        }, 1000);
+    }
+}
+
+function selectOption(id) {
+    userAnswers[currentIndex] = id;
+    if (id === quizQuestions[currentIndex].a) score++;
+    currentIndex++;
+    showQuestion();
+}
+
+function endQuiz() {
+    clearInterval(timer);
+    const duration = Math.floor((new Date() - startTime) / 1000);
+    const finalScore = ((score / quizQuestions.length) * 10).toFixed(1);
+    const timeStr = new Date().toLocaleString('vi-VN');
+    document.getElementById('result-modal').style.display = 'flex';
+    document.getElementById('result-score').innerText = `${finalScore} ĐIỂM`;
+    document.getElementById('result-info').innerHTML = `👤 <b>Tên:</b> ${studentName}<br>⏳ <b>Thời lượng:</b> ${duration} giây<br>📅 <b>Lúc:</b> ${timeStr}`;
+    
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: JSON.stringify({
+            timestamp: timeStr,
+            name: studentName,
+            score: finalScore,
+            duration: duration,
+            details: `Đúng ${score}/${quizQuestions.length}`
+        })
+    });
+}
+
+function openReview() {
+    isReview = true; currentIndex = 0;
+    document.getElementById('result-modal').style.display = 'none';
+    document.getElementById('timer-box').style.display = 'none';
+    document.getElementById('review-controls').style.display = 'flex';
+    document.getElementById('exit-review').style.display = 'block';
+    showQuestion();
+}
+
+function navReview(n) {
+    currentIndex += n;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex >= quizQuestions.length) currentIndex = quizQuestions.length - 1;
+    showQuestion();
+}
+</script>
+</body>
+</html>
