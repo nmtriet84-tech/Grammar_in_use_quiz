@@ -2,136 +2,132 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grammar in use - Pro Quiz</title>
+    <title>Grammar in use - Pro Max</title>
     <style>
         :root { --primary: #6366f1; --secondary: #a855f7; --easy: #22c55e; --medium: #eab308; --hard: #f97316; --vhard: #ef4444; --bg: #f8fafc; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 10px; }
-        .quiz-card { background: white; width: 100%; max-width: 650px; padding: 35px; border-radius: 30px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1); position: relative; }
-        h1 { background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 2.8rem; margin: 0; font-weight: 800; }
-        .input-group { margin: 30px 0; text-align: center; }
-        input[type="text"] { width: 85%; padding: 18px; border: 3px solid #e2e8f0; border-radius: 20px; font-size: 18px; outline: none; transition: 0.3s; text-align: center; }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
-        #timer { font-size: 24px; font-weight: 800; color: white; background: var(--vhard); padding: 8px 25px; border-radius: 50px; }
-        .progress-bar { height: 10px; background: #f1f5f9; border-radius: 5px; margin-bottom: 30px; overflow: hidden; }
-        #progress-fill { height: 100%; background: linear-gradient(to right, var(--primary), var(--secondary)); width: 0%; transition: 0.5s; }
-        .difficulty-tag { display: inline-block; padding: 6px 18px; border-radius: 50px; font-size: 13px; font-weight: 800; color: white; margin-bottom: 15px; }
-        .question-text { font-size: 1.3rem; color: #0f172a; margin-bottom: 25px; font-weight: 600; min-height: 50px; }
-        .options-grid { display: grid; gap: 12px; }
-        .option-btn { padding: 18px; border: 2px solid #f1f5f9; border-radius: 15px; background: #f8fafc; cursor: pointer; text-align: left; font-size: 16px; transition: 0.3s; }
-        .option-btn:hover:not(.disabled) { border-color: var(--primary); background: #eff6ff; transform: translateX(5px); }
-        .option-btn.correct { border-color: var(--easy) !important; background: #f0fdf4 !important; color: #166534; font-weight: bold; }
-        .option-btn.wrong { border-color: var(--vhard) !important; background: #fef2f2 !important; color: #991b1b; }
-        .hint-box { margin-top: 20px; padding: 15px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 12px; color: #92400e; font-size: 0.95rem; display: none; border-left: 5px solid #fbbf24; }
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); justify-content: center; align-items: center; z-index: 1000; backdrop-filter: blur(8px); }
-        .modal-content { background: white; padding: 35px; border-radius: 35px; text-align: center; width: 90%; max-width: 500px; }
-        .btn-action { background: var(--primary); color: white; border: none; padding: 15px 35px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: 0.3s; margin: 5px; }
-        .review-nav { display: none; justify-content: space-between; margin-top: 25px; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 10px; }
+        .quiz-card { background: white; width: 100%; max-width: 650px; padding: 30px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        h1 { background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 2.5rem; margin: 0; font-weight: 800; }
+        .leaderboard { background: #f1f5f9; padding: 20px; border-radius: 15px; margin: 20px 0; font-size: 14px; }
+        .top-item { display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 5px 0; }
+        #timer { background: var(--vhard); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; }
+        .option-btn { width: 100%; padding: 15px; margin: 8px 0; border: 2px solid #f1f5f9; border-radius: 12px; cursor: pointer; text-align: left; transition: 0.3s; }
+        .option-btn.correct { background: #dcfce7; border-color: var(--easy); font-weight: bold; }
+        .option-btn.wrong { background: #fee2e2; border-color: var(--vhard); }
+        .hint-box { margin-top: 15px; padding: 15px; background: #fffbeb; border-left: 5px solid #fbbf24; border-radius: 8px; display: none; font-size: 0.9rem; }
+        .btn-main { width: 100%; padding: 15px; background: var(--primary); color: white; border: none; border-radius: 50px; font-weight: bold; cursor: pointer; font-size: 1.1rem; }
     </style>
 </head>
 <body>
 
 <div class="quiz-card" id="setup-screen">
     <h1>Grammar in use</h1>
-    <div class="input-group">
-        <input type="text" id="student-name" placeholder="Nhập tên của bạn...">
+    <div id="welcome" style="text-align:center; margin-top: 10px; font-weight: 600;"></div>
+    <div class="leaderboard">
+        <h4 style="text-align:center; margin-top:0">🏆 TOP 5 CHIẾN THẦN</h4>
+        <div id="top-list">Đang tải bảng xếp hạng...</div>
     </div>
-    <div style="text-align:center">
-        <button class="btn-action" onclick="startQuiz()" style="font-size: 20px;">BẮT ĐẦU</button>
-    </div>
+    <input type="text" id="user-name" placeholder="Nhập tên của bạn..." style="width:100%; padding:15px; margin-bottom:20px; border-radius:12px; border:1px solid #ddd; text-align:center">
+    <button class="btn-main" onclick="startQuiz()">BẮT ĐẦU THỬ THÁCH</button>
 </div>
 
 <div class="quiz-card" id="quiz-screen" style="display:none">
-    <div class="header">
-        <span id="q-counter" style="font-weight:700; color:#64748b;"></span>
-        <div id="timer-box"><span id="timer">15</span></div>
+    <div style="display:flex; justify-content:space-between; margin-bottom:15px">
+        <span id="counter" style="font-weight:bold"></span>
+        <span id="timer">15</span>
     </div>
-    <div class="progress-bar"><div id="progress-fill"></div></div>
-    <div id="diff-tag" class="difficulty-tag"></div>
-    <div id="question" class="question-text"></div>
-    <div id="options" class="options-grid"></div>
+    <div id="question" style="font-size:1.2rem; font-weight:600; margin-bottom:20px"></div>
+    <div id="options"></div>
     <div id="hint" class="hint-box"></div>
-    
-    <div class="review-nav" id="review-controls">
-        <button class="btn-action" style="background:#64748b" onclick="navReview(-1)">Câu trước</button>
-        <button class="btn-action" onclick="navReview(1)">Câu sau</button>
-    </div>
-    <div id="exit-review" style="display:none; text-align:center; margin-top:15px">
-        <button onclick="location.reload()" style="color:var(--primary); border:none; background:none; font-weight:bold; cursor:pointer">Thoát xem lại</button>
+    <div id="review-nav" style="display:none; margin-top:20px; text-align:center">
+        <button onclick="navReview(-1)">Câu trước</button> <button onclick="navReview(1)">Câu sau</button>
+        <p><button onclick="location.reload()" style="background:none; border:none; color:var(--primary); cursor:pointer">Thoát xem lại</button></p>
     </div>
 </div>
 
-<div class="modal" id="result-modal">
-    <div class="modal-content">
-        <h2 id="comment-title" style="margin:0">KẾT QUẢ</h2>
-        <div id="result-info" style="text-align:left; background:#f8fafc; padding:20px; border-radius:20px; margin:15px 0; font-size: 0.9rem;"></div>
-        <div id="result-score" style="font-size: 50px; font-weight: 900; color: var(--primary); margin: 10px 0;"></div>
-        <div style="display:flex; justify-content:center;">
-            <button class="btn-action" style="background:var(--secondary)" onclick="openReview()">Xem lại bài</button>
-            <button class="btn-action" onclick="location.reload()">Thử lại</button>
-        </div>
+<div class="modal" id="result-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000">
+    <div style="background:white; padding:40px; border-radius:30px; text-align:center; max-width:400px; width:90%">
+        <h2 id="msg"></h2>
+        <div id="score" style="font-size:3rem; font-weight:900; color:var(--primary); margin:20px 0"></div>
+        <div id="info" style="text-align:left; margin-bottom:20px; font-size:0.9rem"></div>
+        <button class="btn-main" onclick="openReview()" style="background:var(--secondary); margin-bottom:10px">XEM LẠI BÀI</button>
+        <button class="btn-main" onclick="location.reload()">LÀM TIẾP LẦN SAU</button>
     </div>
 </div>
 
 <script>
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxred1fOkNnb2LRaKMskMdHczZdA9vo-IMuqwkqHNa0Xi045oHb8l8kVkkrs4B0IMwQ/exec';
+const URL = 'https://script.google.com/macros/s/AKfycbxred1fOkNnb2LRaKMskMdHczZdA9vo-IMuqwkqHNa0Xi045oHb8l8kVkkrs4B0IMwQ/exec';
 
 const db = {
     easy: [
-        {q: "Look! The bus _______.", options: ["is coming", "comes", "are coming", "is come"], a: 0, h: "💡 Dùng Hiện tại tiếp diễn cho hành động đang xảy ra khi có dấu hiệu 'Look!'."},
-        {q: "I never _______ coffee.", options: ["drink", "am drinking", "drinks", "drinking"], a: 0, h: "💡 Hiện tại đơn diễn tả thói quen lặp đi lặp lại với 'never'."},
-        {q: "Mozart _______ more than 600 pieces of music.", options: ["wrote", "write", "writed", "was write"], a: 0, h: "💡 Quá khứ đơn cho sự việc đã kết thúc hoàn toàn trong quá khứ."}
+        {q: "Look! The bus _______.", options: ["is coming", "comes", "are coming"], a: 0, h: "💡 (Unit 1) Dùng am/is/are + V-ing khi có từ nhận biết 'Look!'."},
+        {q: "I never _______ coffee.", options: ["drink", "am drinking", "drinks"], a: 0, h: "💡 (Unit 2) Hiện tại đơn diễn tả thói quen với trạng từ tần suất 'never'."}
     ],
     medium: [
-        {q: "Listen! Someone _______ the piano.", options: ["is playing", "plays", "playing", "are playing"], a: 0, h: "💡 Có dấu hiệu 'Listen!' nên dùng Hiện tại tiếp diễn."},
-        {q: "Jane _______ for me when I arrived.", options: ["was waiting", "waited", "is waiting", "waiting"], a: 0, h: "💡 Quá khứ tiếp diễn cho hành động đang xảy ra thì hành động khác xen vào."}
+        {q: "Listen! Someone _______ the piano.", options: ["is playing", "plays", "playing"], a: 0, h: "💡 (Unit 3) Hiện tại tiếp diễn cho hành động đang diễn ra ngay lúc nói."},
+        {q: "Jane _______ for me when I arrived.", options: ["was waiting", "waited", "is waiting"], a: 0, h: "💡 (Unit 6) Quá khứ tiếp diễn cho hành động đang xảy ra thì có việc khác xen vào."}
     ],
     hard: [
-        {q: "I _______ my key. I can't find it anywhere.", options: ["has lost", "lost", "lose", "am losing"], a: 0, h: "💡 Hiện tại hoàn thành diễn tả hành động quá khứ có kết quả ở hiện tại."},
-        {q: "Have you _______ been to Australia?", options: ["ever", "never", "yet", "just"], a: 0, h: "💡 Dùng 'ever' để hỏi về trải nghiệm tính đến hiện tại."}
+        {q: "I _______ my key. I can't find it anywhere.", options: ["has lost", "lost", "lose"], a: 0, h: "💡 (Unit 7) Hiện tại hoàn thành cho việc vừa xảy ra và để lại kết quả hiện tại."},
+        {q: "Have you _______ been to Australia?", options: ["ever", "never", "yet"], a: 0, h: "💡 (Unit 8) Dùng 'ever' để hỏi về trải nghiệm tính đến thời điểm hiện tại."}
     ],
     vhard: [
-        {q: "Maria _______ English for two years.", options: ["has been learning", "is learning", "learns", "has learned"], a: 0, h: "💡 Hiện tại hoàn thành tiếp diễn nhấn mạnh sự kéo dài của hành động."},
-        {q: "Look! Somebody _______ that window.", options: ["has broken", "has been breaking", "is breaking", "broke"], a: 0, h: "💡 Nhấn mạnh kết quả của hành động vừa xảy ra dùng Hiện tại hoàn thành."}
+        {q: "Maria _______ English for two years.", options: ["has been learning", "is learning", "learns"], a: 0, h: "💡 (Unit 9) Nhấn mạnh tính liên tục của hành động kéo dài dùng Hiện tại hoàn thành tiếp diễn."},
+        {q: "I _______ you should sell your car.", options: ["think", "am thinking", "thinks"], a: 0, h: "💡 (Unit 4) Động từ trạng thái 'think' (ý kiến) không dùng ở thì tiếp diễn."}
     ]
 };
 
-let quizQuestions = [], userAnswers = [], currentIndex = 0, score = 0, timer, startTime, studentName = "", isReview = false;
+let quiz = [], userAns = [], current = 0, score = 0, timer, startT, name = "", isReview = false;
 
-function shuffle(arr) { return arr.sort(() => Math.random() - 0.5); }
+window.onload = async () => {
+    const saved = localStorage.getItem('name');
+    if (saved) {
+        name = saved;
+        document.getElementById('user-name').style.display = 'none';
+        document.getElementById('welcome').innerText = `Chào mừng trở lại, ${name}!`;
+    }
+    try {
+        const res = await fetch(URL);
+        const top = await res.json();
+        document.getElementById('top-list').innerHTML = top.map((u, i) => `<div class="top-item"><span>#${i+1} ${u.name}</span><span>${u.score}đ (Hạng ${u.rank})</span></div>`).join('') || "Chưa có dữ liệu.";
+    } catch (e) { document.getElementById('top-list').innerText = "Lỗi tải bảng xếp hạng."; }
+};
+
+function shuffle(a) { return a.sort(() => 0.5 - Math.random()); }
 
 function startQuiz() {
-    studentName = document.getElementById('student-name').value.trim();
-    if (!studentName) return alert("Vui lòng nhập tên!");
+    if (!name) {
+        name = document.getElementById('user-name').value.trim();
+        if (!name) return alert("Vui lòng nhập tên!");
+        localStorage.setItem('name', name);
+    }
     document.getElementById('setup-screen').style.display = 'none';
     document.getElementById('quiz-screen').style.display = 'block';
-    const total = Math.floor(Math.random() * 11) + 10;
-    quizQuestions = [
-        ...shuffle([...db.easy]).slice(0, Math.round(total*0.4)).map(i=>({...i, d:'Dễ', c:'var(--easy)'})),
-        ...shuffle([...db.medium]).slice(0, Math.round(total*0.3)).map(i=>({...i, d:'TB', c:'var(--medium)'})),
-        ...shuffle([...db.hard]).slice(0, Math.round(total*0.2)).map(i=>({...i, d:'Khó', c:'var(--hard)'})),
-        ...shuffle([...db.vhard]).slice(0, Math.round(total*0.1)).map(i=>({...i, d:'V.Khó', c:'var(--vhard)'}))
+    
+    let extra = parseInt(localStorage.getItem('extra') || 0);
+    const total = 20 + extra;
+    
+    quiz = [
+        ...shuffle([...db.easy]).slice(0, Math.round(total*0.4)),
+        ...shuffle([...db.medium]).slice(0, Math.round(total*0.3)),
+        ...shuffle([...db.hard]).slice(0, Math.round(total*0.2)),
+        ...shuffle([...db.vhard]).slice(0, Math.round(total*0.1))
     ];
-    shuffle(quizQuestions);
-    startTime = new Date();
-    showQuestion();
+    shuffle(quiz);
+    startT = new Date();
+    show();
 }
 
-function showQuestion() {
-    if (currentIndex >= quizQuestions.length) return endQuiz();
-    const q = quizQuestions[currentIndex];
-    document.getElementById('q-counter').innerText = `CÂU ${currentIndex + 1}/${quizQuestions.length}`;
-    document.getElementById('progress-fill').style.width = `${(currentIndex / quizQuestions.length) * 100}%`;
-    document.getElementById('diff-tag').innerText = q.d;
-    document.getElementById('diff-tag').style.backgroundColor = q.c;
+function show() {
+    if (current >= quiz.length) return endQuiz();
+    const q = quiz[current];
+    document.getElementById('counter').innerText = `CÂU ${current + 1}/${quiz.length}`;
+    document.getElementById('progress-fill')?.style.setProperty('width', `${(current/quiz.length)*100}%`);
     document.getElementById('question').innerText = q.q;
-    const optDiv = document.getElementById('options');
-    optDiv.innerHTML = '';
+    const optArea = document.getElementById('options');
+    optArea.innerHTML = '';
     
-    if (!q.shuffled) {
-        q.shuffled = q.options.map((t, i) => ({t, id: i}));
-        shuffle(q.shuffled);
-    }
+    if (!q.shuffled) { q.shuffled = q.options.map((t, i) => ({t, id: i})); shuffle(q.shuffled); }
 
     q.shuffled.forEach(opt => {
         const btn = document.createElement('button');
@@ -139,13 +135,11 @@ function showQuestion() {
         btn.innerText = opt.t;
         if (isReview) {
             if (opt.id === q.a) btn.classList.add('correct');
-            if (userAnswers[currentIndex] === opt.id && opt.id !== q.a) btn.classList.add('wrong');
+            if (userAns[current] === opt.id && opt.id !== q.a) btn.classList.add('wrong');
             document.getElementById('hint').style.display = 'block';
             document.getElementById('hint').innerText = q.h;
-        } else {
-            btn.onclick = () => selectOption(opt.id);
-        }
-        optDiv.appendChild(btn);
+        } else { btn.onclick = () => select(opt.id); }
+        optArea.appendChild(btn);
     });
 
     if (!isReview) {
@@ -154,55 +148,34 @@ function showQuestion() {
         clearInterval(timer);
         timer = setInterval(() => {
             left--; document.getElementById('timer').innerText = left;
-            if (left <= 0) selectOption(-1);
+            if (left <= 0) select(-1);
         }, 1000);
     }
 }
 
-function selectOption(id) {
-    userAnswers[currentIndex] = id;
-    if (id === quizQuestions[currentIndex].a) score++;
-    currentIndex++;
-    showQuestion();
+function select(id) {
+    userAns[current] = id;
+    if (id === quiz[current].a) score++;
+    current++; show();
 }
 
 function endQuiz() {
     clearInterval(timer);
-    const duration = Math.floor((new Date() - startTime) / 1000);
-    const finalScore = ((score / quizQuestions.length) * 10).toFixed(1);
-    const timeStr = new Date().toLocaleString('vi-VN');
+    const dur = Math.floor((new Date() - startT) / 1000);
+    const missed = quiz.length - score;
+    localStorage.setItem('extra', missed);
+    const finalScore = ((score / quiz.length) * 10).toFixed(1);
+
     document.getElementById('result-modal').style.display = 'flex';
-    document.getElementById('result-score').innerText = `${finalScore} ĐIỂM`;
-    document.getElementById('result-info').innerHTML = `👤 <b>Tên:</b> ${studentName}<br>⏳ <b>Thời lượng:</b> ${duration} giây<br>📅 <b>Lúc:</b> ${timeStr}`;
+    document.getElementById('score').innerText = `${finalScore}đ`;
+    document.getElementById('msg').innerText = finalScore >= 8 ? "QUÁ CHÁY! 🔥" : "XU CÀ NA! 💀";
+    document.getElementById('info').innerHTML = `✅ Đúng: ${score}/${quiz.length}<br>⏳ Thời gian: ${dur}s<br>⚠️ Sai (Tăng đề lần sau): ${missed} câu`;
     
-    fetch(SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        body: JSON.stringify({
-            timestamp: timeStr,
-            name: studentName,
-            score: finalScore,
-            duration: duration,
-            details: `Đúng ${score}/${quizQuestions.length}`
-        })
-    });
+    fetch(URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify({timestamp: new Date().toLocaleString('vi-VN'), name: name, score: finalScore, duration: dur, details: `Đúng ${score}/${quiz.length}`})});
 }
 
-function openReview() {
-    isReview = true; currentIndex = 0;
-    document.getElementById('result-modal').style.display = 'none';
-    document.getElementById('timer-box').style.display = 'none';
-    document.getElementById('review-controls').style.display = 'flex';
-    document.getElementById('exit-review').style.display = 'block';
-    showQuestion();
-}
-
-function navReview(n) {
-    currentIndex += n;
-    if (currentIndex < 0) currentIndex = 0;
-    if (currentIndex >= quizQuestions.length) currentIndex = quizQuestions.length - 1;
-    showQuestion();
-}
+function openReview() { isReview = true; current = 0; document.getElementById('result-modal').style.display = 'none'; document.getElementById('timer').parentNode.style.display = 'none'; document.getElementById('review-nav').style.display = 'block'; show(); }
+function navReview(n) { current += n; if (current < 0) current = 0; if (current >= quiz.length) current = quiz.length - 1; show(); }
 </script>
 </body>
 </html>
